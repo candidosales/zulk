@@ -19,9 +19,6 @@
   <script src="javascripts/modernizr.foundation.js"></script>
   <script src="javascripts/less-1.3.3.min.js"></script>
 
-  <script src="javascripts/quantize.js"></script>
-  <script src="javascripts/color-thief.js"></script>
-
   <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
 
 </head>
@@ -31,15 +28,15 @@
   <?php include('menu.php');?>
   
 
-  <div id="tile-1" class="tile">
-    <div class="row">
+ <div id="tile-1" class="tile">
+  <div class="row">
     <div class="twelve columns">
       <div class="logo left">
         <a>
           <img src="images/logo.png" />
         </a>
         <a>
-          <img src="images/like.png" />
+          <img class="animate-tada like-facebook" src="images/like.png" />
         </a>
       </div>
       <a href="#">
@@ -48,48 +45,48 @@
         </div>
       </a>
     </div>
-   </div>
-    <div class="row margin-bt-2">
-      <div class="row social-media">
-        <div class="six columns todas-historias">
-          <p>Todas as Histórias</p>
-        </div>
-        <div class="six columns">
-          <ul class="social">
-            <li>
-              <img src="images/social-media/facebook.png"/>
-            </li> 
-            <li>
-              <img src="images/social-media/instagram.png"/>
-            </li>
-            <li>
-              <img src="images/social-media/feed.png"/>
-            </li>
-            <li>
-              <img src="images/social-media/youtube.png"/>
-            </li>
-            <li>
-              <img src="images/social-media/galery.png"/>
-            </li>
-            <li>
-              <img src="images/social-media/heart.png"/>
-            </li>
-            <li>
-              <img src="images/social-media/email.png"/>
-            </li>
-            <li>
-              <img src="images/social-media/doubts.png"/>
-            </li>
-          </ul>
-        </div>
+  </div>
+  <div class="row margin-bt-2">
+    <div class="row social-media">
+      <div class="six columns todas-historias">
+        <img src="images/todas-historias.png" />
       </div>
-      <div id="principal-1" class="six columns principal">
-        <div id="slide-1" class="slide">
-          <img src="images/slide/1.jpg" data-title="A zulk viaja ao rio de janeiro e faz belissimas fotos, confira a sequencia." data-category="Viagens"/>
-          <img src="images/slide/2.jpg" data-title="Csamento" data-category="Fotos" />
-          <img src="images/slide/1.jpg" data-title="Teste1" />
-          <img src="images/slide/2.jpg" data-title="Teste2" />
-        </div>
+      <div class="six columns">
+        <ul class="social">
+          <li>
+            <img src="images/social-media/facebook.png"/>
+          </li> 
+          <li>
+            <img src="images/social-media/instagram.png"/>
+          </li>
+          <li>
+            <img src="images/social-media/feed.png"/>
+          </li>
+          <li>
+            <img src="images/social-media/youtube.png"/>
+          </li>
+          <li>
+            <img src="images/social-media/galery.png"/>
+          </li>
+          <li>
+            <img src="images/social-media/heart.png"/>
+          </li>
+          <li>
+            <img src="images/social-media/email.png"/>
+          </li>
+          <li>
+            <img src="images/social-media/doubts.png"/>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="principal-1" class="six columns principal">
+      <div id="slide-1" class="slide">
+        <img src="images/slide/1.jpg" data-title="A zulk viaja ao rio de janeiro e faz belissimas fotos, confira a sequencia." data-category="Viagens"/>
+        <img src="images/slide/2.jpg" data-title="Csamento" data-category="Fotos" />
+        <img src="images/slide/1.jpg" data-title="Teste1" />
+        <img src="images/slide/2.jpg" data-title="Teste2" />
+      </div>
         <!--<div class="share-media">
           <ul>
             <li class="share"><span aria-hidden="true" class="icon-export icon"></span> </li>
@@ -99,7 +96,7 @@
         <div class="label-category">
           <p class="label-category-1"></p>
         </div>
-        <div class="category-list">
+        <div class="category-list animated">
           <ul>
             <li>CONTRATE A ZULK</li>
             <li>TRABALHE AQUI</li>
@@ -134,7 +131,7 @@
         <div class="label-category">
           <p class="label-category-1"></p>
         </div>
-        <div class="category-list">
+        <div class="category-list animated">
           <ul>
             <li>CONTRATE A ZULK</li>
             <li>TRABALHE AQUI</li>
@@ -158,7 +155,7 @@
     <div class="row">
       <div class="three columns sub-principal">
         <div id="slide-3" class="slide">
-          <a id="test-ajax" href="#1">
+          <a id="test-ajax" href="#">
             <img src="images/slide/3.jpg" data-title="A zulk viaja ao rio de janeiro e faz belissimas fotos, confira a sequencia." data-category="Viagens"/>
           </a>
         </div>
@@ -171,7 +168,7 @@
         <div class="label-category">
           <p class="label-category-1"></p>
         </div>
-        <div class="category-list">
+        <div class="category-list animated">
           <ul>
             <li>CONTRATE A ZULK</li>
             <li>TRABALHE AQUI</li>
@@ -203,7 +200,7 @@
         <div class="label-category">
           <p class="label-category-1"></p>
         </div>
-        <div class="category-list">
+        <div class="category-list animated">
           <ul>
             <li>CONTRATE A ZULK</li>
             <li>TRABALHE AQUI</li>
@@ -304,85 +301,98 @@
       <h2>Histórias da Zulk</h2>
     </div>
     <div class="row">
-    <div class="container">
-      <div class="box">
+      <div class="container">
+        <div class="box">
 
           <a class="link-category" data-category="Casamento" data-title="Viagem para o Rio">
-          <img src="images/slide/1.jpg"></img>
-        <div class="label-category">
-          <p></p>
-         </div>
-         <div class="title">
-            <p></p>
-            <p class="small">51 dias atrás | <span aria-hidden="true" class="icon-baloon icon"></span> 0 
-             <span aria-hidden="true" class="icon-eye icon"></span> 155 
-             <span aria-hidden="true" class="icon-heart icon"></span> 0  
-               </p>
-         </div>
-        </a>
-      </div>
+            <img src="images/slide/1.jpg"></img>
+            <div class="label-category">
+              <p></p>
+            </div>
+            <div class="title">
+              <p></p>
+              <p class="small">51 dias atrás | <span aria-hidden="true" class="icon-baloon icon"></span> 0 
+               <span aria-hidden="true" class="icon-eye icon"></span> 155 
+               <span aria-hidden="true" class="icon-heart icon"></span> 0  
+             </p>
+           </div>
+         </a>
+       </div>
 
-      
-      <div class="box">
-        <a class="link-category" data-category="Casamento">
+       
+       <div class="box">
+        <a class="link-category small" data-category="Casamento" data-title="Viagem para o Rio">
          <img src="images/slide/3.jpg"></img>
          <div class="label-category">
           <p></p>
-         </div>
-        </a>
-
-      </div>
-      
-
-      <div class="box">
-        <a class="link-category" data-category="Casamento">
-        <img src="images/slide/4.jpg"></img>
-        <div class="label-category">
+        </div>
+        <div class="title">
           <p></p>
-         </div>
-        </a>
-      </div>
-      
-      <div class="box">
-        <img src="images/slide/3.jpg"></img>
-      </div>
-      <div class="box">
-        <img src="images/slide/4.jpg"></img>
-      </div>
-      </div>
-    </div>
-  </div>
+          <p class="small">51 dias atrás | <span aria-hidden="true" class="icon-baloon icon"></span> 0 
+           <span aria-hidden="true" class="icon-eye icon"></span> 155 
+           <span aria-hidden="true" class="icon-heart icon"></span> 0  
+         </p>
+       </div>
+     </a>
 
+   </div>
+   
 
-  
+   <div class="box">
+    <a class="link-category small" data-category="Casamento" data-title="Viagem para o Rio">
+      <img src="images/slide/4.jpg"></img>
+      <div class="label-category">
+        <p></p>
+      </div>
+      <div class="title">
+        <p></p>
+        <p class="small">51 dias atrás | <span aria-hidden="true" class="icon-baloon icon"></span> 0 
+         <span aria-hidden="true" class="icon-eye icon"></span> 155 
+         <span aria-hidden="true" class="icon-heart icon"></span> 0  
+       </p>
+     </div>
+   </a>
+ </div>
+ 
+   <div class="box">
+    <a class="link-category small" data-category="Casamento" data-title="Viagem para o Rio">
+      <img src="images/slide/3.jpg"></img>
+      <div class="label-category">
+        <p></p>
+      </div>
+      <div class="title">
+        <p></p>
+        <p class="small">51 dias atrás | <span aria-hidden="true" class="icon-baloon icon"></span> 0 
+         <span aria-hidden="true" class="icon-eye icon"></span> 155 
+         <span aria-hidden="true" class="icon-heart icon"></span> 0  
+       </p>
+     </div>
+   </a>
+ </div>
+   <div class="box">
+    <a class="link-category small" data-category="Casamento" data-title="Viagem para o Rio">
+      <img src="images/slide/4.jpg"></img>
+      <div class="label-category">
+        <p></p>
+      </div>
+      <div class="title">
+        <p></p>
+        <p class="small">51 dias atrás | <span aria-hidden="true" class="icon-baloon icon"></span> 0 
+         <span aria-hidden="true" class="icon-eye icon"></span> 155 
+         <span aria-hidden="true" class="icon-heart icon"></span> 0  
+       </p>
+     </div>
+   </a>
+ </div>
+</div>
+</div>
+</div>
 
-  
-  
-  <!-- Included JS Files (Uncompressed) -->
-  <!--
-  <script src="javascripts/jquery.js"></script>
-  <script src="javascripts/jquery.foundation.mediaQueryToggle.js"></script>
-  <script src="javascripts/jquery.foundation.forms.js"></script>
-  <script src="javascripts/jquery.event.move.js"></script>
-  <script src="javascripts/jquery.event.swipe.js"></script>
-  <script src="javascripts/jquery.foundation.reveal.js"></script>
-  <script src="javascripts/jquery.foundation.orbit.js"></script>
-  <script src="javascripts/jquery.foundation.navigation.js"></script>
-  <script src="javascripts/jquery.foundation.buttons.js"></script>
-  <script src="javascripts/jquery.foundation.tabs.js"></script>
-  <script src="javascripts/jquery.foundation.tooltips.js"></script>
-  <script src="javascripts/jquery.foundation.accordion.js"></script>
-  <script src="javascripts/jquery.placeholder.js"></script>
-  <script src="javascripts/jquery.foundation.alerts.js"></script>
-  <script src="javascripts/jquery.foundation.topbar.js"></script>
-  <script src="javascripts/jquery.foundation.clearing.js"></script>
-  <script src="javascripts/jquery.foundation.magellan.js"></script>
-  
--->
 
 <!-- Included JS Files (Compressed) -->
 <script src="javascripts/foundation.min.js"></script>
 <script src="javascripts/jquery.masonry.min.js"></script>
+<script src="javascripts/jquery.swipebox.min.js"></script>
 
 <!-- Initialize JS Plugins -->
 <script src="javascripts/app.js"></script>

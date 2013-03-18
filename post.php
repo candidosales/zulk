@@ -19,19 +19,24 @@
   <script src="javascripts/modernizr.foundation.js"></script>
   <script src="javascripts/less-1.3.3.min.js"></script>
 
-  <script src="javascripts/quantize.js"></script>
-  <script src="javascripts/color-thief.js"></script>
-
   <link rel="stylesheet" href="stylesheets/fresco/fresco.css" />
 
   <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
 
 </head>
-<body>
+<body style="width:auto">
 
   <!-- Header and Nav -->
   <?php include('menu.php');?>
   
+
+  <script type="text/javascript">
+    $(".swipebox").swipebox({
+      useCSS : true, // false will force the use of jQuery for animations
+      hideBarsDelay : 3000 // 0 to always show caption and action bar
+    });
+
+  </script>
 
   <div id="post" class="twelve columns tile left post">
 
@@ -93,34 +98,26 @@
         <aside>
           <ul class="gallery">
             <li>
-              <a href='images/reynolds.jpg' 
-                 class='fresco' 
-                 data-fresco-group='example' 
-                 data-fresco-caption="Sir Joshua Reynolds, The Countess of Dartmouth, 1757"> 
+              <a href='images/reynolds.jpg'  title="My Caption"
+                 class="swipebox"> 
                 <img src="images/1.jpg"></img>
               </a>
             </li>
             <li>
-              <a href='images/reynolds.jpg' 
-                 class='fresco' 
-                 data-fresco-group='example' 
-                 data-fresco-caption="Sir Joshua Reynolds, The Countess of Dartmouth, 1757"> 
+              <a href='images/reynolds.jpg' title="My Caption"
+                 class="swipebox">  
                 <img src="images/2.jpg"></img>
               </a>
             </li>
             <li>
-              <a href='images/reynolds.jpg' 
-                 class='fresco' 
-                 data-fresco-group='example' 
-                 data-fresco-caption="Sir Joshua Reynolds, The Countess of Dartmouth, 1757"> 
+              <a href='images/reynolds.jpg' title="My Caption"
+                 class="swipebox"> 
                 <img src="images/3.jpg"></img>
               </a>
             </li>
             <li>
-              <a href='images/reynolds.jpg' 
-                 class='fresco' 
-                 data-fresco-group='example' 
-                 data-fresco-caption="Sir Joshua Reynolds, The Countess of Dartmouth, 1757"> 
+              <a href='images/reynolds.jpg' title="My Caption"
+                 class="swipebox"> 
                 <img src="images/4.jpg"></img>
               </a>
             </li>
