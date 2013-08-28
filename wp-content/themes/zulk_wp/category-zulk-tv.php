@@ -4,13 +4,13 @@
 <div class="twelve columns">
     <?php include('menu.php');?>
      <?php
-        if(in_category('cinezulk')){
+        if(in_category('zulk-tv')){
           $cat = get_category(get_query_var('cat'),false);
 
           //print_r($cat);
       ?>
     <div class="row">
-      <h2><?php categoryName(21) ?> > <?php echo $cat->name?></h2>
+      <h2><?php categoryName(21) ?>312 > <?php echo $cat->name?></h2>
     </div>
     <div class="row margin-btn-2">
       <div class="two columns">

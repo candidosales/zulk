@@ -6229,3 +6229,68 @@ Stack trace:
 [28-Aug-2013 11:52:02 UTC] PHP  13. WP_Http->_dispatch_request() C:\www\zulk\wp-includes\class-http.php:198
 [28-Aug-2013 11:52:02 UTC] PHP  14. WP_Http_Streams->request() C:\www\zulk\wp-includes\class-http.php:261
 [28-Aug-2013 11:52:02 UTC] PHP  15. fopen() C:\www\zulk\wp-includes\class-http.php:955
+[28-Aug-2013 19:04:37 UTC] PHP Warning:  fopen(http://localhost/zulk/wp-cron.php?doing_wp_cron=1377716677.4778089523315429687500): failed to open stream: HTTP request failed!  in C:\www\zulk\wp-includes\class-http.php on line 955
+[28-Aug-2013 19:04:37 UTC] PHP Stack trace:
+[28-Aug-2013 19:04:37 UTC] PHP   1. {main}() C:\www\zulk\index.php:0
+[28-Aug-2013 19:04:37 UTC] PHP   2. require() C:\www\zulk\index.php:17
+[28-Aug-2013 19:04:37 UTC] PHP   3. require_once() C:\www\zulk\wp-blog-header.php:12
+[28-Aug-2013 19:04:37 UTC] PHP   4. require_once() C:\www\zulk\wp-load.php:29
+[28-Aug-2013 19:04:37 UTC] PHP   5. require_once() C:\www\zulk\wp-config.php:92
+[28-Aug-2013 19:04:37 UTC] PHP   6. do_action() C:\www\zulk\wp-settings.php:308
+[28-Aug-2013 19:04:37 UTC] PHP   7. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:406
+[28-Aug-2013 19:04:37 UTC] PHP   8. wp_cron() C:\www\zulk\wp-includes\plugin.php:406
+[28-Aug-2013 19:04:37 UTC] PHP   9. spawn_cron() C:\www\zulk\wp-includes\cron.php:283
+[28-Aug-2013 19:04:37 UTC] PHP  10. wp_remote_post() C:\www\zulk\wp-includes\cron.php:253
+[28-Aug-2013 19:04:37 UTC] PHP  11. WP_Http->post() C:\www\zulk\wp-includes\http.php:195
+[28-Aug-2013 19:04:37 UTC] PHP  12. WP_Http->request() C:\www\zulk\wp-includes\class-http.php:286
+[28-Aug-2013 19:04:37 UTC] PHP  13. WP_Http->_dispatch_request() C:\www\zulk\wp-includes\class-http.php:198
+[28-Aug-2013 19:04:37 UTC] PHP  14. WP_Http_Streams->request() C:\www\zulk\wp-includes\class-http.php:261
+[28-Aug-2013 19:04:37 UTC] PHP  15. fopen() C:\www\zulk\wp-includes\class-http.php:955
+[28-Aug-2013 19:04:41 UTC] PHP Warning:  fopen():  in C:\www\zulk\wp-includes\class-http.php on line 955
+[28-Aug-2013 19:04:41 UTC] PHP Stack trace:
+[28-Aug-2013 19:04:41 UTC] PHP   1. {main}() C:\www\zulk\wp-cron.php:0
+[28-Aug-2013 19:04:41 UTC] PHP   2. do_action_ref_array() C:\www\zulk\wp-cron.php:92
+[28-Aug-2013 19:04:41 UTC] PHP   3. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:487
+[28-Aug-2013 19:04:41 UTC] PHP   4. wp_version_check() C:\www\zulk\wp-includes\plugin.php:487
+[28-Aug-2013 19:04:41 UTC] PHP   5. wp_remote_get() C:\www\zulk\wp-includes\update.php:89
+[28-Aug-2013 19:04:41 UTC] PHP   6. WP_Http->get() C:\www\zulk\wp-includes\http.php:179
+[28-Aug-2013 19:04:41 UTC] PHP   7. WP_Http->request() C:\www\zulk\wp-includes\class-http.php:304
+[28-Aug-2013 19:04:41 UTC] PHP   8. WP_Http->_dispatch_request() C:\www\zulk\wp-includes\class-http.php:198
+[28-Aug-2013 19:04:41 UTC] PHP   9. WP_Http_Streams->request() C:\www\zulk\wp-includes\class-http.php:261
+[28-Aug-2013 19:04:41 UTC] PHP  10. fopen() C:\www\zulk\wp-includes\class-http.php:955
+[28-Aug-2013 19:04:41 UTC] PHP Warning:  fopen(http://api.wordpress.org/core/version-check/1.6/?version=3.6&amp;php=5.4.3&amp;locale=pt_BR&amp;mysql=5.5.24&amp;local_package=pt_BR&amp;blogs=1&amp;users=1&amp;multisite_enabled=0):  in C:\www\zulk\wp-includes\class-http.php on line 955
+[28-Aug-2013 19:04:41 UTC] PHP Stack trace:
+[28-Aug-2013 19:04:41 UTC] PHP   1. {main}() C:\www\zulk\wp-cron.php:0
+[28-Aug-2013 19:04:41 UTC] PHP   2. do_action_ref_array() C:\www\zulk\wp-cron.php:92
+[28-Aug-2013 19:04:41 UTC] PHP   3. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:487
+[28-Aug-2013 19:04:41 UTC] PHP   4. wp_version_check() C:\www\zulk\wp-includes\plugin.php:487
+[28-Aug-2013 19:04:41 UTC] PHP   5. wp_remote_get() C:\www\zulk\wp-includes\update.php:89
+[28-Aug-2013 19:04:41 UTC] PHP   6. WP_Http->get() C:\www\zulk\wp-includes\http.php:179
+[28-Aug-2013 19:04:41 UTC] PHP   7. WP_Http->request() C:\www\zulk\wp-includes\class-http.php:304
+[28-Aug-2013 19:04:41 UTC] PHP   8. WP_Http->_dispatch_request() C:\www\zulk\wp-includes\class-http.php:198
+[28-Aug-2013 19:04:41 UTC] PHP   9. WP_Http_Streams->request() C:\www\zulk\wp-includes\class-http.php:261
+[28-Aug-2013 19:04:41 UTC] PHP  10. fopen() C:\www\zulk\wp-includes\class-http.php:955
+[28-Aug-2013 19:04:41 UTC] PHP Warning:  fopen():  in C:\www\zulk\wp-includes\class-http.php on line 955
+[28-Aug-2013 19:04:41 UTC] PHP Stack trace:
+[28-Aug-2013 19:04:41 UTC] PHP   1. {main}() C:\www\zulk\wp-cron.php:0
+[28-Aug-2013 19:04:41 UTC] PHP   2. do_action_ref_array() C:\www\zulk\wp-cron.php:92
+[28-Aug-2013 19:04:41 UTC] PHP   3. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:487
+[28-Aug-2013 19:04:41 UTC] PHP   4. wp_update_plugins() C:\www\zulk\wp-includes\plugin.php:487
+[28-Aug-2013 19:04:41 UTC] PHP   5. wp_remote_post() C:\www\zulk\wp-includes\update.php:205
+[28-Aug-2013 19:04:41 UTC] PHP   6. WP_Http->post() C:\www\zulk\wp-includes\http.php:195
+[28-Aug-2013 19:04:41 UTC] PHP   7. WP_Http->request() C:\www\zulk\wp-includes\class-http.php:286
+[28-Aug-2013 19:04:41 UTC] PHP   8. WP_Http->_dispatch_request() C:\www\zulk\wp-includes\class-http.php:198
+[28-Aug-2013 19:04:41 UTC] PHP   9. WP_Http_Streams->request() C:\www\zulk\wp-includes\class-http.php:261
+[28-Aug-2013 19:04:41 UTC] PHP  10. fopen() C:\www\zulk\wp-includes\class-http.php:955
+[28-Aug-2013 19:04:41 UTC] PHP Warning:  fopen(http://api.wordpress.org/plugins/update-check/1.0/):  in C:\www\zulk\wp-includes\class-http.php on line 955
+[28-Aug-2013 19:04:41 UTC] PHP Stack trace:
+[28-Aug-2013 19:04:41 UTC] PHP   1. {main}() C:\www\zulk\wp-cron.php:0
+[28-Aug-2013 19:04:41 UTC] PHP   2. do_action_ref_array() C:\www\zulk\wp-cron.php:92
+[28-Aug-2013 19:04:41 UTC] PHP   3. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:487
+[28-Aug-2013 19:04:41 UTC] PHP   4. wp_update_plugins() C:\www\zulk\wp-includes\plugin.php:487
+[28-Aug-2013 19:04:41 UTC] PHP   5. wp_remote_post() C:\www\zulk\wp-includes\update.php:205
+[28-Aug-2013 19:04:41 UTC] PHP   6. WP_Http->post() C:\www\zulk\wp-includes\http.php:195
+[28-Aug-2013 19:04:41 UTC] PHP   7. WP_Http->request() C:\www\zulk\wp-includes\class-http.php:286
+[28-Aug-2013 19:04:41 UTC] PHP   8. WP_Http->_dispatch_request() C:\www\zulk\wp-includes\class-http.php:198
+[28-Aug-2013 19:04:41 UTC] PHP   9. WP_Http_Streams->request() C:\www\zulk\wp-includes\class-http.php:261
+[28-Aug-2013 19:04:41 UTC] PHP  10. fopen() C:\www\zulk\wp-includes\class-http.php:955
