@@ -1,0 +1,9 @@
+section, footer, nav , figure{ display:block; margin:0; }
+
+.container{ width:200px; margin:0 auto 40px; border:1px solid #CCC; -webkit-perspective:800; position: relative; }
+.container:hover #card{ -webkit-transform:rotateY( 180deg ); }
+
+#card{ height:260px; -webkit-transition:-webkit-transform 1s; -webkit-transform-style:preserve-3d; }
+#card figure{ width:200px; height:260px; color:#fff; text-align:center; font:bold 50px/260px arial; position:absolute; -webkit-backface-visibility:hidden; }
+#card .front{ background:red;}
+#card .back{ background:blue; -webkit-transform:rotateY( 180deg ); }
