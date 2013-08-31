@@ -6294,3 +6294,37 @@ Stack trace:
 [28-Aug-2013 19:04:41 UTC] PHP   8. WP_Http->_dispatch_request() C:\www\zulk\wp-includes\class-http.php:198
 [28-Aug-2013 19:04:41 UTC] PHP   9. WP_Http_Streams->request() C:\www\zulk\wp-includes\class-http.php:261
 [28-Aug-2013 19:04:41 UTC] PHP  10. fopen() C:\www\zulk\wp-includes\class-http.php:955
+[28-Aug-2013 23:40:27 UTC] PHP Warning:  fopen(http://localhost/zulk/wp-cron.php?doing_wp_cron=1377733227.2952599525451660156250): failed to open stream: HTTP request failed!  in C:\www\zulk\wp-includes\class-http.php on line 955
+[28-Aug-2013 23:40:27 UTC] PHP Stack trace:
+[28-Aug-2013 23:40:27 UTC] PHP   1. {main}() C:\www\zulk\index.php:0
+[28-Aug-2013 23:40:27 UTC] PHP   2. require() C:\www\zulk\index.php:17
+[28-Aug-2013 23:40:27 UTC] PHP   3. require_once() C:\www\zulk\wp-blog-header.php:12
+[28-Aug-2013 23:40:27 UTC] PHP   4. require_once() C:\www\zulk\wp-load.php:29
+[28-Aug-2013 23:40:27 UTC] PHP   5. require_once() C:\www\zulk\wp-config.php:92
+[28-Aug-2013 23:40:27 UTC] PHP   6. do_action() C:\www\zulk\wp-settings.php:308
+[28-Aug-2013 23:40:27 UTC] PHP   7. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:406
+[28-Aug-2013 23:40:27 UTC] PHP   8. wp_cron() C:\www\zulk\wp-includes\plugin.php:406
+[28-Aug-2013 23:40:27 UTC] PHP   9. spawn_cron() C:\www\zulk\wp-includes\cron.php:283
+[28-Aug-2013 23:40:27 UTC] PHP  10. wp_remote_post() C:\www\zulk\wp-includes\cron.php:253
+[28-Aug-2013 23:40:27 UTC] PHP  11. WP_Http->post() C:\www\zulk\wp-includes\http.php:195
+[28-Aug-2013 23:40:27 UTC] PHP  12. WP_Http->request() C:\www\zulk\wp-includes\class-http.php:286
+[28-Aug-2013 23:40:27 UTC] PHP  13. WP_Http->_dispatch_request() C:\www\zulk\wp-includes\class-http.php:198
+[28-Aug-2013 23:40:27 UTC] PHP  14. WP_Http_Streams->request() C:\www\zulk\wp-includes\class-http.php:261
+[28-Aug-2013 23:40:27 UTC] PHP  15. fopen() C:\www\zulk\wp-includes\class-http.php:955
+[31-Aug-2013 18:30:11 UTC] PHP Warning:  fopen(http://localhost/zulk/wp-cron.php?doing_wp_cron=1377973811.0767130851745605468750): failed to open stream: HTTP request failed!  in C:\www\zulk\wp-includes\class-http.php on line 955
+[31-Aug-2013 18:30:11 UTC] PHP Stack trace:
+[31-Aug-2013 18:30:11 UTC] PHP   1. {main}() C:\www\zulk\index.php:0
+[31-Aug-2013 18:30:11 UTC] PHP   2. require() C:\www\zulk\index.php:17
+[31-Aug-2013 18:30:11 UTC] PHP   3. require_once() C:\www\zulk\wp-blog-header.php:12
+[31-Aug-2013 18:30:11 UTC] PHP   4. require_once() C:\www\zulk\wp-load.php:29
+[31-Aug-2013 18:30:11 UTC] PHP   5. require_once() C:\www\zulk\wp-config.php:92
+[31-Aug-2013 18:30:11 UTC] PHP   6. do_action() C:\www\zulk\wp-settings.php:308
+[31-Aug-2013 18:30:11 UTC] PHP   7. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:406
+[31-Aug-2013 18:30:11 UTC] PHP   8. wp_cron() C:\www\zulk\wp-includes\plugin.php:406
+[31-Aug-2013 18:30:11 UTC] PHP   9. spawn_cron() C:\www\zulk\wp-includes\cron.php:283
+[31-Aug-2013 18:30:11 UTC] PHP  10. wp_remote_post() C:\www\zulk\wp-includes\cron.php:253
+[31-Aug-2013 18:30:11 UTC] PHP  11. WP_Http->post() C:\www\zulk\wp-includes\http.php:195
+[31-Aug-2013 18:30:11 UTC] PHP  12. WP_Http->request() C:\www\zulk\wp-includes\class-http.php:286
+[31-Aug-2013 18:30:11 UTC] PHP  13. WP_Http->_dispatch_request() C:\www\zulk\wp-includes\class-http.php:198
+[31-Aug-2013 18:30:11 UTC] PHP  14. WP_Http_Streams->request() C:\www\zulk\wp-includes\class-http.php:261
+[31-Aug-2013 18:30:11 UTC] PHP  15. fopen() C:\www\zulk\wp-includes\class-http.php:955

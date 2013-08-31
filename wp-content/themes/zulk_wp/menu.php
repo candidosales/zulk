@@ -24,37 +24,37 @@
       </div>
       <div class="eight columns">
         <ul class="social">
-          <li class="widget animation unloaded">
+          <li class="">
             <img src="<?php bloginfo('template_url'); ?>/images/social-media/facebook.png"/>
           </li> 
-          <li class="widget animation unloaded">
+          <li class="">
             <img src="<?php bloginfo('template_url'); ?>/images/social-media/instagram.png"/>
           </li>
-          <li class="widget animation unloaded">
+          <li class="">
             <img src="<?php bloginfo('template_url'); ?>/images/social-media/feed.png"/>
           </li>
-          <li class="widget animation unloaded">
+          <li class="">
             <img src="<?php bloginfo('template_url'); ?>/images/social-media/youtube.png"/>
           </li>
-          <li class="widget animation unloaded">
+          <li class="">
             <img src="<?php bloginfo('template_url'); ?>/images/social-media/galery.png"/>
           </li>
-          <li class="widget animation unloaded">
+          <li class="">
             <img src="<?php bloginfo('template_url'); ?>/images/social-media/heart.png"/>
           </li>
-          <li class="widget animation unloaded">
+          <li class="">
             <img src="<?php bloginfo('template_url'); ?>/images/social-media/email.png"/>
           </li>
-          <li class="widget animation unloaded">
+          <li class="">
             <img src="<?php bloginfo('template_url'); ?>/images/social-media/doubts.png"/>
           </li>
-          <li class="widget animation unloaded">
+          <li class="">
             <img src="<?php bloginfo('template_url'); ?>/images/social-media/heart.png"/>
           </li>
-          <li class="widget animation unloaded">
+          <li class="">
             <img src="<?php bloginfo('template_url'); ?>/images/social-media/email.png"/>
           </li>
-          <li class="widget animation unloaded">
+          <li class="">
             <img src="<?php bloginfo('template_url'); ?>/images/social-media/doubts.png"/>
           </li>
         </ul>

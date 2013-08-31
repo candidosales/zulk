@@ -118,6 +118,9 @@
           $fotografos = new WP_Query(array('showposts' => 4,'category_name' => 'fotografos'));
         ?>
         <div class="extras-top-2">
+          <a href="<?php bloginfo('url')?>/category/fotografos">
+            <p class="title-category-parent"><?php categoryNameBySlug('fotografos') ?></p>
+          </a>
           <ul>
             <li class="share"><span aria-hidden="true" class="icon-export icon"></span></li>
             <li class="heart"><span aria-hidden="true" class="icon-heart icon"></span></li>
@@ -162,13 +165,15 @@
              </p>
           </div>
         </div>
-        <p class="title-category-parent"><strong><?php categoryNameBySlug('fotografos') ?></strong></p>
       </div>
       <div class="three columns sub-principal widget animation unloaded">
         <?php 
           $noiva = new WP_Query(array('showposts' => 4,'category_name' => 'noivas'));
         ?>
         <div class="extras-top-2">
+           <a href="<?php bloginfo('url')?>/category/noivas">
+            <p class="title-category-parent"><?php categoryNameBySlug('noivas') ?></p>
+          </a>
           <ul>
             <li class="share"><span aria-hidden="true" class="icon-export icon"></span></li>
             <li class="heart"><span aria-hidden="true" class="icon-heart icon"></span></li>
@@ -213,13 +218,15 @@
              </p>
           </div>
         </div>
-        <p class="title-category-parent"><strong><?php categoryNameBySlug('noivas') ?></strong></p>
       </div>
       <div class="three columns sub-principal widget animation unloaded">
         <?php 
           $book = new WP_Query(array('showposts' => 4,'category_name' => 'zulkbook'));
         ?>
         <div class="extras-top-2">
+          <a href="<?php bloginfo('url')?>/category/zulkbook">
+            <p class="title-category-parent"><?php categoryNameBySlug('zulkbook') ?></p>
+          </a>
           <ul>
             <li class="share"><span aria-hidden="true" class="icon-export icon"></span></li>
             <li class="heart"><span aria-hidden="true" class="icon-heart icon"></span></li>
@@ -264,13 +271,15 @@
              </p>
           </div>
         </div>
-        <p class="title-category-parent"><strong><?php categoryNameBySlug('zulkbook') ?></strong></p>
       </div>
       <div class="three columns sub-principal widget animation unloaded">
          <?php 
           $cursos = new WP_Query(array('showposts' => 4,'category_name' => 'cursos'));
         ?>
         <div class="extras-top-2">
+          <a href="<?php bloginfo('url')?>/category/cursos">
+            <p class="title-category-parent"><?php categoryNameBySlug('cursos') ?></p>
+          </a>
           <ul>
             <li class="share"><span aria-hidden="true" class="icon-export icon"></span></li>
             <li class="heart"><span aria-hidden="true" class="icon-heart icon"></span></li>
@@ -315,7 +324,6 @@
              </p>
           </div>
         </div>
-        <p class="title-category-parent"><strong><?php categoryNameBySlug('cursos') ?></strong></p>
       </div>
     </div>
   </div>

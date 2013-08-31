@@ -36,6 +36,7 @@
   }
 
     $("#slide-1, #slide-2").orbit({
+      animation: 'horizontal-push',
       bullets: true,
       bulletThumbs: false,
       captions: false,
@@ -60,6 +61,7 @@
     });
 
     $("#slide-3, #slide-4, #slide-5, #slide-6").orbit({
+      animation: 'vertical-push',
       bullets: true,
       bulletThumbs: false,
       captions: false,
@@ -230,7 +232,6 @@ $('.post').mouseenter(function(){
       }
 
    };
-  
 
   $(document).ready(a.init);
 
