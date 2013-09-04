@@ -234,6 +234,16 @@ $('.post').mouseenter(function(){
    };
 
   $(document).ready(a.init);
+  $(document).ready($("body").removeClass("paused"));
+
+  function waitForIt(el, callback){
+    el.on("mozAnimationEnd webkitAnimationEnd msAnimationEnd oAnimationEnd animationend mozAnimationEnd", callback);
+  }
+
+  waitForIt($("#borderTop"), function(){
+    // When loaded, then animate everything
+    $("body").removeClass("paused")
+  })
 
   $(window).load(function(){ /*code here*/ 
        var $container = $('.container');

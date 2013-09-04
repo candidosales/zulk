@@ -1,9 +1,10 @@
 <?php get_header(); ?>
-<body>
+<body class="paused">
  <div id="tile-1" class="twelve columns">
 <?php  include('menu.php'); ?>
-    <div class="row">
-    <div id="principal-1" class="six columns principal widget animation unloaded">
+    <div class="row thumb">
+    <div id="principal-1" class="six columns principal thumbFade bounceTop1 animate">
+      <!-- class: animacao antiga widget animation unloaded -->
    <?php 
     $historias_zulk = new WP_Query(array('showposts' => 4,'category_name' => 'historias-zulk'));
     ?>
@@ -58,7 +59,7 @@
 
 
 
-    <div id="principal-2" class="six columns principal widget animation unloaded">
+    <div id="principal-2" class="six columns principal thumbFade  bounceTop2 animate">
     <?php 
        $cine_zulk = new WP_Query(array('showposts' => 4,'category_name' => 'zulk-tv'));
     ?>
@@ -112,8 +113,8 @@
       </div>
     </div>
     <!--- row sub-principal -->
-    <div class="row">
-      <div class="three columns sub-principal widget animation unloaded">
+    <div class="row thumb">
+      <div class="three columns sub-principal thumbFade bounceBottom1 animate">
          <?php 
           $fotografos = new WP_Query(array('showposts' => 4,'category_name' => 'fotografos'));
         ?>
@@ -166,7 +167,7 @@
           </div>
         </div>
       </div>
-      <div class="three columns sub-principal widget animation unloaded">
+      <div class="three columns sub-principal  thumbFade bounceBottom2 animate">
         <?php 
           $noiva = new WP_Query(array('showposts' => 4,'category_name' => 'noivas'));
         ?>
@@ -219,7 +220,7 @@
           </div>
         </div>
       </div>
-      <div class="three columns sub-principal widget animation unloaded">
+      <div class="three columns sub-principal  thumbFade bounceBottom3 animate">
         <?php 
           $book = new WP_Query(array('showposts' => 4,'category_name' => 'zulkbook'));
         ?>
@@ -272,7 +273,7 @@
           </div>
         </div>
       </div>
-      <div class="three columns sub-principal widget animation unloaded">
+      <div class="three columns sub-principal  thumbFade bounceBottom4 animate">
          <?php 
           $cursos = new WP_Query(array('showposts' => 4,'category_name' => 'cursos'));
         ?>

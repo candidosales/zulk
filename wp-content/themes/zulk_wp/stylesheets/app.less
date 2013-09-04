@@ -136,16 +136,25 @@ body{background: url(../images/back.jpg) repeat fixed #000; color:#fff;}
    	height:80px;
     padding: 0 0 2% 0;
    }
-   .social li{
-      margin-right: 1.85%;
-      cursor: pointer;
-      img{.transition();
-         width: 43px;
-         height: 44px;
-         &:hover{
-            .opacity(0.6);
-         }
-      }
+   .social{
+      margin: 0 8%;
+      li{
+        margin: 0 1%;
+        cursor: pointer;
+        height: 40px;
+        width: 40px;
+
+        span{
+          color:#fff;
+          font-size: 2em;
+          text-align: center;
+          opacity: 0.3;
+          .transition(0.5s, ease);
+          &:hover{
+            opacity:1;
+          }
+        }
+     }
    }
    .extras-top{width: 100%;clear: both; display: inline-block; height:30px;
       .title-category-parent{
@@ -740,10 +749,9 @@ body.post-body{
    h1,h2,h3,h4,h5{
      font-family: @font-2;
    }
-   section{
+   .content{
       background: #fff;
       padding:8%;
-      border-radius: 10px;
       width:100%;
       float: left;
       p{

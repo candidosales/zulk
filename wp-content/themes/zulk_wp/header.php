@@ -16,9 +16,10 @@
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/stylesheets/foundation.min.css">
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/stylesheets/jquery.allofthelights.css">
   <link rel="stylesheet/less" href="<?php bloginfo('template_url'); ?>/stylesheets/app.less">
+  <link rel="stylesheet/less" href="<?php bloginfo('template_url'); ?>/stylesheets/animate.less">
 
   <script src="<?php bloginfo('template_url'); ?>/javascripts/modernizr.foundation.js"></script>
-  <script src="<?php bloginfo('template_url'); ?>/javascripts/less-1.3.3.min.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/javascripts/less-1.4.1.min.js"></script>
 
 <!--
   <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>

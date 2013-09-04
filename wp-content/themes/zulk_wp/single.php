@@ -123,8 +123,7 @@
         </div>
         <div class="nine columns">
           <section>
-            
-              <?php
+            <?php
                 $video = videoUrl($post->ID, 'url_video', 'single');
                 if($video){ 
                 ?>
@@ -132,10 +131,11 @@
 
               <?php }else{?>
                 <div class="thumb-principal">
-                  <?php the_post_thumbnail()?>
+                  <?php the_post_thumbnail('post-thumb-1')?>
                 </div>
               <?php } ?>
-            
+          </section>  
+          <section class="content">            
             <?php the_content(); ?>
           </section>
         </div>

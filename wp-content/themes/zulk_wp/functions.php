@@ -8,6 +8,7 @@ if (function_exists('add_theme_support')) {
 	add_theme_support('post-thumbnails'); 
 	add_image_size( 'home-thumb-1', 440, 208, true );
 	add_image_size( 'home-thumb-2', 220, 190, true );
+	add_image_size( 'post-thumb-1', 764, 384, true );
 	add_image_size( 'category-thumb-1', 278, 136, true );
 	add_image_size( 'category-thumb-2', 178, 136, true );
 	add_image_size( 'related-post-1', 168, 110, true );

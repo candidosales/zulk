@@ -1,4 +1,4 @@
-  <div class="row">
+  <div class="row animated fadeInOnManHome">
     <div class="six columns">
       <div class="logo left">
         <a href="<?php bloginfo('url')?>">
@@ -13,7 +13,7 @@
       <a class="contrate">Contrate a Zulk</a>
     </div>
   </div>
-    <div class="row social-media">
+    <div class="row social-media animated fadeInBaseLineHome">
       <div class="two columns">
         <div class="ultimas-noticias">
           <a href="<?php bloginfo('url')?>/page/todas-as-historias">
@@ -25,37 +25,34 @@
       <div class="eight columns">
         <ul class="social">
           <li class="">
-            <img src="<?php bloginfo('template_url'); ?>/images/social-media/facebook.png"/>
+            <span aria-hidden="true" class="icon-facebook"></span>
           </li> 
           <li class="">
-            <img src="<?php bloginfo('template_url'); ?>/images/social-media/instagram.png"/>
+            <span aria-hidden="true" class="icon-instagram"></span>
           </li>
           <li class="">
-            <img src="<?php bloginfo('template_url'); ?>/images/social-media/feed.png"/>
+            <span aria-hidden="true" class="icon-rss"></span>
           </li>
           <li class="">
-            <img src="<?php bloginfo('template_url'); ?>/images/social-media/youtube.png"/>
+            <span aria-hidden="true" class="icon-vimeo"></span>
           </li>
           <li class="">
-            <img src="<?php bloginfo('template_url'); ?>/images/social-media/galery.png"/>
+            <span aria-hidden="true" class="icon-twitter"></span>
           </li>
           <li class="">
-            <img src="<?php bloginfo('template_url'); ?>/images/social-media/heart.png"/>
+            <span aria-hidden="true" class="icon-pinterest"></span>
           </li>
           <li class="">
-            <img src="<?php bloginfo('template_url'); ?>/images/social-media/email.png"/>
+            <span aria-hidden="true" class="icon-heart"></span>
           </li>
           <li class="">
-            <img src="<?php bloginfo('template_url'); ?>/images/social-media/doubts.png"/>
+            <span aria-hidden="true" class="icon-camera"></span>
           </li>
           <li class="">
-            <img src="<?php bloginfo('template_url'); ?>/images/social-media/heart.png"/>
+            <span aria-hidden="true" class="icon-email"></span>
           </li>
           <li class="">
-            <img src="<?php bloginfo('template_url'); ?>/images/social-media/email.png"/>
-          </li>
-          <li class="">
-            <img src="<?php bloginfo('template_url'); ?>/images/social-media/doubts.png"/>
+            <span aria-hidden="true" class="icon-question"></span>
           </li>
         </ul>
       </div>

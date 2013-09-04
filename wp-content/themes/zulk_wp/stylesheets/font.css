@@ -1,17 +1,17 @@
 @font-face {
-	font-family: 'fontawesome';
-	src:url('fonts/fontawesome.eot');
-	src:url('fonts/fontawesome.svg#fontawesome') format('svg'),
-		url('fonts/fontawesome.eot?#iefix') format('embedded-opentype'),
-		url('fonts/fontawesome.woff') format('woff'),
-		url('fonts/fontawesome.ttf') format('truetype');
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot');
+	src:url('fonts/icomoon.svg#icomoon') format('svg'),
+		url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.woff') format('woff'),
+		url('fonts/icomoon.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
 
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
 [data-icon]:before {
-	font-family: 'fontawesome';
+	font-family: 'icomoon';
 	content: attr(data-icon);
 	speak: none;
 	font-weight: normal;
@@ -19,6 +19,7 @@
 	text-transform: none;
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 /* Use the following CSS code if you want to have a class per icon */
@@ -27,8 +28,8 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="icon-"] {
 */
-.icon-thumbs-up, .icon-twitter, .icon-google-plus, .icon-pinterest, .icon-arrow-left, .icon-arrow-right, .icon-baloon, .icon-eye, .icon-menu, .icon-export, .icon-heart, .icon-email, .icon-home, .icon-lightbulb, .icon-th {
-	font-family: 'fontawesome';
+.icon-thumbs-up, .icon-twitter, .icon-google-plus, .icon-pinterest, .icon-arrow-left, .icon-arrow-right, .icon-baloon, .icon-eye, .icon-menu, .icon-export, .icon-heart, .icon-email, .icon-home, .icon-lightbulb, .icon-th, .icon-instagram, .icon-rss, .icon-youtube, .icon-vimeo, .icon-camera, .icon-question, .icon-facebook {
+	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
@@ -81,4 +82,25 @@ you can use the generic selector below, but it's slower:
 }
 .icon-th:before {
 	content: "\f00a";
+}
+.icon-instagram:before {
+	content: "\f16d";
+}
+.icon-rss:before {
+	content: "\f09e";
+}
+.icon-youtube:before {
+	content: "\f167";
+}
+.icon-vimeo:before {
+	content: "\e00c";
+}
+.icon-camera:before {
+	content: "\f030";
+}
+.icon-question:before {
+	content: "\f128";
+}
+.icon-facebook:before {
+	content: "\f09a";
 }
