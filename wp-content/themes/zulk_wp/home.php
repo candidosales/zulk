@@ -2,7 +2,7 @@
 <body class="paused">
  <div id="tile-1" class="twelve columns">
 <?php  include('menu.php'); ?>
-    <div class="row thumb">
+    <div class="row thumb margin-btn-2">
     <div id="principal-1" class="six columns principal thumbFade bounceTop1 animate">
       <!-- class: animacao antiga widget animation unloaded -->
    <?php 
@@ -83,10 +83,13 @@
                 $cine_zulk->the_post();
                 $thumb = thumbUrl($post->ID, 'home-thumb-1');
                 $diff = diffBetweenDates(the_date("Y-m-d",'','',FALSE));
-                $video = videoUrl($post->ID, 'url_video','home');
+                //$video = videoUrl($post->ID, 'url_video','home');
+
+                $video_url = get_post_meta($post->ID, 'url_video', true);
           ?>
-          <a itemprop="photo" href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>" data-view="3" data-comment="17" data-favorite="50" data-date="<?php echo $diff->d ?>">
-             <?php echo $video ?>
+          <a class="video-play" itemprop="photo" href="#" rel="bookmark" title="<?php the_title_attribute(); ?>" data-video="<?php echo $video_url ?>" data-view="3" data-comment="17" data-favorite="50" data-date="<?php echo $diff->d ?>">
+             <img src="<?php echo $thumb ?>"/>
+             <img class="video-icon" src="<?php bloginfo('template_url'); ?>/images/video.png">
           </a>
           <?php 
                 }
@@ -111,6 +114,19 @@
           </div>
         </div>
       </div>
+      <div id="video" class="six columns principal">
+      </div>
+      <div id="action-video" class="hidden">
+        <ul>
+          <li>
+            <span id="close-video" aria-hidden="true" class="icon-uniF470 icon" title="fechar vídeo"></span>
+          </li>
+          <li>
+            <span id="expand-video" aria-hidden="true" class="icon-expand icon" title="expandir vídeo"></span>
+          </li>
+        </ul>
+      </div>
+
     </div>
     <!--- row sub-principal -->
     <div class="row thumb">

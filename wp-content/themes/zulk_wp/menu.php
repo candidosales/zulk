@@ -17,7 +17,7 @@
       <div class="two columns">
         <div class="ultimas-noticias">
           <a href="<?php bloginfo('url')?>/page/todas-as-historias">
-            <span aria-hidden="true" class="icon-th icon"></span>
+            <span aria-hidden="true" class="icon-windows icon"></span>
             <p><span class="small">TODAS AS</span><br><span class="noticias">Histórias</span></p>
           </a>
         </div>
