@@ -264,7 +264,9 @@ $('.post').mouseenter(function(){
       console.log('video_id: '+video_id);
       $('#video').append('<iframe width="460" height="304"  src="//www.youtube.com/embed/'+video_id+'" frameborder="0" allowfullscreen></iframe>');
     }else{
-      $('#video').append('<iframe src="'+v+'?title=0&amp;byline=0&amp;portrait=0" width="460" height="304" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>');
+      var video_id = vimeo_parser(v);
+      console.log('video_id: '+video_id);
+      $('#video').append('<iframe src="//player.vimeo.com/video/'+video_id+'?title=0&amp;byline=0&amp;portrait=0" width="460" height="304" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>');
     }
 
     $('#principal-2').removeClass('thumbFade bounceTop2 animate').addClass('animated flipOutY');
@@ -274,7 +276,6 @@ $('.post').mouseenter(function(){
         $('#video').removeClass('animated flipOutY ').addClass('animated flipInY');
         $('#action-video').addClass('animated flipInY');
       }, 500);
-        
         
       //});    
   });
@@ -288,6 +289,20 @@ $('.post').mouseenter(function(){
   });
 
 
+  var expand = false;
+  $('#expand-video').click(function(){
+    if(expand){
+      $('#video').removeClass('twelve').addClass('six').css({"position":"relative", "z-index":"1"});
+      $('#video > iframe').attr('width','460').attr('height', '304');
+      expand = false;
+    }else{
+      $('#video').removeClass('six').addClass('twelve').css({"position":"absolute", "z-index":"4"});
+      $('#video > iframe').attr('width','914').attr('height', '582');
+      expand = true;
+    }
+  });
+
+
   function youtube_parser(url){
       var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
       var match = url.match(regExp);
@@ -296,6 +311,16 @@ $('.post').mouseenter(function(){
       }else{
           alert("Url incorrecta");
       }
+  }
+
+  function vimeo_parser(url){
+    var regExp = /http:\/\/(www\.)?vimeo.com\/(\d+)($|\/)/;
+    var match = url.match(regExp);
+    if (match){
+        return match[2];
+    }else{
+        console.log("not a vimeo url");
+    }
   }
 
 })(jQuery, this);
