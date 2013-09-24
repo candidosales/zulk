@@ -12,6 +12,7 @@
   <title>Zulk</title>
   
   <!-- Included CSS Files (Compressed) -->
+  <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/images/favicon.png"/>
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/stylesheets/normalize.css">
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/stylesheets/foundation.min.css">
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/stylesheets/jquery.allofthelights.css">

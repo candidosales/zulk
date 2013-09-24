@@ -6481,3 +6481,323 @@ Stack trace:
 [23-Sep-2013 18:06:06 UTC] PHP  13. WP_Http->_dispatch_request() C:\www\zulk\wp-includes\class-http.php:198
 [23-Sep-2013 18:06:06 UTC] PHP  14. WP_Http_Streams->request() C:\www\zulk\wp-includes\class-http.php:261
 [23-Sep-2013 18:06:06 UTC] PHP  15. fopen() C:\www\zulk\wp-includes\class-http.php:955
+[23-Sep-2013 18:45:41 UTC] PHP Notice:  Undefined index: url_video in C:\www\zulk\wp-content\themes\zulk_wp\custom_meta\custom_input.php on line 37
+[23-Sep-2013 18:45:41 UTC] PHP Stack trace:
+[23-Sep-2013 18:45:41 UTC] PHP   1. {main}() C:\www\zulk\wp-admin\index.php:0
+[23-Sep-2013 18:45:41 UTC] PHP   2. wp_dashboard() C:\www\zulk\wp-admin\index.php:129
+[23-Sep-2013 18:45:41 UTC] PHP   3. do_meta_boxes() C:\www\zulk\wp-admin\includes\dashboard.php:207
+[23-Sep-2013 18:45:41 UTC] PHP   4. call_user_func() C:\www\zulk\wp-admin\includes\template.php:925
+[23-Sep-2013 18:45:41 UTC] PHP   5. wp_dashboard_quick_press() C:\www\zulk\wp-admin\includes\template.php:925
+[23-Sep-2013 18:45:41 UTC] PHP   6. get_default_post_to_edit() C:\www\zulk\wp-admin\includes\dashboard.php:494
+[23-Sep-2013 18:45:41 UTC] PHP   7. wp_insert_post() C:\www\zulk\wp-admin\includes\post.php:451
+[23-Sep-2013 18:45:41 UTC] PHP   8. do_action() C:\www\zulk\wp-includes\post.php:2882
+[23-Sep-2013 18:45:41 UTC] PHP   9. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:406
+[23-Sep-2013 18:45:41 UTC] PHP  10. save_post_meta_video() C:\www\zulk\wp-includes\plugin.php:406
+[23-Sep-2013 18:45:41 UTC] PHP Notice:  Undefined index: large in C:\www\zulk\wp-content\themes\zulk_wp\custom_meta\custom_input.php on line 65
+[23-Sep-2013 18:45:41 UTC] PHP Stack trace:
+[23-Sep-2013 18:45:41 UTC] PHP   1. {main}() C:\www\zulk\wp-admin\index.php:0
+[23-Sep-2013 18:45:41 UTC] PHP   2. wp_dashboard() C:\www\zulk\wp-admin\index.php:129
+[23-Sep-2013 18:45:41 UTC] PHP   3. do_meta_boxes() C:\www\zulk\wp-admin\includes\dashboard.php:207
+[23-Sep-2013 18:45:41 UTC] PHP   4. call_user_func() C:\www\zulk\wp-admin\includes\template.php:925
+[23-Sep-2013 18:45:41 UTC] PHP   5. wp_dashboard_quick_press() C:\www\zulk\wp-admin\includes\template.php:925
+[23-Sep-2013 18:45:41 UTC] PHP   6. get_default_post_to_edit() C:\www\zulk\wp-admin\includes\dashboard.php:494
+[23-Sep-2013 18:45:41 UTC] PHP   7. wp_insert_post() C:\www\zulk\wp-admin\includes\post.php:451
+[23-Sep-2013 18:45:41 UTC] PHP   8. do_action() C:\www\zulk\wp-includes\post.php:2882
+[23-Sep-2013 18:45:41 UTC] PHP   9. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:406
+[23-Sep-2013 18:45:41 UTC] PHP  10. save_post_large() C:\www\zulk\wp-includes\plugin.php:406
+[23-Sep-2013 18:46:06 UTC] PHP Notice:  Undefined index: url_video in C:\www\zulk\wp-content\themes\zulk_wp\custom_meta\custom_input.php on line 37
+[23-Sep-2013 18:46:06 UTC] PHP Stack trace:
+[23-Sep-2013 18:46:06 UTC] PHP   1. {main}() C:\www\zulk\wp-admin\post.php:0
+[23-Sep-2013 18:46:06 UTC] PHP   2. include() C:\www\zulk\wp-admin\post.php:198
+[23-Sep-2013 18:46:06 UTC] PHP   3. _wp_upgrade_revisions_of_post() C:\www\zulk\wp-admin\edit-form-advanced.php:119
+[23-Sep-2013 18:46:06 UTC] PHP   4. wp_save_post_revision() C:\www\zulk\wp-includes\revision.php:600
+[23-Sep-2013 18:46:06 UTC] PHP   5. _wp_put_post_revision() C:\www\zulk\wp-includes\revision.php:117
+[23-Sep-2013 18:46:06 UTC] PHP   6. wp_insert_post() C:\www\zulk\wp-includes\revision.php:236
+[23-Sep-2013 18:46:06 UTC] PHP   7. do_action() C:\www\zulk\wp-includes\post.php:2882
+[23-Sep-2013 18:46:06 UTC] PHP   8. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:406
+[23-Sep-2013 18:46:06 UTC] PHP   9. save_post_meta_video() C:\www\zulk\wp-includes\plugin.php:406
+[23-Sep-2013 18:46:06 UTC] PHP Notice:  Undefined index: large in C:\www\zulk\wp-content\themes\zulk_wp\custom_meta\custom_input.php on line 65
+[23-Sep-2013 18:46:06 UTC] PHP Stack trace:
+[23-Sep-2013 18:46:06 UTC] PHP   1. {main}() C:\www\zulk\wp-admin\post.php:0
+[23-Sep-2013 18:46:06 UTC] PHP   2. include() C:\www\zulk\wp-admin\post.php:198
+[23-Sep-2013 18:46:06 UTC] PHP   3. _wp_upgrade_revisions_of_post() C:\www\zulk\wp-admin\edit-form-advanced.php:119
+[23-Sep-2013 18:46:06 UTC] PHP   4. wp_save_post_revision() C:\www\zulk\wp-includes\revision.php:600
+[23-Sep-2013 18:46:06 UTC] PHP   5. _wp_put_post_revision() C:\www\zulk\wp-includes\revision.php:117
+[23-Sep-2013 18:46:06 UTC] PHP   6. wp_insert_post() C:\www\zulk\wp-includes\revision.php:236
+[23-Sep-2013 18:46:06 UTC] PHP   7. do_action() C:\www\zulk\wp-includes\post.php:2882
+[23-Sep-2013 18:46:06 UTC] PHP   8. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:406
+[23-Sep-2013 18:46:06 UTC] PHP   9. save_post_large() C:\www\zulk\wp-includes\plugin.php:406
+[23-Sep-2013 18:46:36 UTC] PHP Notice:  Undefined index: large in C:\www\zulk\wp-content\themes\zulk_wp\custom_meta\custom_input.php on line 65
+[23-Sep-2013 18:46:36 UTC] PHP Stack trace:
+[23-Sep-2013 18:46:36 UTC] PHP   1. {main}() C:\www\zulk\wp-admin\post.php:0
+[23-Sep-2013 18:46:36 UTC] PHP   2. edit_post() C:\www\zulk\wp-admin\post.php:218
+[23-Sep-2013 18:46:36 UTC] PHP   3. wp_update_post() C:\www\zulk\wp-admin\includes\post.php:272
+[23-Sep-2013 18:46:36 UTC] PHP   4. wp_insert_post() C:\www\zulk\wp-includes\post.php:2944
+[23-Sep-2013 18:46:36 UTC] PHP   5. do_action() C:\www\zulk\wp-includes\post.php:2882
+[23-Sep-2013 18:46:36 UTC] PHP   6. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:406
+[23-Sep-2013 18:46:36 UTC] PHP   7. save_post_large() C:\www\zulk\wp-includes\plugin.php:406
+[23-Sep-2013 18:46:38 UTC] PHP Warning:  fopen(http://localhost/zulk/wp-cron.php?doing_wp_cron=1379961997.8118679523468017578125): failed to open stream: HTTP request failed!  in C:\www\zulk\wp-includes\class-http.php on line 955
+[23-Sep-2013 18:46:38 UTC] PHP Stack trace:
+[23-Sep-2013 18:46:38 UTC] PHP   1. {main}() C:\www\zulk\wp-admin\post.php:0
+[23-Sep-2013 18:46:38 UTC] PHP   2. require_once() C:\www\zulk\wp-admin\post.php:12
+[23-Sep-2013 18:46:38 UTC] PHP   3. require_once() C:\www\zulk\wp-admin\admin.php:30
+[23-Sep-2013 18:46:38 UTC] PHP   4. require_once() C:\www\zulk\wp-load.php:29
+[23-Sep-2013 18:46:38 UTC] PHP   5. require_once() C:\www\zulk\wp-config.php:92
+[23-Sep-2013 18:46:38 UTC] PHP   6. do_action() C:\www\zulk\wp-settings.php:308
+[23-Sep-2013 18:46:38 UTC] PHP   7. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:406
+[23-Sep-2013 18:46:38 UTC] PHP   8. wp_cron() C:\www\zulk\wp-includes\plugin.php:406
+[23-Sep-2013 18:46:38 UTC] PHP   9. spawn_cron() C:\www\zulk\wp-includes\cron.php:283
+[23-Sep-2013 18:46:38 UTC] PHP  10. wp_remote_post() C:\www\zulk\wp-includes\cron.php:253
+[23-Sep-2013 18:46:38 UTC] PHP  11. WP_Http->post() C:\www\zulk\wp-includes\http.php:195
+[23-Sep-2013 18:46:38 UTC] PHP  12. WP_Http->request() C:\www\zulk\wp-includes\class-http.php:286
+[23-Sep-2013 18:46:38 UTC] PHP  13. WP_Http->_dispatch_request() C:\www\zulk\wp-includes\class-http.php:198
+[23-Sep-2013 18:46:38 UTC] PHP  14. WP_Http_Streams->request() C:\www\zulk\wp-includes\class-http.php:261
+[23-Sep-2013 18:46:38 UTC] PHP  15. fopen() C:\www\zulk\wp-includes\class-http.php:955
+[23-Sep-2013 18:47:40 UTC] PHP Notice:  Undefined index: large in C:\www\zulk\wp-content\themes\zulk_wp\custom_meta\custom_input.php on line 65
+[23-Sep-2013 18:47:40 UTC] PHP Stack trace:
+[23-Sep-2013 18:47:40 UTC] PHP   1. {main}() C:\www\zulk\wp-admin\post.php:0
+[23-Sep-2013 18:47:40 UTC] PHP   2. edit_post() C:\www\zulk\wp-admin\post.php:218
+[23-Sep-2013 18:47:40 UTC] PHP   3. wp_update_post() C:\www\zulk\wp-admin\includes\post.php:272
+[23-Sep-2013 18:47:40 UTC] PHP   4. wp_insert_post() C:\www\zulk\wp-includes\post.php:2944
+[23-Sep-2013 18:47:40 UTC] PHP   5. do_action() C:\www\zulk\wp-includes\post.php:2882
+[23-Sep-2013 18:47:40 UTC] PHP   6. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:406
+[23-Sep-2013 18:47:40 UTC] PHP   7. save_post_large() C:\www\zulk\wp-includes\plugin.php:406
+[23-Sep-2013 18:47:42 UTC] PHP Warning:  fopen(http://localhost/zulk/wp-cron.php?doing_wp_cron=1379962061.8966779708862304687500): failed to open stream: HTTP request failed!  in C:\www\zulk\wp-includes\class-http.php on line 955
+[23-Sep-2013 18:47:42 UTC] PHP Stack trace:
+[23-Sep-2013 18:47:42 UTC] PHP   1. {main}() C:\www\zulk\wp-admin\post.php:0
+[23-Sep-2013 18:47:42 UTC] PHP   2. require_once() C:\www\zulk\wp-admin\post.php:12
+[23-Sep-2013 18:47:42 UTC] PHP   3. require_once() C:\www\zulk\wp-admin\admin.php:30
+[23-Sep-2013 18:47:42 UTC] PHP   4. require_once() C:\www\zulk\wp-load.php:29
+[23-Sep-2013 18:47:42 UTC] PHP   5. require_once() C:\www\zulk\wp-config.php:92
+[23-Sep-2013 18:47:42 UTC] PHP   6. do_action() C:\www\zulk\wp-settings.php:308
+[23-Sep-2013 18:47:42 UTC] PHP   7. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:406
+[23-Sep-2013 18:47:42 UTC] PHP   8. wp_cron() C:\www\zulk\wp-includes\plugin.php:406
+[23-Sep-2013 18:47:42 UTC] PHP   9. spawn_cron() C:\www\zulk\wp-includes\cron.php:283
+[23-Sep-2013 18:47:42 UTC] PHP  10. wp_remote_post() C:\www\zulk\wp-includes\cron.php:253
+[23-Sep-2013 18:47:42 UTC] PHP  11. WP_Http->post() C:\www\zulk\wp-includes\http.php:195
+[23-Sep-2013 18:47:42 UTC] PHP  12. WP_Http->request() C:\www\zulk\wp-includes\class-http.php:286
+[23-Sep-2013 18:47:42 UTC] PHP  13. WP_Http->_dispatch_request() C:\www\zulk\wp-includes\class-http.php:198
+[23-Sep-2013 18:47:42 UTC] PHP  14. WP_Http_Streams->request() C:\www\zulk\wp-includes\class-http.php:261
+[23-Sep-2013 18:47:42 UTC] PHP  15. fopen() C:\www\zulk\wp-includes\class-http.php:955
+[24-Sep-2013 12:07:16 UTC] PHP Warning:  fopen(http://localhost/zulk/wp-cron.php?doing_wp_cron=1380024436.2391109466552734375000): failed to open stream: HTTP request failed!  in C:\www\zulk\wp-includes\class-http.php on line 955
+[24-Sep-2013 12:07:16 UTC] PHP Stack trace:
+[24-Sep-2013 12:07:16 UTC] PHP   1. {main}() C:\www\zulk\index.php:0
+[24-Sep-2013 12:07:16 UTC] PHP   2. require() C:\www\zulk\index.php:17
+[24-Sep-2013 12:07:16 UTC] PHP   3. require_once() C:\www\zulk\wp-blog-header.php:12
+[24-Sep-2013 12:07:16 UTC] PHP   4. require_once() C:\www\zulk\wp-load.php:29
+[24-Sep-2013 12:07:16 UTC] PHP   5. require_once() C:\www\zulk\wp-config.php:92
+[24-Sep-2013 12:07:16 UTC] PHP   6. do_action() C:\www\zulk\wp-settings.php:308
+[24-Sep-2013 12:07:16 UTC] PHP   7. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:406
+[24-Sep-2013 12:07:16 UTC] PHP   8. wp_cron() C:\www\zulk\wp-includes\plugin.php:406
+[24-Sep-2013 12:07:16 UTC] PHP   9. spawn_cron() C:\www\zulk\wp-includes\cron.php:283
+[24-Sep-2013 12:07:16 UTC] PHP  10. wp_remote_post() C:\www\zulk\wp-includes\cron.php:253
+[24-Sep-2013 12:07:16 UTC] PHP  11. WP_Http->post() C:\www\zulk\wp-includes\http.php:195
+[24-Sep-2013 12:07:16 UTC] PHP  12. WP_Http->request() C:\www\zulk\wp-includes\class-http.php:286
+[24-Sep-2013 12:07:16 UTC] PHP  13. WP_Http->_dispatch_request() C:\www\zulk\wp-includes\class-http.php:198
+[24-Sep-2013 12:07:16 UTC] PHP  14. WP_Http_Streams->request() C:\www\zulk\wp-includes\class-http.php:261
+[24-Sep-2013 12:07:16 UTC] PHP  15. fopen() C:\www\zulk\wp-includes\class-http.php:955
+[24-Sep-2013 17:56:35 UTC] PHP Warning:  fopen(http://localhost/zulk/wp-cron.php?doing_wp_cron=1380045394.8765909671783447265625): failed to open stream: HTTP request failed!  in C:\www\zulk\wp-includes\class-http.php on line 955
+[24-Sep-2013 17:56:35 UTC] PHP Stack trace:
+[24-Sep-2013 17:56:35 UTC] PHP   1. {main}() C:\www\zulk\index.php:0
+[24-Sep-2013 17:56:35 UTC] PHP   2. require() C:\www\zulk\index.php:17
+[24-Sep-2013 17:56:35 UTC] PHP   3. require_once() C:\www\zulk\wp-blog-header.php:12
+[24-Sep-2013 17:56:35 UTC] PHP   4. require_once() C:\www\zulk\wp-load.php:29
+[24-Sep-2013 17:56:35 UTC] PHP   5. require_once() C:\www\zulk\wp-config.php:92
+[24-Sep-2013 17:56:35 UTC] PHP   6. do_action() C:\www\zulk\wp-settings.php:308
+[24-Sep-2013 17:56:35 UTC] PHP   7. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:406
+[24-Sep-2013 17:56:35 UTC] PHP   8. wp_cron() C:\www\zulk\wp-includes\plugin.php:406
+[24-Sep-2013 17:56:35 UTC] PHP   9. spawn_cron() C:\www\zulk\wp-includes\cron.php:283
+[24-Sep-2013 17:56:35 UTC] PHP  10. wp_remote_post() C:\www\zulk\wp-includes\cron.php:253
+[24-Sep-2013 17:56:35 UTC] PHP  11. WP_Http->post() C:\www\zulk\wp-includes\http.php:195
+[24-Sep-2013 17:56:35 UTC] PHP  12. WP_Http->request() C:\www\zulk\wp-includes\class-http.php:286
+[24-Sep-2013 17:56:35 UTC] PHP  13. WP_Http->_dispatch_request() C:\www\zulk\wp-includes\class-http.php:198
+[24-Sep-2013 17:56:35 UTC] PHP  14. WP_Http_Streams->request() C:\www\zulk\wp-includes\class-http.php:261
+[24-Sep-2013 17:56:35 UTC] PHP  15. fopen() C:\www\zulk\wp-includes\class-http.php:955
+[24-Sep-2013 18:19:42 UTC] PHP Warning:  fopen(http://localhost/zulk/wp-cron.php?doing_wp_cron=1380046782.2295029163360595703125): failed to open stream: HTTP request failed!  in C:\www\zulk\wp-includes\class-http.php on line 955
+[24-Sep-2013 18:19:42 UTC] PHP Stack trace:
+[24-Sep-2013 18:19:42 UTC] PHP   1. {main}() C:\www\zulk\wp-admin\post.php:0
+[24-Sep-2013 18:19:42 UTC] PHP   2. require_once() C:\www\zulk\wp-admin\post.php:12
+[24-Sep-2013 18:19:42 UTC] PHP   3. require_once() C:\www\zulk\wp-admin\admin.php:30
+[24-Sep-2013 18:19:42 UTC] PHP   4. require_once() C:\www\zulk\wp-load.php:29
+[24-Sep-2013 18:19:42 UTC] PHP   5. require_once() C:\www\zulk\wp-config.php:92
+[24-Sep-2013 18:19:42 UTC] PHP   6. do_action() C:\www\zulk\wp-settings.php:308
+[24-Sep-2013 18:19:42 UTC] PHP   7. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:406
+[24-Sep-2013 18:19:42 UTC] PHP   8. wp_cron() C:\www\zulk\wp-includes\plugin.php:406
+[24-Sep-2013 18:19:42 UTC] PHP   9. spawn_cron() C:\www\zulk\wp-includes\cron.php:283
+[24-Sep-2013 18:19:42 UTC] PHP  10. wp_remote_post() C:\www\zulk\wp-includes\cron.php:253
+[24-Sep-2013 18:19:42 UTC] PHP  11. WP_Http->post() C:\www\zulk\wp-includes\http.php:195
+[24-Sep-2013 18:19:42 UTC] PHP  12. WP_Http->request() C:\www\zulk\wp-includes\class-http.php:286
+[24-Sep-2013 18:19:42 UTC] PHP  13. WP_Http->_dispatch_request() C:\www\zulk\wp-includes\class-http.php:198
+[24-Sep-2013 18:19:42 UTC] PHP  14. WP_Http_Streams->request() C:\www\zulk\wp-includes\class-http.php:261
+[24-Sep-2013 18:19:42 UTC] PHP  15. fopen() C:\www\zulk\wp-includes\class-http.php:955
+[24-Sep-2013 18:20:50 UTC] PHP Warning:  fopen(http://localhost/zulk/wp-cron.php?doing_wp_cron=1380046850.7329089641571044921875): failed to open stream: HTTP request failed!  in C:\www\zulk\wp-includes\class-http.php on line 955
+[24-Sep-2013 18:20:50 UTC] PHP Stack trace:
+[24-Sep-2013 18:20:50 UTC] PHP   1. {main}() C:\www\zulk\wp-admin\post.php:0
+[24-Sep-2013 18:20:50 UTC] PHP   2. require_once() C:\www\zulk\wp-admin\post.php:12
+[24-Sep-2013 18:20:50 UTC] PHP   3. require_once() C:\www\zulk\wp-admin\admin.php:30
+[24-Sep-2013 18:20:50 UTC] PHP   4. require_once() C:\www\zulk\wp-load.php:29
+[24-Sep-2013 18:20:50 UTC] PHP   5. require_once() C:\www\zulk\wp-config.php:92
+[24-Sep-2013 18:20:50 UTC] PHP   6. do_action() C:\www\zulk\wp-settings.php:308
+[24-Sep-2013 18:20:50 UTC] PHP   7. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:406
+[24-Sep-2013 18:20:50 UTC] PHP   8. wp_cron() C:\www\zulk\wp-includes\plugin.php:406
+[24-Sep-2013 18:20:50 UTC] PHP   9. spawn_cron() C:\www\zulk\wp-includes\cron.php:283
+[24-Sep-2013 18:20:50 UTC] PHP  10. wp_remote_post() C:\www\zulk\wp-includes\cron.php:253
+[24-Sep-2013 18:20:50 UTC] PHP  11. WP_Http->post() C:\www\zulk\wp-includes\http.php:195
+[24-Sep-2013 18:20:50 UTC] PHP  12. WP_Http->request() C:\www\zulk\wp-includes\class-http.php:286
+[24-Sep-2013 18:20:50 UTC] PHP  13. WP_Http->_dispatch_request() C:\www\zulk\wp-includes\class-http.php:198
+[24-Sep-2013 18:20:50 UTC] PHP  14. WP_Http_Streams->request() C:\www\zulk\wp-includes\class-http.php:261
+[24-Sep-2013 18:20:50 UTC] PHP  15. fopen() C:\www\zulk\wp-includes\class-http.php:955
+[24-Sep-2013 18:21:06 UTC] PHP Notice:  Undefined index: url_video in C:\www\zulk\wp-content\themes\zulk_wp\custom_meta\custom_input.php on line 37
+[24-Sep-2013 18:21:06 UTC] PHP Stack trace:
+[24-Sep-2013 18:21:06 UTC] PHP   1. {main}() C:\www\zulk\wp-admin\post-new.php:0
+[24-Sep-2013 18:21:06 UTC] PHP   2. get_default_post_to_edit() C:\www\zulk\wp-admin\post-new.php:63
+[24-Sep-2013 18:21:06 UTC] PHP   3. wp_insert_post() C:\www\zulk\wp-admin\includes\post.php:451
+[24-Sep-2013 18:21:06 UTC] PHP   4. do_action() C:\www\zulk\wp-includes\post.php:2882
+[24-Sep-2013 18:21:06 UTC] PHP   5. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:406
+[24-Sep-2013 18:21:06 UTC] PHP   6. save_post_meta_video() C:\www\zulk\wp-includes\plugin.php:406
+[24-Sep-2013 18:21:06 UTC] PHP Notice:  Undefined index: large in C:\www\zulk\wp-content\themes\zulk_wp\custom_meta\custom_input.php on line 65
+[24-Sep-2013 18:21:06 UTC] PHP Stack trace:
+[24-Sep-2013 18:21:06 UTC] PHP   1. {main}() C:\www\zulk\wp-admin\post-new.php:0
+[24-Sep-2013 18:21:06 UTC] PHP   2. get_default_post_to_edit() C:\www\zulk\wp-admin\post-new.php:63
+[24-Sep-2013 18:21:06 UTC] PHP   3. wp_insert_post() C:\www\zulk\wp-admin\includes\post.php:451
+[24-Sep-2013 18:21:06 UTC] PHP   4. do_action() C:\www\zulk\wp-includes\post.php:2882
+[24-Sep-2013 18:21:06 UTC] PHP   5. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:406
+[24-Sep-2013 18:21:06 UTC] PHP   6. save_post_large() C:\www\zulk\wp-includes\plugin.php:406
+[24-Sep-2013 18:21:16 UTC] PHP Notice:  Undefined index: url_video in C:\www\zulk\wp-content\themes\zulk_wp\custom_meta\custom_input.php on line 37
+[24-Sep-2013 18:21:16 UTC] PHP Stack trace:
+[24-Sep-2013 18:21:16 UTC] PHP   1. {main}() C:\www\zulk\wp-admin\admin-ajax.php:0
+[24-Sep-2013 18:21:16 UTC] PHP   2. do_action() C:\www\zulk\wp-admin\admin-ajax.php:72
+[24-Sep-2013 18:21:16 UTC] PHP   3. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:406
+[24-Sep-2013 18:21:16 UTC] PHP   4. wp_ajax_autosave() C:\www\zulk\wp-includes\plugin.php:406
+[24-Sep-2013 18:21:16 UTC] PHP   5. edit_post() C:\www\zulk\wp-admin\includes\ajax-actions.php:1074
+[24-Sep-2013 18:21:16 UTC] PHP   6. wp_update_post() C:\www\zulk\wp-admin\includes\post.php:272
+[24-Sep-2013 18:21:16 UTC] PHP   7. wp_insert_post() C:\www\zulk\wp-includes\post.php:2944
+[24-Sep-2013 18:21:16 UTC] PHP   8. do_action() C:\www\zulk\wp-includes\post.php:2882
+[24-Sep-2013 18:21:16 UTC] PHP   9. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:406
+[24-Sep-2013 18:21:16 UTC] PHP  10. save_post_meta_video() C:\www\zulk\wp-includes\plugin.php:406
+[24-Sep-2013 18:21:16 UTC] PHP Notice:  Undefined index: large in C:\www\zulk\wp-content\themes\zulk_wp\custom_meta\custom_input.php on line 65
+[24-Sep-2013 18:21:16 UTC] PHP Stack trace:
+[24-Sep-2013 18:21:16 UTC] PHP   1. {main}() C:\www\zulk\wp-admin\admin-ajax.php:0
+[24-Sep-2013 18:21:16 UTC] PHP   2. do_action() C:\www\zulk\wp-admin\admin-ajax.php:72
+[24-Sep-2013 18:21:16 UTC] PHP   3. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:406
+[24-Sep-2013 18:21:16 UTC] PHP   4. wp_ajax_autosave() C:\www\zulk\wp-includes\plugin.php:406
+[24-Sep-2013 18:21:16 UTC] PHP   5. edit_post() C:\www\zulk\wp-admin\includes\ajax-actions.php:1074
+[24-Sep-2013 18:21:16 UTC] PHP   6. wp_update_post() C:\www\zulk\wp-admin\includes\post.php:272
+[24-Sep-2013 18:21:16 UTC] PHP   7. wp_insert_post() C:\www\zulk\wp-includes\post.php:2944
+[24-Sep-2013 18:21:16 UTC] PHP   8. do_action() C:\www\zulk\wp-includes\post.php:2882
+[24-Sep-2013 18:21:16 UTC] PHP   9. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:406
+[24-Sep-2013 18:21:16 UTC] PHP  10. save_post_large() C:\www\zulk\wp-includes\plugin.php:406
+[24-Sep-2013 18:21:48 UTC] PHP Notice:  Undefined index: large in C:\www\zulk\wp-content\themes\zulk_wp\custom_meta\custom_input.php on line 65
+[24-Sep-2013 18:21:48 UTC] PHP Stack trace:
+[24-Sep-2013 18:21:48 UTC] PHP   1. {main}() C:\www\zulk\wp-admin\post.php:0
+[24-Sep-2013 18:21:48 UTC] PHP   2. edit_post() C:\www\zulk\wp-admin\post.php:218
+[24-Sep-2013 18:21:48 UTC] PHP   3. wp_update_post() C:\www\zulk\wp-admin\includes\post.php:272
+[24-Sep-2013 18:21:48 UTC] PHP   4. wp_insert_post() C:\www\zulk\wp-includes\post.php:2944
+[24-Sep-2013 18:21:48 UTC] PHP   5. do_action() C:\www\zulk\wp-includes\post.php:2879
+[24-Sep-2013 18:21:48 UTC] PHP   6. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:406
+[24-Sep-2013 18:21:48 UTC] PHP   7. wp_save_post_revision() C:\www\zulk\wp-includes\plugin.php:406
+[24-Sep-2013 18:21:48 UTC] PHP   8. _wp_put_post_revision() C:\www\zulk\wp-includes\revision.php:117
+[24-Sep-2013 18:21:48 UTC] PHP   9. wp_insert_post() C:\www\zulk\wp-includes\revision.php:236
+[24-Sep-2013 18:21:48 UTC] PHP  10. do_action() C:\www\zulk\wp-includes\post.php:2882
+[24-Sep-2013 18:21:48 UTC] PHP  11. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:406
+[24-Sep-2013 18:21:48 UTC] PHP  12. save_post_large() C:\www\zulk\wp-includes\plugin.php:406
+[24-Sep-2013 18:21:48 UTC] PHP Notice:  Undefined index: large in C:\www\zulk\wp-content\themes\zulk_wp\custom_meta\custom_input.php on line 65
+[24-Sep-2013 18:21:48 UTC] PHP Stack trace:
+[24-Sep-2013 18:21:48 UTC] PHP   1. {main}() C:\www\zulk\wp-admin\post.php:0
+[24-Sep-2013 18:21:48 UTC] PHP   2. edit_post() C:\www\zulk\wp-admin\post.php:218
+[24-Sep-2013 18:21:48 UTC] PHP   3. wp_update_post() C:\www\zulk\wp-admin\includes\post.php:272
+[24-Sep-2013 18:21:48 UTC] PHP   4. wp_insert_post() C:\www\zulk\wp-includes\post.php:2944
+[24-Sep-2013 18:21:48 UTC] PHP   5. do_action() C:\www\zulk\wp-includes\post.php:2882
+[24-Sep-2013 18:21:48 UTC] PHP   6. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:406
+[24-Sep-2013 18:21:48 UTC] PHP   7. save_post_large() C:\www\zulk\wp-includes\plugin.php:406
+[24-Sep-2013 18:21:50 UTC] PHP Warning:  fopen(http://localhost/zulk/wp-cron.php?doing_wp_cron=1380046909.8209989070892333984375): failed to open stream: HTTP request failed!  in C:\www\zulk\wp-includes\class-http.php on line 955
+[24-Sep-2013 18:21:50 UTC] PHP Stack trace:
+[24-Sep-2013 18:21:50 UTC] PHP   1. {main}() C:\www\zulk\wp-admin\post.php:0
+[24-Sep-2013 18:21:50 UTC] PHP   2. require_once() C:\www\zulk\wp-admin\post.php:12
+[24-Sep-2013 18:21:50 UTC] PHP   3. require_once() C:\www\zulk\wp-admin\admin.php:30
+[24-Sep-2013 18:21:50 UTC] PHP   4. require_once() C:\www\zulk\wp-load.php:29
+[24-Sep-2013 18:21:50 UTC] PHP   5. require_once() C:\www\zulk\wp-config.php:92
+[24-Sep-2013 18:21:50 UTC] PHP   6. do_action() C:\www\zulk\wp-settings.php:308
+[24-Sep-2013 18:21:50 UTC] PHP   7. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:406
+[24-Sep-2013 18:21:50 UTC] PHP   8. wp_cron() C:\www\zulk\wp-includes\plugin.php:406
+[24-Sep-2013 18:21:50 UTC] PHP   9. spawn_cron() C:\www\zulk\wp-includes\cron.php:283
+[24-Sep-2013 18:21:50 UTC] PHP  10. wp_remote_post() C:\www\zulk\wp-includes\cron.php:253
+[24-Sep-2013 18:21:50 UTC] PHP  11. WP_Http->post() C:\www\zulk\wp-includes\http.php:195
+[24-Sep-2013 18:21:50 UTC] PHP  12. WP_Http->request() C:\www\zulk\wp-includes\class-http.php:286
+[24-Sep-2013 18:21:50 UTC] PHP  13. WP_Http->_dispatch_request() C:\www\zulk\wp-includes\class-http.php:198
+[24-Sep-2013 18:21:50 UTC] PHP  14. WP_Http_Streams->request() C:\www\zulk\wp-includes\class-http.php:261
+[24-Sep-2013 18:21:50 UTC] PHP  15. fopen() C:\www\zulk\wp-includes\class-http.php:955
+[24-Sep-2013 19:29:49 UTC] PHP Notice:  Undefined index: large in C:\www\zulk\wp-content\themes\zulk_wp\custom_meta\custom_input.php on line 65
+[24-Sep-2013 19:29:49 UTC] PHP Stack trace:
+[24-Sep-2013 19:29:49 UTC] PHP   1. {main}() C:\www\zulk\wp-admin\post.php:0
+[24-Sep-2013 19:29:49 UTC] PHP   2. edit_post() C:\www\zulk\wp-admin\post.php:218
+[24-Sep-2013 19:29:49 UTC] PHP   3. wp_update_post() C:\www\zulk\wp-admin\includes\post.php:272
+[24-Sep-2013 19:29:49 UTC] PHP   4. wp_insert_post() C:\www\zulk\wp-includes\post.php:2944
+[24-Sep-2013 19:29:49 UTC] PHP   5. do_action() C:\www\zulk\wp-includes\post.php:2879
+[24-Sep-2013 19:29:49 UTC] PHP   6. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:406
+[24-Sep-2013 19:29:49 UTC] PHP   7. wp_save_post_revision() C:\www\zulk\wp-includes\plugin.php:406
+[24-Sep-2013 19:29:49 UTC] PHP   8. _wp_put_post_revision() C:\www\zulk\wp-includes\revision.php:117
+[24-Sep-2013 19:29:49 UTC] PHP   9. wp_insert_post() C:\www\zulk\wp-includes\revision.php:236
+[24-Sep-2013 19:29:49 UTC] PHP  10. do_action() C:\www\zulk\wp-includes\post.php:2882
+[24-Sep-2013 19:29:49 UTC] PHP  11. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:406
+[24-Sep-2013 19:29:49 UTC] PHP  12. save_post_large() C:\www\zulk\wp-includes\plugin.php:406
+[24-Sep-2013 19:29:49 UTC] PHP Notice:  Undefined index: large in C:\www\zulk\wp-content\themes\zulk_wp\custom_meta\custom_input.php on line 65
+[24-Sep-2013 19:29:49 UTC] PHP Stack trace:
+[24-Sep-2013 19:29:49 UTC] PHP   1. {main}() C:\www\zulk\wp-admin\post.php:0
+[24-Sep-2013 19:29:49 UTC] PHP   2. edit_post() C:\www\zulk\wp-admin\post.php:218
+[24-Sep-2013 19:29:49 UTC] PHP   3. wp_update_post() C:\www\zulk\wp-admin\includes\post.php:272
+[24-Sep-2013 19:29:49 UTC] PHP   4. wp_insert_post() C:\www\zulk\wp-includes\post.php:2944
+[24-Sep-2013 19:29:49 UTC] PHP   5. do_action() C:\www\zulk\wp-includes\post.php:2882
+[24-Sep-2013 19:29:49 UTC] PHP   6. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:406
+[24-Sep-2013 19:29:49 UTC] PHP   7. save_post_large() C:\www\zulk\wp-includes\plugin.php:406
+[24-Sep-2013 19:29:50 UTC] PHP Warning:  fopen(http://localhost/zulk/wp-cron.php?doing_wp_cron=1380050990.7606699466705322265625): failed to open stream: HTTP request failed!  in C:\www\zulk\wp-includes\class-http.php on line 955
+[24-Sep-2013 19:29:50 UTC] PHP Stack trace:
+[24-Sep-2013 19:29:50 UTC] PHP   1. {main}() C:\www\zulk\wp-admin\post.php:0
+[24-Sep-2013 19:29:50 UTC] PHP   2. require_once() C:\www\zulk\wp-admin\post.php:12
+[24-Sep-2013 19:29:50 UTC] PHP   3. require_once() C:\www\zulk\wp-admin\admin.php:30
+[24-Sep-2013 19:29:50 UTC] PHP   4. require_once() C:\www\zulk\wp-load.php:29
+[24-Sep-2013 19:29:50 UTC] PHP   5. require_once() C:\www\zulk\wp-config.php:92
+[24-Sep-2013 19:29:50 UTC] PHP   6. do_action() C:\www\zulk\wp-settings.php:308
+[24-Sep-2013 19:29:50 UTC] PHP   7. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:406
+[24-Sep-2013 19:29:50 UTC] PHP   8. wp_cron() C:\www\zulk\wp-includes\plugin.php:406
+[24-Sep-2013 19:29:50 UTC] PHP   9. spawn_cron() C:\www\zulk\wp-includes\cron.php:283
+[24-Sep-2013 19:29:50 UTC] PHP  10. wp_remote_post() C:\www\zulk\wp-includes\cron.php:253
+[24-Sep-2013 19:29:50 UTC] PHP  11. WP_Http->post() C:\www\zulk\wp-includes\http.php:195
+[24-Sep-2013 19:29:50 UTC] PHP  12. WP_Http->request() C:\www\zulk\wp-includes\class-http.php:286
+[24-Sep-2013 19:29:50 UTC] PHP  13. WP_Http->_dispatch_request() C:\www\zulk\wp-includes\class-http.php:198
+[24-Sep-2013 19:29:50 UTC] PHP  14. WP_Http_Streams->request() C:\www\zulk\wp-includes\class-http.php:261
+[24-Sep-2013 19:29:50 UTC] PHP  15. fopen() C:\www\zulk\wp-includes\class-http.php:955
+[24-Sep-2013 19:32:47 UTC] PHP Warning:  fopen(http://localhost/zulk/wp-cron.php?doing_wp_cron=1380051167.4512460231781005859375): failed to open stream: HTTP request failed!  in C:\www\zulk\wp-includes\class-http.php on line 955
+[24-Sep-2013 19:32:47 UTC] PHP Stack trace:
+[24-Sep-2013 19:32:47 UTC] PHP   1. {main}() C:\www\zulk\wp-admin\post.php:0
+[24-Sep-2013 19:32:47 UTC] PHP   2. require_once() C:\www\zulk\wp-admin\post.php:12
+[24-Sep-2013 19:32:47 UTC] PHP   3. require_once() C:\www\zulk\wp-admin\admin.php:30
+[24-Sep-2013 19:32:47 UTC] PHP   4. require_once() C:\www\zulk\wp-load.php:29
+[24-Sep-2013 19:32:47 UTC] PHP   5. require_once() C:\www\zulk\wp-config.php:92
+[24-Sep-2013 19:32:47 UTC] PHP   6. do_action() C:\www\zulk\wp-settings.php:308
+[24-Sep-2013 19:32:47 UTC] PHP   7. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:406
+[24-Sep-2013 19:32:47 UTC] PHP   8. wp_cron() C:\www\zulk\wp-includes\plugin.php:406
+[24-Sep-2013 19:32:47 UTC] PHP   9. spawn_cron() C:\www\zulk\wp-includes\cron.php:283
+[24-Sep-2013 19:32:47 UTC] PHP  10. wp_remote_post() C:\www\zulk\wp-includes\cron.php:253
+[24-Sep-2013 19:32:47 UTC] PHP  11. WP_Http->post() C:\www\zulk\wp-includes\http.php:195
+[24-Sep-2013 19:32:47 UTC] PHP  12. WP_Http->request() C:\www\zulk\wp-includes\class-http.php:286
+[24-Sep-2013 19:32:47 UTC] PHP  13. WP_Http->_dispatch_request() C:\www\zulk\wp-includes\class-http.php:198
+[24-Sep-2013 19:32:47 UTC] PHP  14. WP_Http_Streams->request() C:\www\zulk\wp-includes\class-http.php:261
+[24-Sep-2013 19:32:47 UTC] PHP  15. fopen() C:\www\zulk\wp-includes\class-http.php:955
+[24-Sep-2013 19:33:08 UTC] PHP Warning:  fopen(http://localhost/zulk/wp-cron.php?doing_wp_cron=1380051188.1706910133361816406250): failed to open stream: HTTP request failed!  in C:\www\zulk\wp-includes\class-http.php on line 955
+[24-Sep-2013 19:33:08 UTC] PHP Stack trace:
+[24-Sep-2013 19:33:08 UTC] PHP   1. {main}() C:\www\zulk\wp-admin\post.php:0
+[24-Sep-2013 19:33:08 UTC] PHP   2. require_once() C:\www\zulk\wp-admin\post.php:12
+[24-Sep-2013 19:33:08 UTC] PHP   3. require_once() C:\www\zulk\wp-admin\admin.php:30
+[24-Sep-2013 19:33:08 UTC] PHP   4. require_once() C:\www\zulk\wp-load.php:29
+[24-Sep-2013 19:33:08 UTC] PHP   5. require_once() C:\www\zulk\wp-config.php:92
+[24-Sep-2013 19:33:08 UTC] PHP   6. do_action() C:\www\zulk\wp-settings.php:308
+[24-Sep-2013 19:33:08 UTC] PHP   7. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:406
+[24-Sep-2013 19:33:08 UTC] PHP   8. wp_cron() C:\www\zulk\wp-includes\plugin.php:406
+[24-Sep-2013 19:33:08 UTC] PHP   9. spawn_cron() C:\www\zulk\wp-includes\cron.php:283
+[24-Sep-2013 19:33:08 UTC] PHP  10. wp_remote_post() C:\www\zulk\wp-includes\cron.php:253
+[24-Sep-2013 19:33:08 UTC] PHP  11. WP_Http->post() C:\www\zulk\wp-includes\http.php:195
+[24-Sep-2013 19:33:08 UTC] PHP  12. WP_Http->request() C:\www\zulk\wp-includes\class-http.php:286
+[24-Sep-2013 19:33:08 UTC] PHP  13. WP_Http->_dispatch_request() C:\www\zulk\wp-includes\class-http.php:198
+[24-Sep-2013 19:33:08 UTC] PHP  14. WP_Http_Streams->request() C:\www\zulk\wp-includes\class-http.php:261
+[24-Sep-2013 19:33:08 UTC] PHP  15. fopen() C:\www\zulk\wp-includes\class-http.php:955

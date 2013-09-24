@@ -259,21 +259,21 @@ $('.post').mouseenter(function(){
   $('a.video-play').click(function(){
     var v = $(this).data('video');
     console.log('video: '+v);
-    if(v.search('youtube')){
+    if(v.search('youtube')>0){
       var video_id = youtube_parser(v);
       console.log('video_id: '+video_id);
-      $('#video').append('<iframe width="460" height="304"  src="//www.youtube.com/embed/'+video_id+'" frameborder="0" allowfullscreen></iframe>');
+      $('#video').append('<iframe width="460" height="304"  src="http://www.youtube.com/embed/'+video_id+'" frameborder="0" allowfullscreen></iframe>');
     }else{
       var video_id = vimeo_parser(v);
       console.log('video_id: '+video_id);
-      $('#video').append('<iframe src="//player.vimeo.com/video/'+video_id+'?title=0&amp;byline=0&amp;portrait=0" width="460" height="304" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>');
+      $('#video').append('<iframe src="http://player.vimeo.com/video/'+video_id+'?title=0&amp;byline=0&amp;portrait=0" width="460" height="304" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>');
     }
 
     $('#principal-2').removeClass('thumbFade bounceTop2 animate').addClass('animated flipOutY');
       setTimeout(function() { 
         $('#principal-2').addClass('hidden');
-        $('#action-video').removeClass('hidden');
-        $('#video').removeClass('animated flipOutY ').addClass('animated flipInY');
+        $('#action-video').removeClass('hidden animated flipOutY');
+        $('#video').removeClass('animated flipOutY hidden').addClass('animated flipInY');
         $('#action-video').addClass('animated flipInY');
       }, 500);
         
@@ -282,6 +282,7 @@ $('.post').mouseenter(function(){
 
   $('#close-video').click(function(){
     $('#video').removeClass('animated flipInY').addClass('animated flipOutY');
+    $('#action-video').removeClass('animated flipInY').addClass('animated flipOutY hidden');
     setTimeout(function() { 
       $('#video').addClass('hidden').html('');
       $('#principal-2').removeClass('hidden').removeClass('animated flipOutY').addClass('animated flipInY');
@@ -314,13 +315,14 @@ $('.post').mouseenter(function(){
   }
 
   function vimeo_parser(url){
-    var regExp = /http:\/\/(www\.)?vimeo.com\/(\d+)($|\/)/;
-    var match = url.match(regExp);
-    if (match){
-        return match[2];
+     var match = /vimeo.*\/(\d+)/i.exec( url );
+    // if the match isn't null (i.e. it matched)
+    if ( match ) {
+      // the grouped/matched digits from the regex
+      return match[1];
     }else{
-        console.log("not a vimeo url");
-    }
+          console.log("not a vimeo url");
+      }
   }
 
 })(jQuery, this);

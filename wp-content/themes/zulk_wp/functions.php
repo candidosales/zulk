@@ -9,8 +9,8 @@ if (function_exists('add_theme_support')) {
 	add_image_size( 'home-thumb-1', 440, 208, true );
 	add_image_size( 'home-thumb-2', 220, 190, true );
 	add_image_size( 'post-thumb-1', 764, 384, true );
-	add_image_size( 'category-thumb-1', 278, 136, true );
-	add_image_size( 'category-thumb-2', 178, 136, true );
+	add_image_size( 'category-thumb-1', 424, 160, true );
+	add_image_size( 'category-thumb-2', 195, 160, true );
 	add_image_size( 'related-post-1', 168, 110, true );
 	add_image_size( 'ultimas-thumb-1', 540, 260, true );
 	add_image_size( 'ultimas-thumb-2', 295, 190, true );
