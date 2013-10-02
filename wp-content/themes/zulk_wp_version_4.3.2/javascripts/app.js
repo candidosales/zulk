@@ -3,10 +3,12 @@
 $("#slide-1, #slide-2").on("orbit:after-slide-change", function(event, orbit) {
   console.info("after slide change");
   console.info("slide " + orbit.slide_number + " of " + orbit.total_slides);
+  alert(getMethods(orbit).join("\n"));
+  //orbit.get_methods();
    //var y = this.$slides.eq(this.activeSlide);
           var y = orbit;
           console.log('Object Orbit: '+this.idx);
-          console.log(this.idx);
+          console.log(orbit);
           var a = new Array();
           a['obj'] = $(y);
           a['title'] = $(y).attr('title');
@@ -105,6 +107,20 @@ $("#slide-1, #slide-2").on("orbit:after-slide-change", function(event, orbit) {
         $(y['id']).closest(y['class']).find('span.date').html(y['date']);
     }
 
+    function getMethods(obj) {
+  var result = [];
+  for (var id in obj) {
+    try {
+      if (typeof(obj[id]) == "function") {
+        result.push(id + ": " + obj[id].toString());
+      }
+    } catch (err) {
+      result.push(id + ": inaccessible");
+    }
+  }
+  return result;
+}
+
 
    $('#slide-1, #slide-2, #slide-3, #slide-4, #slide-5, #slide-6').trigger('orbit.stop');
 
@@ -118,7 +134,7 @@ $("#slide-1, #slide-2").on("orbit:after-slide-change", function(event, orbit) {
       var obj = $(this).closest('.principal').find('.orbit-slides-container');
       console.log(obj);
       obj.trigger('orbit.goto', index);
-      obj.foundation('orbit','goto', index);
+      obj.foundation('orbit','_goto', index);
 
 
       var obj = $(this).closest('.sub-principal').find('.orbit-slides-container');

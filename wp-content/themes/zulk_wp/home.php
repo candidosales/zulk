@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 <body class="paused">
- <div id="tile-1" class="twelve columns">
+ <div id="tile-1" class="large-12 columns">
 <?php  include('menu.php'); ?>
-    <div class="row thumb margin-btn-2">
-    <div id="principal-1" class="six columns principal thumbFade bounceTop1 animate">
+    <div class="row thumb margin-btn-1">
+    <div id="principal-1" class="large-6 columns principal thumbFade bounceTop1 animate">
       <!-- class: animacao antiga widget animation unloaded -->
    <?php 
     $historias_zulk = new WP_Query(array('showposts' => 4,'category_name' => 'historias-zulk'));
@@ -23,7 +23,8 @@
             <li class="share"><span aria-hidden="true" class="icon-menu icon"></span> </li>
         </ul>
       </div>
-      <div id="slide-1" class="slide">
+      <div id="slide-1" class="slide flexslider">
+        <ul class="slides">
         <?php
             if($historias_zulk->have_posts()){
               while($historias_zulk->have_posts()) { 
@@ -31,13 +32,16 @@
                 $thumb = thumbUrl($post->ID, 'home-thumb-1');
                 $diff = diffBetweenDates(the_date("Y-m-d",'','',FALSE));
         ?>
-        <a itemprop="photo" href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>" data-view="3" data-comment="17" data-favorite="50" data-date="<?php echo $diff->d ?>">
-           <img src="<?php echo $thumb ?>"/>
-        </a>
+        <li>
+          <a itemprop="photo" href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>" data-view="3" data-comment="17" data-favorite="50" data-date="<?php echo $diff->d ?>">
+             <img src="<?php echo $thumb ?>"/>
+          </a>
+        </li>
         <?php 
               }
             }
         ?>
+      </ul>
      </div>
         <div class="category-list animated">
           <ul>
@@ -45,7 +49,7 @@
           </ul>
         </div>
         <div class="extras">
-          <div class="twelve columns">
+          <div class="large-12 columns">
             <a class="link-category-child" href="" rel="bookmark" title="">
               <p class="title-category-child"></p>
             </a>
@@ -59,7 +63,7 @@
 
 
 
-    <div id="principal-2" class="six columns principal thumbFade  bounceTop2 animate">
+    <div id="principal-2" class="large-6 columns principal thumbFade  bounceTop2 animate">
     <?php 
        $cine_zulk = new WP_Query(array('showposts' => 4,'category_name' => 'zulk-tv'));
     ?>
@@ -76,7 +80,8 @@
             <li class="share"><span aria-hidden="true" class="icon-menu icon"></span> </li>
         </ul>
       </div>
-        <div id="slide-2" class="slide video">
+        <div id="slide-2" class="slide video flexslider">
+          <ul class="slides">
           <?php
             if($cine_zulk->have_posts()){
               while($cine_zulk->have_posts()) { 
@@ -87,14 +92,17 @@
 
                 $video_url = get_post_meta($post->ID, 'url_video', true);
           ?>
-          <a class="video-play" itemprop="photo" href="#" rel="bookmark" title="<?php the_title_attribute(); ?>" data-video="<?php echo $video_url ?>" data-view="3" data-comment="17" data-favorite="50" data-date="<?php echo $diff->d ?>">
-             <img src="<?php echo $thumb ?>"/>
-             <img class="video-icon" src="<?php bloginfo('template_url'); ?>/images/video.png">
-          </a>
+          <li>
+            <a class="video-play" itemprop="photo" href="#" rel="bookmark" title="<?php the_title_attribute(); ?>" data-video="<?php echo $video_url ?>" data-view="3" data-comment="17" data-favorite="50" data-date="<?php echo $diff->d ?>">
+               <img src="<?php echo $thumb ?>"/>
+            </a>
+          </li>
           <?php 
                 }
               }
           ?>
+        </ul>
+        <img class="video-icon" src="<?php bloginfo('template_url'); ?>/images/video.png">
         </div>
         <div class="category-list animated">
           <ul>
@@ -103,7 +111,7 @@
           </ul>
         </div>
         <div class="extras">
-          <div class="twelve columns">
+          <div class="large-12 columns">
             <a class="link-category-child" href="" rel="bookmark" title="">
               <p class="title-category-child"></p>
             </a>
@@ -114,7 +122,7 @@
           </div>
         </div>
       </div>
-      <div id="video" class="six columns principal">
+      <div id="video" class="large-6 columns principal">
       </div>
       <div id="action-video" class="hidden">
         <ul>
@@ -130,7 +138,7 @@
     </div>
     <!--- row sub-principal -->
     <div class="row thumb">
-      <div class="three columns sub-principal thumbFade bounceBottom1 animate">
+      <div class="large-3 columns sub-principal thumbFade bounceBottom1 animate">
          <?php 
           $fotografos = new WP_Query(array('showposts' => 4,'category_name' => 'fotografos'));
         ?>
@@ -149,7 +157,8 @@
             <li class="heart"><span aria-hidden="true" class="icon-menu icon"></span></li>
           </ul>
         </div>
-        <div id="slide-3" class="slide">
+        <div id="slide-3" class="slide flexslider">
+          <ul class="slides">
           <?php
             if($fotografos->have_posts()){
               while($fotografos->have_posts()) { 
@@ -157,13 +166,16 @@
                 $thumb = thumbUrl($post->ID, 'home-thumb-2');
                 $diff = diffBetweenDates(the_date("Y-m-d",'','',FALSE));
           ?>
-          <a itemprop="photo" href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-             <img src="<?php echo $thumb ?>" data-title="<?php the_title() ?>" data-view="3" data-comment="17" data-favorite="50" data-date="<?php echo $diff->d ?>"/>
-          </a>
+            <li>
+              <a itemprop="photo" href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+                 <img src="<?php echo $thumb ?>" data-title="<?php the_title() ?>" data-view="3" data-comment="17" data-favorite="50" data-date="<?php echo $diff->d ?>"/>
+              </a>
+            </li>
           <?php 
                 }
               }
           ?>
+        </ul>
         </div>
         <div class="category-list animated">
           <ul>
@@ -183,7 +195,7 @@
           </div>
         </div>
       </div>
-      <div class="three columns sub-principal  thumbFade bounceBottom2 animate">
+      <div class="large-3 columns sub-principal  thumbFade bounceBottom2 animate">
         <?php 
           $noiva = new WP_Query(array('showposts' => 4,'category_name' => 'noivas'));
         ?>
@@ -202,7 +214,8 @@
             <li class="heart"><span aria-hidden="true" class="icon-menu icon"></span></li>
           </ul>
         </div>
-        <div id="slide-4" class="slide">
+        <div id="slide-4" class="slide flexslider">
+          <ul class="slides">
           <?php
             if($noiva->have_posts()){
               while($noiva->have_posts()) { 
@@ -210,13 +223,16 @@
                 $thumb = thumbUrl($post->ID, 'home-thumb-2');
                 $diff = diffBetweenDates(the_date("Y-m-d",'','',FALSE));
           ?>
-          <a itemprop="photo" href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-             <img src="<?php echo $thumb ?>" data-title="<?php the_title() ?>" data-view="3" data-comment="17" data-favorite="50" data-date="<?php echo $diff->d ?>"/>
-          </a>
+          <li>
+            <a itemprop="photo" href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+               <img src="<?php echo $thumb ?>" data-title="<?php the_title() ?>" data-view="3" data-comment="17" data-favorite="50" data-date="<?php echo $diff->d ?>"/>
+            </a>
+          </li>
           <?php 
                 }
               }
           ?>
+          </ul>
         </div>
         <div class="category-list animated">
           <ul>
@@ -236,7 +252,7 @@
           </div>
         </div>
       </div>
-      <div class="three columns sub-principal  thumbFade bounceBottom3 animate">
+      <div class="large-3 columns sub-principal  thumbFade bounceBottom3 animate">
         <?php 
           $book = new WP_Query(array('showposts' => 4,'category_name' => 'zulkbook'));
         ?>
@@ -255,7 +271,8 @@
             <li class="heart"><span aria-hidden="true" class="icon-menu icon"></span></li>
           </ul>
         </div>
-        <div id="slide-5" class="slide">
+        <div id="slide-5" class="slide flexslider">
+          <ul class="slides">
           <?php
             if($book->have_posts()){
               while($book->have_posts()) { 
@@ -263,13 +280,16 @@
                 $thumb = thumbUrl($post->ID, 'home-thumb-2');
                 $diff = diffBetweenDates(the_date("Y-m-d",'','',FALSE));
           ?>
-          <a itemprop="photo" href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-             <img src="<?php echo $thumb ?>" data-title="<?php the_title() ?>" data-view="3" data-comment="17" data-favorite="50" data-date="<?php echo $diff->d ?>"/>
-          </a>
+          <li>
+            <a itemprop="photo" href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+               <img src="<?php echo $thumb ?>" data-title="<?php the_title() ?>" data-view="3" data-comment="17" data-favorite="50" data-date="<?php echo $diff->d ?>"/>
+            </a>
+          </li>
           <?php 
                 }
               }
           ?>
+          </ul>
         </div>
         <div class="category-list">
           <ul>
@@ -289,7 +309,7 @@
           </div>
         </div>
       </div>
-      <div class="three columns sub-principal  thumbFade bounceBottom4 animate">
+      <div class="large-3 columns sub-principal  thumbFade bounceBottom4 animate">
          <?php 
           $cursos = new WP_Query(array('showposts' => 4,'category_name' => 'cursos'));
         ?>
@@ -308,7 +328,8 @@
             <li class="heart"><span aria-hidden="true" class="icon-menu icon"></span></li>
           </ul>
         </div>
-        <div id="slide-6" class="slide">
+        <div id="slide-6" class="slide flexslider">
+          <ul class="slides">
           <?php
             if($cursos->have_posts()){
               while($cursos->have_posts()) { 
@@ -316,13 +337,16 @@
                 $thumb = thumbUrl($post->ID, 'home-thumb-2');
                 $diff = diffBetweenDates(the_date("Y-m-d",'','',FALSE));
           ?>
-          <a itemprop="photo" href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
-             <img src="<?php echo $thumb ?>" data-title="<?php the_title() ?>" data-view="3" data-comment="17" data-favorite="50" data-date="<?php echo $diff->d ?>"/>
-          </a>
+          <li>
+            <a itemprop="photo" href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+               <img src="<?php echo $thumb ?>" data-title="<?php the_title() ?>" data-view="3" data-comment="17" data-favorite="50" data-date="<?php echo $diff->d ?>"/>
+            </a>
+          </li>
           <?php 
                 }
               }
           ?>
+          </ul>
         </div>
         <div class="category-list">
           <ul>

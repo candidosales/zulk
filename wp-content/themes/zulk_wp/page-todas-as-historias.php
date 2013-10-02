@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <body>
  
-<div class="twelve columns">
+<div class="large-12 columns">
  <div class="fixed-top">
   <?php include('menu.php');?>
   </div>
