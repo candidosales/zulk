@@ -204,7 +204,8 @@ Zulk.hoverBulletsNext();
     $(this).removeClass('animated tada');
   });
 
-  /**** Post ****/
+
+/**** Post ****/
   $('.habilita-posts-relacionados').mouseenter(function(){
         $('.posts-relacionados').addClass('height-move');
   });
@@ -215,7 +216,29 @@ $('.post').mouseenter(function(){
     }
     
 });
+
+
+var scrollPost = true;
+$('.content-post').click(function() {
+  $(this).addClass('active');
+  $('.command-left, .command-right, .command-top').addClass('active');
+  if(scrollPost){
+      $(".content-post .main").mCustomScrollbar({
+          theme:"light-thin",
+          scrollInertia:150
+      });
+      scrollPost = false;
+  }
+});
+
+$('.command-top .down').click(function(){
+  $('.command-left, .command-right, .command-top, .content-post').removeClass('active');
+  $('.content-post .main').mCustomScrollbar("destroy");
+  scrollPost = true;
+});
   
+/**** Post ****/
+
   $('.image').hover(function(){
 	   $(this).addClass('flip');
   },function(){

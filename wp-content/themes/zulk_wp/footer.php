@@ -12,7 +12,9 @@
 <script src="<?php bloginfo('template_url'); ?>/javascripts/jquery.allofthelights.js" type="text/javascript"></script>
 <script src="<?php bloginfo('template_url'); ?>/javascripts/jquery.flexslider-min.js"></script>
 
+
 <script src="<?php bloginfo('template_url'); ?>/javascripts/vegas/jquery.vegas.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/javascripts/jquery.mCustomScrollbar.concat.min.js"></script>
 
 <!-- Initialize JS Plugins -->
 <script src="<?php bloginfo('template_url'); ?>/javascripts/app.js" type="text/javascript"></script>
