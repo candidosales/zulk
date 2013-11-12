@@ -2,7 +2,9 @@
 <script src="<?php bloginfo('template_url'); ?>/javascripts/4.3.2/foundation.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/javascripts/jquery.masonry.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/javascripts/jquery.swipebox.min.js"></script>
+
 <script src="<?php bloginfo('template_url'); ?>/javascripts/jquery.scrollTo-min.js"></script>
+
 
 <script src="<?php bloginfo('template_url'); ?>/javascripts/smooth-div-scroll/jquery-ui-1.8.23.custom.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/javascripts/smooth-div-scroll/jquery.mousewheel.min.js"></script>
@@ -11,6 +13,7 @@
 <script src="<?php bloginfo('template_url'); ?>/javascripts/jquery.nicescroll.min.js" type="text/javascript"></script>
 <script src="<?php bloginfo('template_url'); ?>/javascripts/jquery.allofthelights.js" type="text/javascript"></script>
 <script src="<?php bloginfo('template_url'); ?>/javascripts/jquery.flexslider-min.js"></script>
+
 
 <script src="<?php bloginfo('template_url'); ?>/javascripts/jquery.mCustomScrollbar.concat.min.js"></script>
 

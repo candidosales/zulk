@@ -311,12 +311,16 @@ function initContentPost(){
 	   $(this).removeClass('flip');
   });
 
+
+if($('body').hasClass('video')){
   $("#video").allofthelights({
         'switch_id':'lamp',
         'opacity': '0.7',
         'delay_turn_on': '1000',
         'clickable_bg': true,
   });
+}
+  
 
   /* Animation all */
   var a = {  

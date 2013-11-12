@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<body>
+<body class="video">
  
 <div class="twelve columns">
     <?php include('menu.php');?>

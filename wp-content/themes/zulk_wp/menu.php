@@ -22,7 +22,11 @@
           </a>
         </div>
       </div>
-      <div class="large-8 columns">
+      <div class="large-8 columns wrapper-social">
+        <div class="social-habilita">
+          <p><span aria-hidden="true" class="icon-chevron-up"></span></p>
+          <p>SOCIAL</p>
+        </div>
         <ul class="social">
           <li class="">
             <span aria-hidden="true" class="icon-facebook"></span>
