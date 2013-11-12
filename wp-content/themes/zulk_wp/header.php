@@ -23,13 +23,14 @@
   <link rel="stylesheet/less" href="<?php bloginfo('template_url'); ?>/stylesheets/animate.less">
 
   <script src="<?php bloginfo('template_url'); ?>/javascripts/4.3.2/vendor/custom.modernizr.js"></script>
-  <script src="<?php bloginfo('template_url'); ?>/javascripts/less-1.4.1.min.js"></script>
+  <script src="<?php bloginfo('template_url'); ?>/javascripts/less-1.5.0.min.js"></script>
   <script src="<?php bloginfo('template_url'); ?>/javascripts/4.3.2/vendor/jquery.js"></script>
 
 <!--
   <link href='http://fonts.googleapis.com/css?family=Oxygen:400,700,300' rel='stylesheet' type='text/css'>
--->
+
   <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+  -->
   <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/stylesheets/swipebox.css">
 
 </head>

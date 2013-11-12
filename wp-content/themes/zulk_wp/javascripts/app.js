@@ -152,8 +152,8 @@ var Zulk  = (function () {
           Zulk.insertCaption(a);
       });
 
-
 Zulk.hoverBulletsNext();
+
 /****** Interações ******/
 
   $(".icon-menu").click(function(){
@@ -206,7 +206,8 @@ Zulk.hoverBulletsNext();
 
 
 /**** Post ****/
-  $('.habilita-posts-relacionados').mouseenter(function(){
+/*
+$('.habilita-posts-relacionados').mouseenter(function(){
         $('.posts-relacionados').addClass('height-move');
   });
     
@@ -215,28 +216,93 @@ $('.post').mouseenter(function(){
         $('.posts-relacionados').removeClass('height-move');
     }
     
-});
+});*/
 
 
-var scrollPost = true;
+var backgroundPost = $('.background-post');
+var backPost = $('.back-post');
+var contentPostMain = $('.content-post .main');
+
 $('.content-post').click(function() {
-  $(this).addClass('active');
-  $('.command-left, .command-right, .command-top').addClass('active');
-  if(scrollPost){
-      $(".content-post .main").mCustomScrollbar({
-          theme:"light-thin",
-          scrollInertia:150
-      });
-      scrollPost = false;
+  if(isDisablePost()){
+    backgroundPost.removeClass('disable');
+    enablePost();
+    showPost($('.content-post'));
+    showCommands();
+  }else{
+    showPost($(this));
+    showCommands();
   }
 });
 
 $('.command-top .down').click(function(){
-  $('.command-left, .command-right, .command-top, .content-post').removeClass('active');
-  $('.content-post .main').mCustomScrollbar("destroy");
-  scrollPost = true;
+  hiddenCommands();
 });
-  
+
+$('.command-left .icon-th').click(function(){
+  if(isDisablePost()){
+    backgroundPost.removeClass('disable');
+  }else{
+    hiddenCommands();
+    backgroundPost.addClass('disable');
+    disablePost();
+  }
+});
+
+enablePost();
+initbackPost();
+initContentPost();
+
+function hiddenCommands(){
+  $('.command-left, .command-right, .command-top, .content-post').removeClass('active');
+  contentPostMain.mCustomScrollbar("destroy");
+}
+
+function showCommands(){
+  $('.command-left, .command-right, .command-top').addClass('active');
+}
+
+function showPost(param){
+  param.addClass('active').css("height",$(window).height());
+  if(!contentPostMain.hasClass('mCustomScrollbar')){
+      contentPostMain.mCustomScrollbar({
+              theme:"light-thin",
+              scrollInertia:150
+    });
+  }
+}
+
+function isDisablePost(){
+  return backgroundPost.hasClass('disable');
+}
+
+function enablePost(){
+  backgroundPost.css({
+    "width":$(window).width(),
+    "height":$(window).height(),
+    "top":"0"});
+}
+
+function disablePost(){
+  backgroundPost.css({
+    "width":$(window).width()/1.5,
+    "height":$(window).height()/1.5,
+    "top":$(window).height()/3.2,
+    "background-size":"contain",
+    "background-attachment":"local",
+    "background-position":"50% 50%"});
+}  
+
+function initbackPost(){
+  backPost.css({
+    "width":$(window).width(),
+    "height":$(window).height()
+  });
+}
+
+function initContentPost(){
+  contentPostMain.css({"height":$(window).height()/1.1});
+}
 /**** Post ****/
 
   $('.image').hover(function(){

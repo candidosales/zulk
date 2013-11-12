@@ -1,8 +1,7 @@
-<div class="large-12 columns posts-relacionados">
+<div class="large-12 columns posts-relacionados-1">
         <div id="scroll">
           <div id="overview">
           <?php
-            if (have_posts()){
                 //for use in the loop, list 5 post titles related to first tag on current post
               $tags       = wp_get_post_tags($post->ID);
               $categories = wp_get_post_categories($post->ID);
@@ -35,7 +34,7 @@
                       <?php
                     endwhile;
                   }
-              }     
+              }   
           ?>
              </div>
         </div>
