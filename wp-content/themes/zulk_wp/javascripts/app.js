@@ -22,6 +22,49 @@ var Zulk  = (function () {
         });
     }
 
+    function initAnimation(){
+        var  widgets = null;
+        widgets = $(".widget");
+        $(document.body).addClass("loaded");
+          widgets.each(function (a) {
+            var b = $(this);
+            setTimeout(function () {
+              b.removeClass("unloaded");
+              setTimeout(function () {
+                b.removeClass("animation")
+              }, 300)
+            }, 100 * a)  
+          });
+    }
+
+      /* Animation all */
+
+    function presentationVideo(){
+      $('body').css({"padding":"0","overflow":"hidden"});
+      $(document).ready(initAnimation());
+      $('#tile-1').hide();
+      $('#presentation-video').attr({
+                              height:$(window).height()*1.14, 
+                              width: $(window).width()*1.14
+                            }).css({
+                              "margin":"-7% 0 0 -7%"
+                            });
+
+      setInterval(function() {
+        $('#presentation-video').remove();
+        $('body').css({"padding":"1.8% 0","overflow":"hidden"});
+        $('#tile-1').show();
+
+        //Create Slide
+        createAllSlide();
+        //create interactions
+        interactionSlide();
+        hoverBulletsNext();
+
+        $(document).ready($("body").removeClass("paused"));
+      }, 4000);
+    }
+
     function closeVideo(){
       $('#close-video').click(function(){
         expandVideo();
@@ -75,98 +118,106 @@ var Zulk  = (function () {
         }
     }
 
+    function createAllSlide(){
+        $('.principal > .flexslider').flexslider({
+          animation: "slide",
+          directionNav: false,
+          slideshow: false, 
+          after: function(slider) {
+            var y = slider.slides.eq(slider.currentSlide).find('a');
+              var a = new Array();
+              a['obj'] = $(y);
+              a['title'] = $(y).attr('title');
+              a['href'] = $(y).attr('href');
+              a['view'] = $(y).data('view');
+              a['comment'] = $(y).data('comment');
+              a['favorite'] = $(y).data('favorite');
+              a['date'] = $(y).data('date');
+              a['id'] = '#'+$(y).closest('.slide').attr('id');
+              a['class'] = '.principal';
+              insertCaption(a);
+          }
+        });
+
+        $('.sub-principal > .flexslider ').flexslider({
+          animation: "slide",
+          directionNav: false,
+          slideshow: false, 
+          after: function(slider) {
+            var y = slider.slides.eq(slider.currentSlide).find('a');
+              var a = new Array();
+              a['obj'] = $(y);
+              a['title'] = $(y).attr('title');
+              a['href'] = $(y).attr('href');
+              a['view'] = $(y).data('view');
+              a['comment'] = $(y).data('comment');
+              a['favorite'] = $(y).data('favorite');
+              a['date'] = $(y).data('date');
+              a['id'] = '#'+$(y).closest('.slide').attr('id');
+              a['class'] = '.sub-principal';
+              insertCaption(a);
+          }
+        });
+
+        //Inserir as informações na primeira imagem do slide
+          var count = 0;
+          $('.slide').each(function(){
+              var link = $(this).find('a').first();
+
+              var a = new Array();
+              a['title'] = link.attr('title');
+              a['href'] = link.attr('href');
+              a['view'] = link.data('view');
+              a['comment'] = link.data('comment');
+              a['favorite'] = link.data('favorite');
+              a['date'] = link.data('date');
+
+              a['id'] = '#'+$(this).attr('id');
+              if(count < 2){
+                 a['class'] = '.principal';
+               }else{
+                 a['class'] = '.sub-principal';
+               }
+               count++;
+              insertCaption(a);
+          });
+    }
+
+    function interactionSlide(){
+       $(".icon-menu").click(function(){
+            $(this).closest('.principal').find('.category-list').removeClass('fadeOutDown').addClass('block fadeInUp');
+        });
+        
+        $('.category-list').on("mouseleave",function(){
+          $(this).closest('.principal').find('.category-list').removeClass('fadeInUp').addClass('fadeOutDown');
+        });
+    }
 
     return {
         insertCaption:insertCaption,
         hoverBulletsNext:hoverBulletsNext,
+        presentationVideo:presentationVideo,
         expandVideo:expandVideo,
         closeVideo:closeVideo,
         showVideo:showVideo,
         youtubeParser:youtubeParser,
-        vimeoParser:vimeoParser
+        vimeoParser:vimeoParser,
+        createAllSlide:createAllSlide,
+        interactionSlide:interactionSlide
       }
   }());
-    
 
+  
+if($('body').hasClass('home')){
+  Zulk.presentationVideo();
+}
 
-    $('.principal > .flexslider').flexslider({
-      animation: "slide",
-      directionNav: false,
-      slideshow: false, 
-      after: function(slider) {
-        var y = slider.slides.eq(slider.currentSlide).find('a');
-          var a = new Array();
-          a['obj'] = $(y);
-          a['title'] = $(y).attr('title');
-          a['href'] = $(y).attr('href');
-          a['view'] = $(y).data('view');
-          a['comment'] = $(y).data('comment');
-          a['favorite'] = $(y).data('favorite');
-          a['date'] = $(y).data('date');
-          a['id'] = '#'+$(y).closest('.slide').attr('id');
-          a['class'] = '.principal';
-          Zulk.insertCaption(a);
-      }
-    });
-
-    $('.sub-principal > .flexslider ').flexslider({
-      animation: "slide",
-      directionNav: false,
-      slideshow: false, 
-      after: function(slider) {
-        var y = slider.slides.eq(slider.currentSlide).find('a');
-          var a = new Array();
-          a['obj'] = $(y);
-          a['title'] = $(y).attr('title');
-          a['href'] = $(y).attr('href');
-          a['view'] = $(y).data('view');
-          a['comment'] = $(y).data('comment');
-          a['favorite'] = $(y).data('favorite');
-          a['date'] = $(y).data('date');
-          a['id'] = '#'+$(y).closest('.slide').attr('id');
-          a['class'] = '.sub-principal';
-          Zulk.insertCaption(a);
-      }
-    });
-
-    //Inserir as informações na primeira imagem do slide
-      var count = 0;
-      $('.slide').each(function(){
-          var link = $(this).find('a').first();
-
-          var a = new Array();
-          a['title'] = link.attr('title');
-          a['href'] = link.attr('href');
-          a['view'] = link.data('view');
-          a['comment'] = link.data('comment');
-          a['favorite'] = link.data('favorite');
-          a['date'] = link.data('date');
-
-          a['id'] = '#'+$(this).attr('id');
-          if(count < 2){
-             a['class'] = '.principal';
-           }else{
-             a['class'] = '.sub-principal';
-           }
-           count++;
-          Zulk.insertCaption(a);
-      });
-
-Zulk.hoverBulletsNext();
 
 /****** Interações ******/
 
-  $(".icon-menu").click(function(){
-      $(this).closest('.principal').find('.category-list').removeClass('fadeOutDown').addClass('block fadeInUp');
-  });
-  
-  $('.category-list').on("mouseleave",function(){
-    $(this).closest('.principal').find('.category-list').removeClass('fadeInUp').addClass('fadeOutDown');
-  });
-
-  $('.wrapper').each(function(){
+ /* $('.wrapper').each(function(){
     console.log('index wrapper: '+$(this).index());
-  });
+  });*/
 
   var currentPosition = 0;
   var nextPosition = 0;
@@ -218,90 +269,115 @@ $('.post').mouseenter(function(){
     
 });*/
 
+if($('body').hasClass('post-body')){
+  var backgroundPost = $('.background-post');
+  var backPost = $('.back-post');
+  var contentPost = $('.content-post');
+  var contentPostMain = $('.content-post .main');
 
-var backgroundPost = $('.background-post');
-var backPost = $('.back-post');
-var contentPostMain = $('.content-post .main');
+      $('.content-post').blurjs({
+          source: '.background-post',
+          overlay: 'rgba(0,0,0,0.5)',
+          optClass: 'blur',
+          radius: 10,
+          cache: true
+        });
 
-$('.content-post').click(function() {
-  if(isDisablePost()){
-    backgroundPost.removeClass('disable');
-    enablePost();
-    showPost($('.content-post'));
-    showCommands();
-  }else{
-    showPost($(this));
-    showCommands();
-  }
-});
+  $('.content-post').click(function() {
+    if(isDisablePost()){
+      backgroundPost.removeClass('disable');
+      enablePost();
+      showPost($('.content-post'));
+      showCommands();
+    }else{
+      showPost($(this));
+      showCommands();
+    }
+  });
 
-$('.command-top .down').click(function(){
-  hiddenCommands();
-});
-
-$('.command-left .icon-th').click(function(){
-  if(isDisablePost()){
-    backgroundPost.removeClass('disable');
-  }else{
+  $('.command-top .down').click(function(){
     hiddenCommands();
-    backgroundPost.addClass('disable');
-    disablePost();
+  });
+
+  $('.command-left .icon-th').click(function(){
+    if(isDisablePost()){
+      backgroundPost.removeClass('disable');
+    }else{
+      hiddenCommands();
+      backgroundPost.addClass('disable');
+      disablePost();
+    }
+  });
+
+  enablePost();
+  initbackPost();
+  initContentPost();
+
+  function hiddenCommands(){
+    $('.command-left, .command-right, .command-top, .content-post').removeClass('active');
+    contentPostMain.mCustomScrollbar("destroy");
   }
-});
 
-enablePost();
-initbackPost();
-initContentPost();
+  function showCommands(){
+    $('.command-left, .command-right, .command-top').addClass('active');
+  }
 
-function hiddenCommands(){
-  $('.command-left, .command-right, .command-top, .content-post').removeClass('active');
-  contentPostMain.mCustomScrollbar("destroy");
-}
+  function showPost(param){
+    param.addClass('active').css("height",$(window).height());
+    if(!contentPostMain.hasClass('mCustomScrollbar')){
+        contentPostMain.mCustomScrollbar({
+                theme:"light-thin",
+                scrollInertia:150
+      });
+    }
+  }
 
-function showCommands(){
-  $('.command-left, .command-right, .command-top').addClass('active');
-}
+  function isDisablePost(){
+    return backgroundPost.hasClass('disable');
+  }
 
-function showPost(param){
-  param.addClass('active').css("height",$(window).height());
-  if(!contentPostMain.hasClass('mCustomScrollbar')){
-      contentPostMain.mCustomScrollbar({
-              theme:"light-thin",
-              scrollInertia:150
+  function enablePost(){
+    backgroundPost.css({
+      "width":$(window).width(),
+      "height":$(window).height(),
+      "top":"0"});
+
+    contentPost.css({
+      "width":$(window).width(),
+      "height":$(window).height(),
+      "background-size":"cover",
+      "background-attachment":"fixed",
+      "background-position":"50% 50%"});
+  }
+
+  function disablePost(){
+    backgroundPost.css({
+      "width":$(window).width()/1.5,
+      "height":$(window).height()/1.5,
+      "top":$(window).height()/3.2,
+      "background-size":"cover",
+      "background-attachment":"local",
+      "background-position":"50% 50%"});
+
+    contentPost.css({
+      "width":$(window).width()/1.5,
+      "height":$(window).height()/1.5,
+      "top":$(window).height()/3.2,
+      "background-size":"cover",
+      "background-attachment":"local",
+      "background-position":"50% 185%"});
+  }  
+
+  function initbackPost(){
+    backPost.css({
+      "width":$(window).width(),
+      "height":$(window).height()
     });
   }
-}
 
-function isDisablePost(){
-  return backgroundPost.hasClass('disable');
-}
-
-function enablePost(){
-  backgroundPost.css({
-    "width":$(window).width(),
-    "height":$(window).height(),
-    "top":"0"});
-}
-
-function disablePost(){
-  backgroundPost.css({
-    "width":$(window).width()/1.5,
-    "height":$(window).height()/1.5,
-    "top":$(window).height()/3.2,
-    "background-size":"contain",
-    "background-attachment":"local",
-    "background-position":"50% 50%"});
-}  
-
-function initbackPost(){
-  backPost.css({
-    "width":$(window).width(),
-    "height":$(window).height()
-  });
-}
-
-function initContentPost(){
-  contentPostMain.css({"height":$(window).height()/1.1});
+  function initContentPost(){
+    contentPostMain.css({"height":$(window).height()/1.1});
+  }
 }
 /**** Post ****/
 
@@ -321,28 +397,6 @@ if($('body').hasClass('video')){
   });
 }
   
-
-  /* Animation all */
-  var a = {  
-      widgets: null,
-      init: function () {
-        a.widgets = $(".widget");
-        $(document.body).addClass("loaded");
-          a.widgets.each(function (a) {
-            var b = $(this);
-            setTimeout(function () {
-              b.removeClass("unloaded");
-              setTimeout(function () {
-                b.removeClass("animation")
-              }, 300)
-            }, 100 * a)  
-          });
-      }
-
-   };
-
-  $(document).ready(a.init);
-  $(document).ready($("body").removeClass("paused"));
 
   function waitForIt(el, callback){
     el.on("mozAnimationEnd webkitAnimationEnd msAnimationEnd oAnimationEnd animationend mozAnimationEnd", callback);
