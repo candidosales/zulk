@@ -2,27 +2,18 @@ var Zulk  = (function () {
 
     var expand = false;
 
-    function insertCaption(y){
-        $(y['id']).closest(y['class']).find('.title-category-child').html(y['title']);
-
-        $(y['id']).closest(y['class']).find('.link-category-child').prop('title', (y['title']));
-        $(y['id']).closest(y['class']).find('.link-category-child').prop('href', (y['href']))
-
-        $(y['id']).closest(y['class']).find('span.view').html(y['view']);
-        $(y['id']).closest(y['class']).find('span.comment').html(y['comment']);
-        $(y['id']).closest(y['class']).find('span.favorite').html(y['favorite']);
-        $(y['id']).closest(y['class']).find('span.date').html(y['date']);
-    }
-
     function hoverBulletsNext(){
          $('ol.flex-control-nav li').mouseenter(function(){
+
           var index = $(this).index();
+          console.log(index);
+
           var obj = $(this).closest('.flexslider');
           $('#'+obj.attr('id')).data('flexslider').flexAnimate(index);
         });
     }
 
-    function initAnimation(){
+    function configureAnimation(){
         var  widgets = null;
         widgets = $(".widget");
         $(document.body).addClass("loaded");
@@ -41,7 +32,7 @@ var Zulk  = (function () {
 
     function presentationVideo(){
       $('body').css({"padding":"0","overflow":"hidden"});
-      $(document).ready(initAnimation());
+      $(document).ready(configureAnimation());
       $('#tile-1').hide();
       $('#presentation-video').attr({
                               height:$(window).height()*1.14, 
@@ -50,19 +41,20 @@ var Zulk  = (function () {
                               "margin":"-7% 0 0 -7%"
                             });
 
-      setInterval(function() {
+      setTimeout(function() {
         $('#presentation-video').remove();
         $('body').css({"padding":"1.8% 0","overflow":"hidden"});
         $('#tile-1').show();
 
         //Create Slide
         createAllSlide();
+        insertCaptionFirst();
         //create interactions
         interactionSlide();
         hoverBulletsNext();
 
         $(document).ready($("body").removeClass("paused"));
-      }, 4000);
+      }, 1000);
     }
 
     function closeVideo(){
@@ -160,12 +152,31 @@ var Zulk  = (function () {
         });
 
         //Inserir as informações na primeira imagem do slide
-          var count = 0;
+
+    }
+
+    function insertCaption(y){
+        $(y['id']).closest(y['class']).find('.title-category-child').html(y['title']);
+
+        $(y['id']).closest(y['class']).find('.link-category-child').prop('title', (y['title']));
+        $(y['id']).closest(y['class']).find('.link-category-child').prop('href', (y['href']))
+
+        $(y['id']).closest(y['class']).find('span.view').html(y['view']);
+        $(y['id']).closest(y['class']).find('span.comment').html(y['comment']);
+        $(y['id']).closest(y['class']).find('span.favorite').html(y['favorite']);
+        $(y['id']).closest(y['class']).find('span.date').html(y['date']);
+    }
+
+    function insertCaptionFirst(){
+        var count = 0;
           $('.slide').each(function(){
-              var link = $(this).find('a').first();
+              var link = $($(this).find('a')[1]);
 
               var a = new Array();
               a['title'] = link.attr('title');
+
+              console.log('Insert caption title: '+a['title']+'\n');
+
               a['href'] = link.attr('href');
               a['view'] = link.data('view');
               a['comment'] = link.data('comment');
@@ -195,8 +206,10 @@ var Zulk  = (function () {
 
     return {
         insertCaption:insertCaption,
+        insertCaptionFirst:insertCaptionFirst,
         hoverBulletsNext:hoverBulletsNext,
         presentationVideo:presentationVideo,
+        configureAnimation:configureAnimation,
         expandVideo:expandVideo,
         closeVideo:closeVideo,
         showVideo:showVideo,
@@ -209,7 +222,13 @@ var Zulk  = (function () {
 
   
 if($('body').hasClass('home')){
-  Zulk.presentationVideo();
+  $('.loading-home').css({"height":$(window).height(), "width":$(window).width()});
+  $(window).bind("load", function() {
+      $('.loading-home').fadeOut('3000', function(){
+        Zulk.presentationVideo();
+      });
+  });
+
 }
 
 
@@ -279,8 +298,8 @@ if($('body').hasClass('post-body')){
           source: '.background-post',
           overlay: 'rgba(0,0,0,0.5)',
           optClass: 'blur',
-          radius: 10,
-          cache: true
+          radius: 20,
+          cache: false
         });
 
   $('.content-post').click(function() {
@@ -365,7 +384,7 @@ if($('body').hasClass('post-body')){
       "top":$(window).height()/3.2,
       "background-size":"cover",
       "background-attachment":"local",
-      "background-position":"50% 185%"});
+      "background-position":"50% 190%"});
   }  
 
   function initbackPost(){

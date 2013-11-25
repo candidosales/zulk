@@ -10,10 +10,32 @@
       </div>
     </div>
     <div class="large-6 columns">
-      <a class="contrate">Contrate a Zulk</a>
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="<?php bloginfo('url')?>">
+                <span aria-hidden="true" class="icon-home"></span>
+              </a>
+            </li>
+            <li>
+              <a href="<?php bloginfo('url')?>">
+                <span aria-hidden="true" class="icon-windows"></span>
+              </a>
+            </li>
+            <li>
+              <a href="<?php bloginfo('url')?>">
+                <span class="qtd">3</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <a class="contrate">Contrate a Zulk</a>
+        </div>
+      </div>
     </div>
-  </div>
     <div class="row social-media animated fadeInBaseLineHome">
+      <!--
       <div class="large-2 columns">
         <div class="ultimas-noticias">
           <a href="<?php bloginfo('url')?>/page/todas-as-historias">
@@ -21,8 +43,8 @@
             <p><span class="small">TODAS AS</span><br><span class="noticias">Histórias</span></p>
           </a>
         </div>
-      </div>
-      <div class="large-8 columns wrapper-social">
+      </div>-->
+      <div class="large-8 columns large-centered wrapper-social">
         <div class="social-habilita">
           <p><span aria-hidden="true" class="icon-chevron-up"></span></p>
           <p>SOCIAL</p>
@@ -60,6 +82,7 @@
           </li>
         </ul>
       </div>
+      <!--
       <div class="large-2 columns">
         <div class="ultimas-noticias">
            <a href="<?php bloginfo('url')?>/category/ultimas-noticias">
@@ -69,5 +92,5 @@
               </span>
             </a>
         </div>
-      </div>
+      </div>-->
     </div>
