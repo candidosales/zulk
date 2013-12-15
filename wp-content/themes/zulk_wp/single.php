@@ -1,7 +1,8 @@
 <?php get_header();  
-      while (have_posts()) {  the_post(); 
+      while (have_posts()) {  
+        the_post(); 
         $src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
-
+        $id_current = $post->ID;
         ?>
         
 
@@ -14,6 +15,11 @@
       <li>
         <a href="#">
           <span  aria-hidden="true" class="icon-th icon"></span>
+        </a>
+      </li>
+      <li>
+        <a class="command-gallery" href="#">
+          <span aria-hidden="true" class="icon-camera"></span>
         </a>
       </li>
     </ul>
@@ -74,10 +80,35 @@
     </div>
   </div>
   <div class="background-post" style="background:url(<?php echo $src[0]?>) no-repeat center center fixed;-webkit-background-size:cover">
+    <div class="gallery-hidden">
+      <?php
+        echo gallery_hidden($id_current);
+      ?>
+    </div>
     <div class="content-post" >
       <div class="main">
+        <?php
+          query_posts( 'p='.$id_current );
+          while ( have_posts() ) { 
+            the_post();
+
+        ?>
         <header>
-            <h1>
+            <div class="row action-title">
+              <div class="large-6 columns">
+                <a class="right more-history" href="#">
+                  <span aria-hidden="true" class="icon-tn icon"></span>
+                  Mais Histórias
+                </a>
+              </div>
+              <div class="large-6 columns">
+                <a class="left gallery" href="#">
+                  <span aria-hidden="true" class="icon-camera"></span>
+                  Galeria de Fotos
+                </a>
+              </div>
+            </div>
+            <h1 class="title">
               <?php the_title(); ?>
             </h1>
             <p class="date">
@@ -86,20 +117,13 @@
         </header>
         <article>
             <?php the_content(); ?>
-        </article>    
+        </article> 
+        <?php } 
+          wp_reset_query();
+        ?>   
       </div>
     </div>
   </div>
-<script type="text/javascript">
-  $(function() {
-    /*$.vegas({
-      src:'<?php echo $src[0]?>'
-    })('overlay', {
-      src:'/vegas/overlays/13.png'
-    });*/
-    
-  });
-</script>
 <?php 
 
 }

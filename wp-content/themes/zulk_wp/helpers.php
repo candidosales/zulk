@@ -95,15 +95,36 @@ function categoryPostsBySlug($slug='',$tam=''){
 function categoryPosts($cat_id='',$tam=''){
 
            $cat_post = new WP_Query(array('showposts' => 1,'cat' => $cat_id));
+           $category =  get_the_category_by_ID($cat_id);
+
 
             if($cat_post->have_posts()){
               while($cat_post->have_posts()) { 
                 $cat_post->the_post();
                 $thumb = thumbUrl(get_the_ID(), $tam);
-                $diff = diffBetweenDates(the_date("Y-m-d",'','',FALSE));
+                $diff = diffBetweenDates(the_date("Y-m-d",'','',FALSE));     
 
-                $tam == 'category-thumb-1' ? $class='large' : $class='small';
-          
+              echo '<div class="back" style="background:url('.$thumb.') no-repeat center center;-webkit-background-size:cover">
+            
+              <div class="front">
+
+                <div class="category">
+                  <h3>'.$category.'</h3>
+                </div>
+                <div class="title">
+                  <a href="'.get_permalink(get_the_ID()).'" rel="bookmark" title="">
+                    <h2>'.get_the_title().'</h2>
+                  </a>
+                  <p class="date">há 15 horas        356 views</p>
+                  <span></span>
+                </div>
+                <p><span aria-hidden="true" class="icon-heart icon" title="Ame!"></span></p>
+                
+              </div>
+            </div>';
+/*
+                
+         //$tam == 'category-thumb-1' ? $class='large' : $class='small';
          echo '<div class="container-sub-cat">
             <a href="'.get_permalink(get_the_ID()).'" rel="bookmark" title="">
               <img class="principal"  src="'.$thumb.'" alt="">
@@ -124,7 +145,7 @@ function categoryPosts($cat_id='',$tam=''){
                 <li class="share"><span aria-hidden="true" class="icon-export icon"></span> </li>
               </ul>
           </div>';
-     
+     */
        }
     }
      
@@ -237,3 +258,101 @@ function get_youtube_screen( $url = '', $type = 'default', $echo = true ) {
     else
         return $img;
 }
+
+add_filter('post_gallery', 'my_post_gallery', 10, 2);
+function my_post_gallery($output, $attr) {
+    global $post;
+
+    if (isset($attr['orderby'])) {
+        $attr['orderby'] = sanitize_sql_orderby($attr['orderby']);
+        if (!$attr['orderby'])
+            unset($attr['orderby']);
+    }
+
+    extract(shortcode_atts(array(
+        'order' => 'ASC',
+        'orderby' => 'menu_order ID',
+        'id' => $post->ID,
+        'itemtag' => 'dl',
+        'icontag' => 'dt',
+        'captiontag' => 'dd',
+        'columns' => 3,
+        'size' => 'thumbnail',
+        'include' => '',
+        'exclude' => ''
+    ), $attr));
+
+    $id = intval($id);
+    if ('RAND' == $order) $orderby = 'none';
+
+    if (!empty($include)) {
+        $include = preg_replace('/[^0-9,]+/', '', $include);
+        $_attachments = get_posts(array('include' => $include, 'post_status' => 'inherit', 'post_type' => 'attachment', 'post_mime_type' => 'image', 'order' => $order, 'orderby' => $orderby));
+
+        $attachments = array();
+        foreach ($_attachments as $key => $val) {
+            $attachments[$val->ID] = $_attachments[$key];
+        }
+    }
+
+    if (empty($attachments)) return '';
+
+    // Here's your actual output, you may customize it to your need
+    $output .= "<ul id=\"clearing\" class=\"clearing-thumbs\" data-clearing>\n";
+
+    // Now you loop through each attachment
+    foreach ($attachments as $id => $attachment) {
+        // Fetch the thumbnail (or full image, it's up to you)
+//      $img = wp_get_attachment_image_src($id, 'medium');
+//      $img = wp_get_attachment_image_src($id, 'my-custom-image-size');
+        $img_th = wp_get_attachment_image_src($id, 'thumbnail');
+        $img = wp_get_attachment_image_src($id, 'full');
+
+        $output .= "<li>\n";
+        $output .= "<a class=\"th\" href=\"{$img[0]}\"><img src=\"{$img_th[0]}\" width=\"{$img_th[1]}\" height=\"{$img_th[2]}\" alt=\"\" /></a>\n";
+        $output .= "</li>\n";
+    }
+
+    $output .= "</ul>\n";
+
+    return $output;
+}
+
+ function gallery_hidden( $id ) {
+
+  $post = get_post($id);
+
+  $content = '';
+  // Only do this on singular items
+  if( ! is_singular() )
+    return $content;
+
+  // Make sure the post has a gallery in it
+  if( ! has_shortcode( $post->post_content, 'gallery' ) )
+    return $content;
+
+  // Retrieve all galleries of this post
+  //$galleries = get_post_galleries_images( $post );
+
+  $gallery = get_post_gallery( $id, false );
+  $ids_images = explode(',',$gallery['ids']);
+
+  $image_list = '<ul id="clearing-hidden" class="clearing-thumbs" data-clearing>';
+
+    // Loop through each image in each gallery
+    foreach( $ids_images as $id ) {
+      $img_th = wp_get_attachment_image_src($id, 'thumbnail');
+      $img = wp_get_attachment_image_src($id, 'full');
+
+      $image_list .= '<li><a class="th" href="' . $img[0] . '"><img src="'.$img_th[0].'" width="'.$img_th[1].'" height="'.$img_th[2].'" ></a></li>';
+
+    }
+
+  $image_list .= '</ul>';
+
+  // Append our image list to the content of our post
+  $content .= $image_list;
+
+  return $content;
+
+ }

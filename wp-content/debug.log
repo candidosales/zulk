@@ -7361,3 +7361,207 @@ Stack trace:
 [25-Nov-2013 18:48:27 UTC] PHP   8. do_action() C:\www\zulk\wp-includes\post.php:2882
 [25-Nov-2013 18:48:27 UTC] PHP   9. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:406
 [25-Nov-2013 18:48:27 UTC] PHP  10. save_post_large() C:\www\zulk\wp-includes\plugin.php:406
+[27-Nov-2013 18:31:46 UTC] PHP Notice:  Undefined index: url_video in C:\www\zulk\wp-content\themes\zulk_wp\custom_meta\custom_input.php on line 37
+[27-Nov-2013 18:31:46 UTC] PHP Stack trace:
+[27-Nov-2013 18:31:46 UTC] PHP   1. {main}() C:\www\zulk\wp-admin\post.php:0
+[27-Nov-2013 18:31:46 UTC] PHP   2. include() C:\www\zulk\wp-admin\post.php:198
+[27-Nov-2013 18:31:46 UTC] PHP   3. _wp_upgrade_revisions_of_post() C:\www\zulk\wp-admin\edit-form-advanced.php:119
+[27-Nov-2013 18:31:46 UTC] PHP   4. wp_save_post_revision() C:\www\zulk\wp-includes\revision.php:600
+[27-Nov-2013 18:31:46 UTC] PHP   5. _wp_put_post_revision() C:\www\zulk\wp-includes\revision.php:117
+[27-Nov-2013 18:31:46 UTC] PHP   6. wp_insert_post() C:\www\zulk\wp-includes\revision.php:236
+[27-Nov-2013 18:31:46 UTC] PHP   7. do_action() C:\www\zulk\wp-includes\post.php:2882
+[27-Nov-2013 18:31:46 UTC] PHP   8. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:406
+[27-Nov-2013 18:31:46 UTC] PHP   9. save_post_meta_video() C:\www\zulk\wp-includes\plugin.php:406
+[27-Nov-2013 18:31:46 UTC] PHP Notice:  Undefined index: large in C:\www\zulk\wp-content\themes\zulk_wp\custom_meta\custom_input.php on line 65
+[27-Nov-2013 18:31:46 UTC] PHP Stack trace:
+[27-Nov-2013 18:31:46 UTC] PHP   1. {main}() C:\www\zulk\wp-admin\post.php:0
+[27-Nov-2013 18:31:46 UTC] PHP   2. include() C:\www\zulk\wp-admin\post.php:198
+[27-Nov-2013 18:31:46 UTC] PHP   3. _wp_upgrade_revisions_of_post() C:\www\zulk\wp-admin\edit-form-advanced.php:119
+[27-Nov-2013 18:31:46 UTC] PHP   4. wp_save_post_revision() C:\www\zulk\wp-includes\revision.php:600
+[27-Nov-2013 18:31:46 UTC] PHP   5. _wp_put_post_revision() C:\www\zulk\wp-includes\revision.php:117
+[27-Nov-2013 18:31:46 UTC] PHP   6. wp_insert_post() C:\www\zulk\wp-includes\revision.php:236
+[27-Nov-2013 18:31:46 UTC] PHP   7. do_action() C:\www\zulk\wp-includes\post.php:2882
+[27-Nov-2013 18:31:46 UTC] PHP   8. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:406
+[27-Nov-2013 18:31:46 UTC] PHP   9. save_post_large() C:\www\zulk\wp-includes\plugin.php:406
+[27-Nov-2013 19:07:12 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in C:\www\zulk\wp-includes\post.php on line 598
+[27-Nov-2013 19:07:12 UTC] PHP Stack trace:
+[27-Nov-2013 19:07:12 UTC] PHP   1. {main}() C:\www\zulk\index.php:0
+[27-Nov-2013 19:07:12 UTC] PHP   2. require() C:\www\zulk\index.php:17
+[27-Nov-2013 19:07:12 UTC] PHP   3. require_once() C:\www\zulk\wp-blog-header.php:16
+[27-Nov-2013 19:07:12 UTC] PHP   4. include() C:\www\zulk\wp-includes\template-loader.php:47
+[27-Nov-2013 19:07:12 UTC] PHP   5. include() C:\www\zulk\wp-content\themes\zulk_wp\single.php:60
+[27-Nov-2013 19:07:12 UTC] PHP   6. thumbUrl() C:\www\zulk\wp-content\themes\zulk_wp\posts-relacionados.php:21
+[27-Nov-2013 19:07:12 UTC] PHP   7. wp_get_attachment_image_src() C:\www\zulk\wp-content\themes\zulk_wp\helpers.php:9
+[27-Nov-2013 19:07:12 UTC] PHP   8. image_downsize() C:\www\zulk\wp-includes\media.php:511
+[27-Nov-2013 19:07:12 UTC] PHP   9. wp_get_attachment_url() C:\www\zulk\wp-includes\media.php:145
+[27-Nov-2013 19:07:12 UTC] PHP  10. get_post() C:\www\zulk\wp-includes\post.php:4178
+[27-Nov-2013 19:07:12 UTC] PHP  11. WP_Post::get_instance() C:\www\zulk\wp-includes\post.php:402
+[03-Dec-2013 18:54:28 UTC] PHP Parse error:  syntax error, unexpected ';' in C:\www\zulk\wp-content\themes\zulk_wp\category-historias-zulk.php on line 17
+[03-Dec-2013 18:54:28 UTC] PHP Stack trace:
+[03-Dec-2013 18:54:28 UTC] PHP   1. {main}() C:\www\zulk\index.php:0
+[03-Dec-2013 18:54:28 UTC] PHP   2. require() C:\www\zulk\index.php:17
+[03-Dec-2013 18:54:28 UTC] PHP   3. require_once() C:\www\zulk\wp-blog-header.php:16
+[03-Dec-2013 20:46:55 UTC] PHP Notice:  Undefined index: url_video in C:\www\zulk\wp-content\themes\zulk_wp\custom_meta\custom_input.php on line 37
+[03-Dec-2013 20:46:55 UTC] PHP Stack trace:
+[03-Dec-2013 20:46:55 UTC] PHP   1. {main}() C:\www\zulk\wp-admin\index.php:0
+[03-Dec-2013 20:46:55 UTC] PHP   2. wp_dashboard() C:\www\zulk\wp-admin\index.php:129
+[03-Dec-2013 20:46:55 UTC] PHP   3. do_meta_boxes() C:\www\zulk\wp-admin\includes\dashboard.php:207
+[03-Dec-2013 20:46:55 UTC] PHP   4. call_user_func() C:\www\zulk\wp-admin\includes\template.php:925
+[03-Dec-2013 20:46:55 UTC] PHP   5. wp_dashboard_quick_press() C:\www\zulk\wp-admin\includes\template.php:925
+[03-Dec-2013 20:46:55 UTC] PHP   6. get_default_post_to_edit() C:\www\zulk\wp-admin\includes\dashboard.php:494
+[03-Dec-2013 20:46:55 UTC] PHP   7. wp_insert_post() C:\www\zulk\wp-admin\includes\post.php:451
+[03-Dec-2013 20:46:55 UTC] PHP   8. do_action() C:\www\zulk\wp-includes\post.php:2882
+[03-Dec-2013 20:46:55 UTC] PHP   9. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:406
+[03-Dec-2013 20:46:55 UTC] PHP  10. save_post_meta_video() C:\www\zulk\wp-includes\plugin.php:406
+[03-Dec-2013 20:46:55 UTC] PHP Notice:  Undefined index: large in C:\www\zulk\wp-content\themes\zulk_wp\custom_meta\custom_input.php on line 65
+[03-Dec-2013 20:46:55 UTC] PHP Stack trace:
+[03-Dec-2013 20:46:55 UTC] PHP   1. {main}() C:\www\zulk\wp-admin\index.php:0
+[03-Dec-2013 20:46:55 UTC] PHP   2. wp_dashboard() C:\www\zulk\wp-admin\index.php:129
+[03-Dec-2013 20:46:55 UTC] PHP   3. do_meta_boxes() C:\www\zulk\wp-admin\includes\dashboard.php:207
+[03-Dec-2013 20:46:55 UTC] PHP   4. call_user_func() C:\www\zulk\wp-admin\includes\template.php:925
+[03-Dec-2013 20:46:55 UTC] PHP   5. wp_dashboard_quick_press() C:\www\zulk\wp-admin\includes\template.php:925
+[03-Dec-2013 20:46:55 UTC] PHP   6. get_default_post_to_edit() C:\www\zulk\wp-admin\includes\dashboard.php:494
+[03-Dec-2013 20:46:55 UTC] PHP   7. wp_insert_post() C:\www\zulk\wp-admin\includes\post.php:451
+[03-Dec-2013 20:46:55 UTC] PHP   8. do_action() C:\www\zulk\wp-includes\post.php:2882
+[03-Dec-2013 20:46:55 UTC] PHP   9. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:406
+[03-Dec-2013 20:46:55 UTC] PHP  10. save_post_large() C:\www\zulk\wp-includes\plugin.php:406
+[03-Dec-2013 20:47:07 UTC] PHP Notice:  Undefined index: url_video in C:\www\zulk\wp-content\themes\zulk_wp\custom_meta\custom_input.php on line 37
+[03-Dec-2013 20:47:07 UTC] PHP Stack trace:
+[03-Dec-2013 20:47:07 UTC] PHP   1. {main}() C:\www\zulk\wp-admin\post-new.php:0
+[03-Dec-2013 20:47:07 UTC] PHP   2. get_default_post_to_edit() C:\www\zulk\wp-admin\post-new.php:63
+[03-Dec-2013 20:47:07 UTC] PHP   3. wp_insert_post() C:\www\zulk\wp-admin\includes\post.php:451
+[03-Dec-2013 20:47:07 UTC] PHP   4. do_action() C:\www\zulk\wp-includes\post.php:2882
+[03-Dec-2013 20:47:07 UTC] PHP   5. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:406
+[03-Dec-2013 20:47:07 UTC] PHP   6. save_post_meta_video() C:\www\zulk\wp-includes\plugin.php:406
+[03-Dec-2013 20:47:07 UTC] PHP Notice:  Undefined index: large in C:\www\zulk\wp-content\themes\zulk_wp\custom_meta\custom_input.php on line 65
+[03-Dec-2013 20:47:07 UTC] PHP Stack trace:
+[03-Dec-2013 20:47:07 UTC] PHP   1. {main}() C:\www\zulk\wp-admin\post-new.php:0
+[03-Dec-2013 20:47:07 UTC] PHP   2. get_default_post_to_edit() C:\www\zulk\wp-admin\post-new.php:63
+[03-Dec-2013 20:47:07 UTC] PHP   3. wp_insert_post() C:\www\zulk\wp-admin\includes\post.php:451
+[03-Dec-2013 20:47:07 UTC] PHP   4. do_action() C:\www\zulk\wp-includes\post.php:2882
+[03-Dec-2013 20:47:07 UTC] PHP   5. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:406
+[03-Dec-2013 20:47:07 UTC] PHP   6. save_post_large() C:\www\zulk\wp-includes\plugin.php:406
+[05-Dec-2013 17:21:09 UTC] PHP Notice:  Undefined variable: slug in C:\www\zulk\wp-content\themes\zulk_wp\helpers.php on line 98
+[05-Dec-2013 17:21:09 UTC] PHP Stack trace:
+[05-Dec-2013 17:21:09 UTC] PHP   1. {main}() C:\www\zulk\index.php:0
+[05-Dec-2013 17:21:09 UTC] PHP   2. require() C:\www\zulk\index.php:17
+[05-Dec-2013 17:21:09 UTC] PHP   3. require_once() C:\www\zulk\wp-blog-header.php:16
+[05-Dec-2013 17:21:09 UTC] PHP   4. include() C:\www\zulk\wp-includes\template-loader.php:47
+[05-Dec-2013 17:21:09 UTC] PHP   5. categoryPostsBySlug() C:\www\zulk\wp-content\themes\zulk_wp\category-historias-zulk.php:15
+[05-Dec-2013 17:21:09 UTC] PHP   6. categoryPosts() C:\www\zulk\wp-content\themes\zulk_wp\helpers.php:91
+[05-Dec-2013 17:21:09 UTC] PHP Notice:  Trying to get property of non-object in C:\www\zulk\wp-content\themes\zulk_wp\helpers.php on line 111
+[05-Dec-2013 17:21:09 UTC] PHP Stack trace:
+[05-Dec-2013 17:21:09 UTC] PHP   1. {main}() C:\www\zulk\index.php:0
+[05-Dec-2013 17:21:09 UTC] PHP   2. require() C:\www\zulk\index.php:17
+[05-Dec-2013 17:21:09 UTC] PHP   3. require_once() C:\www\zulk\wp-blog-header.php:16
+[05-Dec-2013 17:21:09 UTC] PHP   4. include() C:\www\zulk\wp-includes\template-loader.php:47
+[05-Dec-2013 17:21:09 UTC] PHP   5. categoryPostsBySlug() C:\www\zulk\wp-content\themes\zulk_wp\category-historias-zulk.php:15
+[05-Dec-2013 17:21:09 UTC] PHP   6. categoryPosts() C:\www\zulk\wp-content\themes\zulk_wp\helpers.php:91
+[05-Dec-2013 17:22:54 UTC] PHP Notice:  Trying to get property of non-object in C:\www\zulk\wp-content\themes\zulk_wp\helpers.php on line 112
+[05-Dec-2013 17:22:54 UTC] PHP Stack trace:
+[05-Dec-2013 17:22:54 UTC] PHP   1. {main}() C:\www\zulk\index.php:0
+[05-Dec-2013 17:22:54 UTC] PHP   2. require() C:\www\zulk\index.php:17
+[05-Dec-2013 17:22:54 UTC] PHP   3. require_once() C:\www\zulk\wp-blog-header.php:16
+[05-Dec-2013 17:22:54 UTC] PHP   4. include() C:\www\zulk\wp-includes\template-loader.php:47
+[05-Dec-2013 17:22:54 UTC] PHP   5. categoryPostsBySlug() C:\www\zulk\wp-content\themes\zulk_wp\category-historias-zulk.php:15
+[05-Dec-2013 17:22:54 UTC] PHP   6. categoryPosts() C:\www\zulk\wp-content\themes\zulk_wp\helpers.php:91
+[05-Dec-2013 18:47:12 UTC] PHP Notice:  Undefined index: large in C:\www\zulk\wp-content\themes\zulk_wp\custom_meta\custom_input.php on line 65
+[05-Dec-2013 18:47:12 UTC] PHP Stack trace:
+[05-Dec-2013 18:47:12 UTC] PHP   1. {main}() C:\www\zulk\wp-admin\post.php:0
+[05-Dec-2013 18:47:12 UTC] PHP   2. edit_post() C:\www\zulk\wp-admin\post.php:218
+[05-Dec-2013 18:47:12 UTC] PHP   3. wp_update_post() C:\www\zulk\wp-admin\includes\post.php:272
+[05-Dec-2013 18:47:12 UTC] PHP   4. wp_insert_post() C:\www\zulk\wp-includes\post.php:2944
+[05-Dec-2013 18:47:12 UTC] PHP   5. do_action() C:\www\zulk\wp-includes\post.php:2882
+[05-Dec-2013 18:47:12 UTC] PHP   6. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:406
+[05-Dec-2013 18:47:12 UTC] PHP   7. save_post_large() C:\www\zulk\wp-includes\plugin.php:406
+[12-Dec-2013 21:16:00 UTC] PHP Notice:  Undefined index: url_video in C:\www\zulk\wp-content\themes\zulk_wp\custom_meta\custom_input.php on line 37
+[12-Dec-2013 21:16:00 UTC] PHP Stack trace:
+[12-Dec-2013 21:16:00 UTC] PHP   1. {main}() C:\www\zulk\wp-admin\index.php:0
+[12-Dec-2013 21:16:00 UTC] PHP   2. wp_dashboard() C:\www\zulk\wp-admin\index.php:129
+[12-Dec-2013 21:16:00 UTC] PHP   3. do_meta_boxes() C:\www\zulk\wp-admin\includes\dashboard.php:207
+[12-Dec-2013 21:16:00 UTC] PHP   4. call_user_func() C:\www\zulk\wp-admin\includes\template.php:925
+[12-Dec-2013 21:16:00 UTC] PHP   5. wp_dashboard_quick_press() C:\www\zulk\wp-admin\includes\template.php:925
+[12-Dec-2013 21:16:00 UTC] PHP   6. get_default_post_to_edit() C:\www\zulk\wp-admin\includes\dashboard.php:494
+[12-Dec-2013 21:16:00 UTC] PHP   7. wp_insert_post() C:\www\zulk\wp-admin\includes\post.php:451
+[12-Dec-2013 21:16:00 UTC] PHP   8. do_action() C:\www\zulk\wp-includes\post.php:2882
+[12-Dec-2013 21:16:00 UTC] PHP   9. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:406
+[12-Dec-2013 21:16:00 UTC] PHP  10. save_post_meta_video() C:\www\zulk\wp-includes\plugin.php:406
+[12-Dec-2013 21:16:00 UTC] PHP Notice:  Undefined index: large in C:\www\zulk\wp-content\themes\zulk_wp\custom_meta\custom_input.php on line 65
+[12-Dec-2013 21:16:00 UTC] PHP Stack trace:
+[12-Dec-2013 21:16:00 UTC] PHP   1. {main}() C:\www\zulk\wp-admin\index.php:0
+[12-Dec-2013 21:16:00 UTC] PHP   2. wp_dashboard() C:\www\zulk\wp-admin\index.php:129
+[12-Dec-2013 21:16:00 UTC] PHP   3. do_meta_boxes() C:\www\zulk\wp-admin\includes\dashboard.php:207
+[12-Dec-2013 21:16:00 UTC] PHP   4. call_user_func() C:\www\zulk\wp-admin\includes\template.php:925
+[12-Dec-2013 21:16:00 UTC] PHP   5. wp_dashboard_quick_press() C:\www\zulk\wp-admin\includes\template.php:925
+[12-Dec-2013 21:16:00 UTC] PHP   6. get_default_post_to_edit() C:\www\zulk\wp-admin\includes\dashboard.php:494
+[12-Dec-2013 21:16:00 UTC] PHP   7. wp_insert_post() C:\www\zulk\wp-admin\includes\post.php:451
+[12-Dec-2013 21:16:00 UTC] PHP   8. do_action() C:\www\zulk\wp-includes\post.php:2882
+[12-Dec-2013 21:16:00 UTC] PHP   9. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:406
+[12-Dec-2013 21:16:00 UTC] PHP  10. save_post_large() C:\www\zulk\wp-includes\plugin.php:406
+[15-Dec-2013 20:14:00 UTC] PHP Notice:  Undefined index: large in C:\www\zulk\wp-content\themes\zulk_wp\custom_meta\custom_input.php on line 65
+[15-Dec-2013 20:14:00 UTC] PHP Stack trace:
+[15-Dec-2013 20:14:00 UTC] PHP   1. {main}() C:\www\zulk\wp-admin\post.php:0
+[15-Dec-2013 20:14:00 UTC] PHP   2. edit_post() C:\www\zulk\wp-admin\post.php:225
+[15-Dec-2013 20:14:00 UTC] PHP   3. wp_update_post() C:\www\zulk\wp-admin\includes\post.php:281
+[15-Dec-2013 20:14:00 UTC] PHP   4. wp_insert_post() C:\www\zulk\wp-includes\post.php:3023
+[15-Dec-2013 20:14:00 UTC] PHP   5. do_action() C:\www\zulk\wp-includes\post.php:2957
+[15-Dec-2013 20:14:00 UTC] PHP   6. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:429
+[15-Dec-2013 20:14:00 UTC] PHP   7. wp_save_post_revision() C:\www\zulk\wp-includes\plugin.php:429
+[15-Dec-2013 20:14:00 UTC] PHP   8. _wp_put_post_revision() C:\www\zulk\wp-includes\revision.php:117
+[15-Dec-2013 20:14:00 UTC] PHP   9. wp_insert_post() C:\www\zulk\wp-includes\revision.php:236
+[15-Dec-2013 20:14:00 UTC] PHP  10. do_action() C:\www\zulk\wp-includes\post.php:2961
+[15-Dec-2013 20:14:00 UTC] PHP  11. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:429
+[15-Dec-2013 20:14:00 UTC] PHP  12. save_post_large() C:\www\zulk\wp-includes\plugin.php:429
+[15-Dec-2013 20:14:00 UTC] PHP Notice:  Undefined index: large in C:\www\zulk\wp-content\themes\zulk_wp\custom_meta\custom_input.php on line 65
+[15-Dec-2013 20:14:00 UTC] PHP Stack trace:
+[15-Dec-2013 20:14:00 UTC] PHP   1. {main}() C:\www\zulk\wp-admin\post.php:0
+[15-Dec-2013 20:14:00 UTC] PHP   2. edit_post() C:\www\zulk\wp-admin\post.php:225
+[15-Dec-2013 20:14:00 UTC] PHP   3. wp_update_post() C:\www\zulk\wp-admin\includes\post.php:281
+[15-Dec-2013 20:14:00 UTC] PHP   4. wp_insert_post() C:\www\zulk\wp-includes\post.php:3023
+[15-Dec-2013 20:14:00 UTC] PHP   5. do_action() C:\www\zulk\wp-includes\post.php:2961
+[15-Dec-2013 20:14:00 UTC] PHP   6. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:429
+[15-Dec-2013 20:14:00 UTC] PHP   7. save_post_large() C:\www\zulk\wp-includes\plugin.php:429
+[15-Dec-2013 20:23:58 UTC] PHP Notice:  Undefined index: large in C:\www\zulk\wp-content\themes\zulk_wp\custom_meta\custom_input.php on line 65
+[15-Dec-2013 20:23:58 UTC] PHP Stack trace:
+[15-Dec-2013 20:23:58 UTC] PHP   1. {main}() C:\www\zulk\wp-admin\post.php:0
+[15-Dec-2013 20:23:58 UTC] PHP   2. edit_post() C:\www\zulk\wp-admin\post.php:225
+[15-Dec-2013 20:23:58 UTC] PHP   3. wp_update_post() C:\www\zulk\wp-admin\includes\post.php:281
+[15-Dec-2013 20:23:58 UTC] PHP   4. wp_insert_post() C:\www\zulk\wp-includes\post.php:3023
+[15-Dec-2013 20:23:58 UTC] PHP   5. do_action() C:\www\zulk\wp-includes\post.php:2961
+[15-Dec-2013 20:23:58 UTC] PHP   6. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:429
+[15-Dec-2013 20:23:58 UTC] PHP   7. save_post_large() C:\www\zulk\wp-includes\plugin.php:429
+[15-Dec-2013 22:01:59 UTC] PHP Notice:  Array to string conversion in C:\www\zulk\wp-content\themes\zulk_wp\single.php on line 86
+[15-Dec-2013 22:01:59 UTC] PHP Stack trace:
+[15-Dec-2013 22:01:59 UTC] PHP   1. {main}() C:\www\zulk\index.php:0
+[15-Dec-2013 22:01:59 UTC] PHP   2. require() C:\www\zulk\index.php:17
+[15-Dec-2013 22:01:59 UTC] PHP   3. require_once() C:\www\zulk\wp-blog-header.php:16
+[15-Dec-2013 22:01:59 UTC] PHP   4. include() C:\www\zulk\wp-includes\template-loader.php:74
+[15-Dec-2013 22:09:50 UTC] PHP Notice:  Undefined variable: content in C:\www\zulk\wp-content\themes\zulk_wp\helpers.php on line 353
+[15-Dec-2013 22:09:50 UTC] PHP Stack trace:
+[15-Dec-2013 22:09:50 UTC] PHP   1. {main}() C:\www\zulk\index.php:0
+[15-Dec-2013 22:09:50 UTC] PHP   2. require() C:\www\zulk\index.php:17
+[15-Dec-2013 22:09:50 UTC] PHP   3. require_once() C:\www\zulk\wp-blog-header.php:16
+[15-Dec-2013 22:09:50 UTC] PHP   4. include() C:\www\zulk\wp-includes\template-loader.php:74
+[15-Dec-2013 22:09:50 UTC] PHP   5. gallery_hidden() C:\www\zulk\wp-content\themes\zulk_wp\single.php:85
+[15-Dec-2013 22:38:36 UTC] PHP Deprecated:  Function split() is deprecated in C:\www\zulk\wp-content\themes\zulk_wp\helpers.php on line 338
+[15-Dec-2013 22:38:36 UTC] PHP Stack trace:
+[15-Dec-2013 22:38:36 UTC] PHP   1. {main}() C:\www\zulk\index.php:0
+[15-Dec-2013 22:38:36 UTC] PHP   2. require() C:\www\zulk\index.php:17
+[15-Dec-2013 22:38:36 UTC] PHP   3. require_once() C:\www\zulk\wp-blog-header.php:16
+[15-Dec-2013 22:38:36 UTC] PHP   4. include() C:\www\zulk\wp-includes\template-loader.php:74
+[15-Dec-2013 22:38:36 UTC] PHP   5. gallery_hidden() C:\www\zulk\wp-content\themes\zulk_wp\single.php:85
+[15-Dec-2013 23:37:25 UTC] PHP Notice:  Trying to get property of non-object in C:\www\zulk\wp-content\themes\zulk_wp\helpers.php on line 91
+[15-Dec-2013 23:37:25 UTC] PHP Stack trace:
+[15-Dec-2013 23:37:25 UTC] PHP   1. {main}() C:\www\zulk\index.php:0
+[15-Dec-2013 23:37:25 UTC] PHP   2. require() C:\www\zulk\index.php:17
+[15-Dec-2013 23:37:25 UTC] PHP   3. require_once() C:\www\zulk\wp-blog-header.php:16
+[15-Dec-2013 23:37:25 UTC] PHP   4. include() C:\www\zulk\wp-includes\template-loader.php:74
+[15-Dec-2013 23:37:25 UTC] PHP   5. categoryPostsBySlug() C:\www\zulk\wp-content\themes\zulk_wp\category-fotografos.php:31
+[15-Dec-2013 23:37:25 UTC] PHP Catchable fatal error:  Object of class WP_Error could not be converted to string in C:\www\zulk\wp-content\themes\zulk_wp\helpers.php on line 112
+[15-Dec-2013 23:37:25 UTC] PHP Stack trace:
+[15-Dec-2013 23:37:25 UTC] PHP   1. {main}() C:\www\zulk\index.php:0
+[15-Dec-2013 23:37:25 UTC] PHP   2. require() C:\www\zulk\index.php:17
+[15-Dec-2013 23:37:25 UTC] PHP   3. require_once() C:\www\zulk\wp-blog-header.php:16
+[15-Dec-2013 23:37:25 UTC] PHP   4. include() C:\www\zulk\wp-includes\template-loader.php:74
+[15-Dec-2013 23:37:25 UTC] PHP   5. categoryPostsBySlug() C:\www\zulk\wp-content\themes\zulk_wp\category-fotografos.php:31
+[15-Dec-2013 23:37:25 UTC] PHP   6. categoryPosts() C:\www\zulk\wp-content\themes\zulk_wp\helpers.php:91

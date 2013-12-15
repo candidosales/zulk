@@ -111,7 +111,7 @@ input.search{.border-radius(20px);margin:5% 0 0 0;}
    .noticias{font-size: 1.2em;margin:0 0 0 15%;}
 }
 
-.qtd{background: #ed0000;padding: 2px 5px;.border-radius();color: #fff;font-weight: bold; text-shadow:1px 1px 0px #000; .drop-shadow(1px, 2px, 3px, 0.6);float: right}
+.qtd{background: #ed0000;padding: 1px 8px;.border-radius(5px);color: #fff;font-weight: bold; text-shadow:1px 1px 0px #000; .drop-shadow(1px, 2px, 3px, 0.6);float: right}
 
 .arrow-right, .arrow-left{
    color:#fff;font-size: 3.0em;
@@ -532,6 +532,110 @@ body{background: url(../images/back.jpg) repeat fixed #000; color:#fff;}
      margin: 0 2% 0 7%;
   }
 }
+.wrapper-page{
+  height: 500px;
+  width: 890px;
+  margin: 0 5%;
+    .main{
+      height: 332px;
+        .sub-1{
+          height: 332px;
+          width: 667px;
+          float: left;
+          .back,.front{
+            height: 332px;
+            width: 667px;
+            .transition(margin 0.3s ease);
+          }
+          .back{
+            overflow: hidden;
+          }
+          .front{
+            margin-top: 332px;
+            padding: 2%;
+            &.move{
+              margin-top: 0px;
+            }
+            .category{
+              height: initial;
+              h3{
+                text-align: center;
+                text-transform: uppercase;
+                color: #fff;
+                font-size: 1em;
+              }
+            }
+            .title{
+              padding: 15% 8% 4% 8%;
+              h2{
+                color: #fff;
+                font-weight: bold;
+                font-size: 1.4em;
+                text-align: center;
+              }
+              .date{
+                font-weight: normal;
+                font-size: 0.6em;
+                text-align: center;
+              }
+            }
+            p{
+              text-align: center;
+              font-size: 2em;
+            }
+          }
+        }
+    }
+    .sub-2{
+      height: 165px;
+      width: 221px;
+      float: left;
+      margin: 1px 1px 0 0;
+          .back,.front{
+            height: 165px;
+            width: 221px;
+            .transition(margin 0.3s ease);
+          }
+          .back{
+            overflow: hidden;
+          }
+          .front{
+            margin-top: 165px;
+            padding: 2%;
+            &.move{
+              margin-top: 0px;
+            }
+            .category{
+              height: initial;
+              h3{
+                text-align: center;
+                text-transform: uppercase;
+                color: #fff;
+                font-size: 0.8em;
+              }
+            }
+            .title{
+              padding: 5% 8% 0% 8%;
+              h2{
+                color: #fff;
+                font-weight: bold;
+                font-size: 1em;
+                text-align: center;
+              }
+              .date{
+                font-weight: normal;
+                font-size: 0.6em;
+                text-align: center;
+              }
+            }
+            p{
+              text-align: center;
+              font-size: 2em;
+              margin: 0;
+            }
+          }
+        }
+}
 .wrapper-content{
   width:auto;
   height:405px; 
@@ -612,6 +716,7 @@ body{background: url(../images/back.jpg) repeat fixed #000; color:#fff;}
 }
 h2{
   &.parent-category{
+    padding-left:5%;
     font-weight: 300;
     font-size: 2em;
   }
@@ -884,7 +989,7 @@ body.post-body{
 .clearing-assembled .clearing-container .visible-img, .clearing-assembled .clearing-container .carousel{
   background: url(../images/back.jpg) repeat;
 }
-
+/*
 .clearing-assembled .clearing-container ul[data-clearing] li{
   margin: 0 0% 0 1%;
   width: 100px;
@@ -911,7 +1016,7 @@ body.post-body{
     display: none;
   }
 }
-
+*/
 #scroll
       {
          width:100%;
@@ -1275,14 +1380,26 @@ body.post-body{
     height: 600px;
     overflow: auto;
   }
+  .action-title{
+    padding-bottom: 2%;
+    a{
+      padding-bottom: 2%;
+      color: #fff;
+      span{
+
+      }
+    }
+  }
   h1{
     color: #fff;
     font-family: @font-2;
-    font-size: 3.5em;
+    font-size: 2.5em;
     font-weight: 700;
     padding: 0;
     line-height: 1;
     margin: 0;
+    text-align: center;
+    text-shadow: 0px 0px 10px #000;
   }
   .date{
     text-align: right;

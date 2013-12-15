@@ -1,5 +1,7 @@
+
+
 <!-- Included JS Files (Compressed) -->
-<script src="<?php bloginfo('template_url'); ?>/javascripts/4.3.2/foundation.min.js"></script>
+<script src="<?php bloginfo('template_url'); ?>/javascripts/5.0.2/foundation.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/javascripts/jquery.masonry.min.js"></script>
 <script src="<?php bloginfo('template_url'); ?>/javascripts/jquery.swipebox.min.js"></script>
 

@@ -16,7 +16,8 @@
                    );
                   $my_query = new WP_Query($args);
                   if( $my_query->have_posts() ) {
-                    while ($my_query->have_posts()) : $my_query->the_post(); 
+                    while ($my_query->have_posts()) { 
+                      $my_query->the_post(); 
                       $thumb = thumbUrl($post->ID, 'related-post-1');
                     ?>
                      <div class="image">
@@ -32,8 +33,8 @@
                          </div>
                      </div>
                       <?php
-                    endwhile;
-                  }
+                    }
+                 }
               }   
           ?>
              </div>
