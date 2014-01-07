@@ -7565,3 +7565,30 @@ Stack trace:
 [15-Dec-2013 23:37:25 UTC] PHP   4. include() C:\www\zulk\wp-includes\template-loader.php:74
 [15-Dec-2013 23:37:25 UTC] PHP   5. categoryPostsBySlug() C:\www\zulk\wp-content\themes\zulk_wp\category-fotografos.php:31
 [15-Dec-2013 23:37:25 UTC] PHP   6. categoryPosts() C:\www\zulk\wp-content\themes\zulk_wp\helpers.php:91
+[07-Jan-2014 18:34:51 UTC] PHP Warning:  Ocorreu um erro inesperado. Algo pode estar errado com o WordPress.org ou com a configuração deste servidor. Se os problemas persistirem, busque ajuda no <a href="http://wordpress.org/support/">fórum de suporte</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in C:\www\zulk\wp-includes\update.php on line 267
+[07-Jan-2014 18:34:51 UTC] PHP Stack trace:
+[07-Jan-2014 18:34:51 UTC] PHP   1. {main}() C:\www\zulk\wp-cron.php:0
+[07-Jan-2014 18:34:51 UTC] PHP   2. do_action_ref_array() C:\www\zulk\wp-cron.php:100
+[07-Jan-2014 18:34:51 UTC] PHP   3. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:507
+[07-Jan-2014 18:34:51 UTC] PHP   4. wp_maybe_auto_update() C:\www\zulk\wp-includes\plugin.php:507
+[07-Jan-2014 18:34:51 UTC] PHP   5. WP_Automatic_Updater->run() C:\www\zulk\wp-includes\update.php:438
+[07-Jan-2014 18:34:51 UTC] PHP   6. wp_update_plugins() C:\www\zulk\wp-admin\includes\class-wp-upgrader.php:1968
+[07-Jan-2014 18:34:51 UTC] PHP   7. trigger_error() C:\www\zulk\wp-includes\update.php:267
+[07-Jan-2014 18:34:52 UTC] PHP Warning:  Ocorreu um erro inesperado. Algo pode estar errado com o WordPress.org ou com a configuração deste servidor. Se os problemas persistirem, busque ajuda no <a href="http://wordpress.org/support/">fórum de suporte</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in C:\www\zulk\wp-includes\update.php on line 407
+[07-Jan-2014 18:34:52 UTC] PHP Stack trace:
+[07-Jan-2014 18:34:52 UTC] PHP   1. {main}() C:\www\zulk\wp-cron.php:0
+[07-Jan-2014 18:34:52 UTC] PHP   2. do_action_ref_array() C:\www\zulk\wp-cron.php:100
+[07-Jan-2014 18:34:52 UTC] PHP   3. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:507
+[07-Jan-2014 18:34:52 UTC] PHP   4. wp_maybe_auto_update() C:\www\zulk\wp-includes\plugin.php:507
+[07-Jan-2014 18:34:52 UTC] PHP   5. WP_Automatic_Updater->run() C:\www\zulk\wp-includes\update.php:438
+[07-Jan-2014 18:34:52 UTC] PHP   6. wp_update_themes() C:\www\zulk\wp-admin\includes\class-wp-upgrader.php:1979
+[07-Jan-2014 18:34:52 UTC] PHP   7. trigger_error() C:\www\zulk\wp-includes\update.php:407
+[07-Jan-2014 18:34:53 UTC] PHP Warning:  Ocorreu um erro inesperado. Algo pode estar errado com o WordPress.org ou com a configuração deste servidor. Se os problemas persistirem, busque ajuda no <a href="http://wordpress.org/support/">fórum de suporte</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in C:\www\zulk\wp-includes\update.php on line 120
+[07-Jan-2014 18:34:53 UTC] PHP Stack trace:
+[07-Jan-2014 18:34:53 UTC] PHP   1. {main}() C:\www\zulk\wp-cron.php:0
+[07-Jan-2014 18:34:53 UTC] PHP   2. do_action_ref_array() C:\www\zulk\wp-cron.php:100
+[07-Jan-2014 18:34:53 UTC] PHP   3. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:507
+[07-Jan-2014 18:34:53 UTC] PHP   4. wp_maybe_auto_update() C:\www\zulk\wp-includes\plugin.php:507
+[07-Jan-2014 18:34:53 UTC] PHP   5. WP_Automatic_Updater->run() C:\www\zulk\wp-includes\update.php:438
+[07-Jan-2014 18:34:53 UTC] PHP   6. wp_version_check() C:\www\zulk\wp-admin\includes\class-wp-upgrader.php:1990
+[07-Jan-2014 18:34:53 UTC] PHP   7. trigger_error() C:\www\zulk\wp-includes\update.php:120

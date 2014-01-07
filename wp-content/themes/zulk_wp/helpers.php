@@ -337,7 +337,7 @@ function my_post_gallery($output, $attr) {
   $gallery = get_post_gallery( $id, false );
   $ids_images = explode(',',$gallery['ids']);
 
-  $image_list = '<ul id="clearing-hidden" class="clearing-thumbs" data-clearing>';
+  $image_list = '<ul class="clearing-thumbs" data-clearing>';
 
     // Loop through each image in each gallery
     foreach( $ids_images as $id ) {

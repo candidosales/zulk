@@ -331,19 +331,20 @@ if($('body').hasClass('post-body')){
       }
   });
 
+  /******* Gallery Post ********/
+
   $('.left.gallery').on('click', function (e) {
     console.log('left gallery');
-    $('.gallery-hidden').show();
-    $('#clearing-hidden li img').first().trigger('click');
+   // $('.gallery-hidden').show();
+    $('.clearing-thumbs li img').first().trigger('click');
   });
   $('.command-gallery').on('click', function (e) {
-    $('#clearing li img').first().trigger('click');
+    $('.clearing-thumbs li img').first().trigger('click');
   });
 
-  $('.clearing-close').on('click', function(){
-    console.info('hidden please');
-    $('.gallery-hidden').hide();
-  });
+     //Clearing slideshow
+  $(document).foundation();
+  //$('.gallery-hidden').hide();
 
 
   $('.command-top .down').click(function(){
@@ -430,10 +431,6 @@ if($('body').hasClass('post-body')){
   function initContentPost(){
     contentPostMain.css({"height":$(window).height()/1.1});
   }
-
-  //Clearing slideshow
-  $(document).foundation();
-  $('.gallery-hidden').hide();
 }
 /**** Post ****/
 
