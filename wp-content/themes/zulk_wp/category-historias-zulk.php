@@ -10,6 +10,7 @@
     </div>
     <div class="row margin-btn-2">
       <div class="large-12 columns no-padding wrapper-page">
+
         <div class="main">
           <div class="sub-1">
             <?php categoryPostsBySlug('casamentos','category-thumb-3');?>
@@ -17,20 +18,21 @@
           <div class="sub-2">
             <?php categoryPostsBySlug('formaturas','category-thumb-4');?>
           </div>
-          <div class="sub-2">
+          
+          <div class="sub-2 sub-3">
             <?php categoryPostsBySlug('15-anos','category-thumb-4');?>
           </div>
         </div>
-          <div class="sub-2">
+          <div class="sub-2 sub-4">
             <?php categoryPostsBySlug('criancas','category-thumb-4');?>
           </div>
-          <div class="sub-2">
+          <div class="sub-2 sub-5">
             <?php categoryPostsBySlug('sensuais','category-thumb-4');?>
           </div>
-          <div class="sub-2">
+          <div class="sub-2 sub-6">
             <?php categoryPostsBySlug('gravidas','category-thumb-4');?>
           </div>
-          <div class="sub-2">
+          <div class="sub-2 sub-7">
             <?php categoryPostsBySlug('gravidas','category-thumb-4');?>
           </div>
       </div>

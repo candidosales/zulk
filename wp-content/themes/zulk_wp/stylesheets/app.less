@@ -16,6 +16,7 @@
 body{
    font-family: @font-1;
    padding:2.5% 0 ;
+   -webkit-text-stroke: 0.2px;
 }
 a{
   .transition(all 0.3s ease);
@@ -136,6 +137,29 @@ input.search{.border-radius(20px);margin:5% 0 0 0;}
    .box{
       margin-bottom: 10px;
    }
+}
+
+.enter{
+  font-family: @font-2;
+  position: absolute;
+  bottom: -10%;
+  left: 35%;
+  font-size: 2em;
+  opacity: 0;
+  .transition(all 1s ease);
+  &.active{
+    opacity: 1;
+    bottom: 10%;
+  }
+  a{
+    color: #fff;
+    font-style:italic;
+  }
+  p{
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 0;
+  }
 }
 
 h2{font-family: @font-1;color: #fff; font-weight: normal;}
@@ -1247,6 +1271,7 @@ div.widget.animation, ul li.widget.animation {
   background: inherit;
   border: none;
   position: relative;
+  .box-shadow(none);
   .slides > li{
     .translateZ(0);
   }
@@ -1260,6 +1285,8 @@ div.widget.animation, ul li.widget.animation {
     width: 25%;
     float: left;
     margin: 0;
+    .box-shadow(none);
+
     a{ width:100%;color: #000;cursor: pointer;background:none;margin:5% 0 0 0;.transition(all 0.3s ease);background:#000; height:12px; border:none;border-radius: 0;
         &.flex-active{
           background:#fff;
@@ -1269,6 +1296,10 @@ div.widget.animation, ul li.widget.animation {
         }
       }
   }
+}
+
+.flex-control-paging li a{
+  .box-shadow(none);
 }
 
 .principal, .sub-principal{
@@ -1388,6 +1419,9 @@ body.post-body{
     a{
       padding-bottom: 2%;
       color: #fff;
+      p{
+      text-align:center;
+      }
       span{
 
       }

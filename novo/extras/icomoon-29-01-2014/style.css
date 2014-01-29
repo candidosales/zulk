@@ -9,26 +9,7 @@
 	font-style: normal;
 }
 
-/* Use the following CSS code if you want to use data attributes for inserting your icons */
-[data-icon]:before {
-	font-family: 'icomoon';
-	content: attr(data-icon);
-	speak: none;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-/* Use the following CSS code if you want to have a class per icon */
-/*
-Instead of a list of all class selectors,
-you can use the generic selector below, but it's slower:
-[class*="icon-"] {
-*/
-.icon-thumbs-up, .icon-twitter, .icon-google-plus, .icon-pinterest, .icon-arrow-left, .icon-arrow-right, .icon-baloon, .icon-eye, .icon-menu, .icon-export, .icon-heart, .icon-email, .icon-home, .icon-lightbulb, .icon-th, .icon-instagram, .icon-rss, .icon-youtube, .icon-vimeo, .icon-camera, .icon-question, .icon-facebook, .icon-uniF470, .icon-windows, .icon-expand, .icon-uniF48A, .icon-uniF489, .icon-uniF488 {
+[class^="icon-"], [class*=" icon-"] {
 	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
@@ -36,8 +17,12 @@ you can use the generic selector below, but it's slower:
 	font-variant: normal;
 	text-transform: none;
 	line-height: 1;
+
+	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
+
 .icon-thumbs-up:before {
 	content: "\e000";
 }
@@ -104,7 +89,7 @@ you can use the generic selector below, but it's slower:
 .icon-facebook:before {
 	content: "\f09a";
 }
-.icon-uniF470:before {
+.icon-close:before {
 	content: "\f470";
 }
 .icon-windows:before {
@@ -113,12 +98,15 @@ you can use the generic selector below, but it's slower:
 .icon-expand:before {
 	content: "\e00d";
 }
-.icon-uniF48A:before {
-	content: "\f48a";
+.icon-chevron-left:before {
+	content: "\f053";
 }
-.icon-uniF489:before {
-	content: "\f489";
+.icon-chevron-right:before {
+	content: "\f054";
 }
-.icon-uniF488:before {
-	content: "\f488";
+.icon-chevron-up:before {
+	content: "\f077";
+}
+.icon-chevron-down:before {
+	content: "\f078";
 }

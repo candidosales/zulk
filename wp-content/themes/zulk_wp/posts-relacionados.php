@@ -22,7 +22,7 @@
                     ?>
                      <div class="image">
                         <div class="front">
-                            <img src="<?php echo $thumb ?>"/>
+                            <img  class="lazy"  data-original="<?php echo $thumb ?>"/>
                         </div>
                         
                         <div class="back" >

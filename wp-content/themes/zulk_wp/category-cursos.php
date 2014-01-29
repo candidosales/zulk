@@ -17,20 +17,20 @@
           <div class="sub-2">
             <?php categoryPostsBySlug('zulk-master-class','category-thumb-4');?>
           </div>
-          <div class="sub-2">
+          <div class="sub-2 sub-3">
             <?php categoryPostsBySlug('flash','category-thumb-4');?>
           </div>
         </div>
-          <div class="sub-2">
+          <div class="sub-2 sub-4">
             <?php categoryPostsBySlug('fotografia','category-thumb-4');?>
           </div>
-          <div class="sub-2">
+          <div class="sub-2 sub-5">
             <?php categoryPostsBySlug('pos-producao','category-thumb-4');?>
           </div>
-          <div class="sub-2">
+          <div class="sub-2 sub-6">
             <?php categoryPostsBySlug('criando-portfolio','category-thumb-4');?>
           </div>
-          <div class="sub-2">
+          <div class="sub-2 sub-7">
             <?php categoryPostsBySlug('criando-portfolio','category-thumb-4');?>
           </div>
       </div>

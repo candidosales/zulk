@@ -17,20 +17,20 @@
           <div class="sub-2">
             <?php categoryPostsBySlug('dicas-diagramacao','category-thumb-4');?>
           </div>
-          <div class="sub-2">
+          <div class="sub-2 sub-3">
             <?php categoryPostsBySlug('linha-mimo','category-thumb-4');?>
           </div>
         </div>
-          <div class="sub-2">
+          <div class="sub-2 sub-4">
             <?php categoryPostsBySlug('linha-romana','category-thumb-4');?>
           </div>
-          <div class="sub-2">
+          <div class="sub-2 sub-5">
             <?php categoryPostsBySlug('linha-moderna','category-thumb-4');?>
           </div>
-          <div class="sub-2">
+          <div class="sub-2 sub-6">
             <?php categoryPostsBySlug('linha-fineart','category-thumb-4');?>
           </div>
-          <div class="sub-2">
+          <div class="sub-2 sub-7">
             <?php categoryPostsBySlug('linha-fineart','category-thumb-4');?>
           </div>
       </div>

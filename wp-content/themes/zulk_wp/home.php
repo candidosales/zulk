@@ -1,17 +1,16 @@
 <?php get_header(); ?>
 <body class="paused home">
-  <div class="loading-home">
-    <h2>Prepare-se para o novo mundo da fotografia!</h2>
-  </div>
-  <div class="move-video">
-
-  </div>  
-  <video id="presentation-video" class="fullscreen fill" autoplay="" loop="" muted="muted">
+  <video id="presentation-video" autoplay="" loop="" muted="muted">
         <source src="<?php bloginfo('template_url'); ?>/video/august_video_04.mp4" type="video/mp4; codecs="avc1.42E01E, mp4a.40.2"">
         <source src="<?php bloginfo('template_url'); ?>/video/august_video_04.ogv" type="video/ogg">
         <source src="<?php bloginfo('template_url'); ?>/video/august_video_04.webmhd.webm" type="video/webm">
   </video>
+  <div class="enter">
 
+    <a href="#">
+      <p><span class="icon-chevron-up"></span></p>
+      Entre para o novo mundo da fotografia!</a>
+  </div>
  <div id="tile-1" class="large-12 columns">
 <?php  include('menu.php'); ?>
     <div class="row thumb margin-btn-1">

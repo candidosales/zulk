@@ -9,6 +9,7 @@ if (function_exists('add_theme_support')) {
 	add_image_size( 'home-thumb-1', 440, 208, true );
 	add_image_size( 'home-thumb-2', 220, 190, true );
 	add_image_size( 'post-thumb-1', 764, 384, true );
+	add_image_size( 'post-thumb-2', 1600, 780, true );
 	add_image_size( 'category-thumb-1', 424, 160, true );
 	add_image_size( 'category-thumb-2', 195, 160, true );
 	add_image_size( 'category-thumb-3', 667, 332, true );

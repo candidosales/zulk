@@ -1,12 +1,12 @@
 <?php get_header();  
       while (have_posts()) {  
         the_post(); 
-        $src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
+        $src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'post-thumb-2' );
         $id_current = $post->ID;
         ?>
         
 
-<body class="post-body">
+<body class="post">
   <div class="command-left">
     <ul>
       <li id="prev" class="arrow-left left">
@@ -95,16 +95,22 @@
         ?>
         <header>
             <div class="row action-title">
-              <div class="large-6 columns">
-                <a class="right more-history" href="#">
-                  <span aria-hidden="true" class="icon-tn icon"></span>
-                  Mais Histórias
+              <div class="large-4 columns">
+                <a href="<?php bloginfo('url')?>">
+                  <p><span aria-hidden="true" class="icon-home icon"></span>
+                  Home</p>
                 </a>
               </div>
-              <div class="large-6 columns">
-                <a class="left gallery" href="#">
-                  <span aria-hidden="true" class="icon-camera"></span>
-                  Galeria de Fotos
+              <div class="large-4 columns">
+                <a class="more-history" href="#">
+                  <p><span aria-hidden="true" class="icon-windows icon"></span>
+                  Mais Histórias</p>
+                </a>
+              </div>
+              <div class="large-4 columns">
+                <a class="gallery" href="#">
+                  <p><span aria-hidden="true" class="icon-camera"></span>
+                  Galeria de Fotos</p>
                 </a>
               </div>
             </div>

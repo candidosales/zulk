@@ -17,20 +17,20 @@
           <div class="sub-2">
             <?php categoryPostsBySlug('ideias-legais','category-thumb-4');?>
           </div>
-          <div class="sub-2">
+          <div class="sub-2 sub-3">
             <?php categoryPostsBySlug('fornecedores','category-thumb-4');?>
           </div>
         </div>
-          <div class="sub-2">
+          <div class="sub-2 sub-4">
             <?php categoryPostsBySlug('planejando-casamento','category-thumb-4');?>
           </div>
-          <div class="sub-2">
+          <div class="sub-2 sub-5">
             <?php categoryPostsBySlug('certo-errado','category-thumb-4');?>
           </div>
-          <div class="sub-2">
+          <div class="sub-2 sub-6">
             <?php categoryPostsBySlug('livros-casamento','category-thumb-4');?>
           </div>
-          <div class="sub-2">
+          <div class="sub-2 sub-7">
             <?php categoryPostsBySlug('livros-casamento','category-thumb-4');?>
           </div>
       </div>

@@ -7592,3 +7592,75 @@ Stack trace:
 [07-Jan-2014 18:34:53 UTC] PHP   5. WP_Automatic_Updater->run() C:\www\zulk\wp-includes\update.php:438
 [07-Jan-2014 18:34:53 UTC] PHP   6. wp_version_check() C:\www\zulk\wp-admin\includes\class-wp-upgrader.php:1990
 [07-Jan-2014 18:34:53 UTC] PHP   7. trigger_error() C:\www\zulk\wp-includes\update.php:120
+[21-Jan-2014 13:40:30 UTC] PHP Notice:  Undefined index: url_video in C:\www\zulk\wp-content\themes\zulk_wp\custom_meta\custom_input.php on line 37
+[21-Jan-2014 13:40:30 UTC] PHP Stack trace:
+[21-Jan-2014 13:40:30 UTC] PHP   1. {main}() C:\www\zulk\wp-admin\index.php:0
+[21-Jan-2014 13:40:30 UTC] PHP   2. wp_dashboard() C:\www\zulk\wp-admin\index.php:125
+[21-Jan-2014 13:40:30 UTC] PHP   3. do_meta_boxes() C:\www\zulk\wp-admin\includes\dashboard.php:152
+[21-Jan-2014 13:40:30 UTC] PHP   4. call_user_func() C:\www\zulk\wp-admin\includes\template.php:924
+[21-Jan-2014 13:40:30 UTC] PHP   5. wp_dashboard_quick_press() C:\www\zulk\wp-admin\includes\template.php:924
+[21-Jan-2014 13:40:30 UTC] PHP   6. get_default_post_to_edit() C:\www\zulk\wp-admin\includes\dashboard.php:335
+[21-Jan-2014 13:40:30 UTC] PHP   7. wp_insert_post() C:\www\zulk\wp-admin\includes\post.php:469
+[21-Jan-2014 13:40:30 UTC] PHP   8. do_action() C:\www\zulk\wp-includes\post.php:2961
+[21-Jan-2014 13:40:30 UTC] PHP   9. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:429
+[21-Jan-2014 13:40:30 UTC] PHP  10. save_post_meta_video() C:\www\zulk\wp-includes\plugin.php:429
+[21-Jan-2014 13:40:30 UTC] PHP Notice:  Undefined index: large in C:\www\zulk\wp-content\themes\zulk_wp\custom_meta\custom_input.php on line 65
+[21-Jan-2014 13:40:30 UTC] PHP Stack trace:
+[21-Jan-2014 13:40:30 UTC] PHP   1. {main}() C:\www\zulk\wp-admin\index.php:0
+[21-Jan-2014 13:40:30 UTC] PHP   2. wp_dashboard() C:\www\zulk\wp-admin\index.php:125
+[21-Jan-2014 13:40:30 UTC] PHP   3. do_meta_boxes() C:\www\zulk\wp-admin\includes\dashboard.php:152
+[21-Jan-2014 13:40:30 UTC] PHP   4. call_user_func() C:\www\zulk\wp-admin\includes\template.php:924
+[21-Jan-2014 13:40:30 UTC] PHP   5. wp_dashboard_quick_press() C:\www\zulk\wp-admin\includes\template.php:924
+[21-Jan-2014 13:40:30 UTC] PHP   6. get_default_post_to_edit() C:\www\zulk\wp-admin\includes\dashboard.php:335
+[21-Jan-2014 13:40:30 UTC] PHP   7. wp_insert_post() C:\www\zulk\wp-admin\includes\post.php:469
+[21-Jan-2014 13:40:30 UTC] PHP   8. do_action() C:\www\zulk\wp-includes\post.php:2961
+[21-Jan-2014 13:40:30 UTC] PHP   9. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:429
+[21-Jan-2014 13:40:30 UTC] PHP  10. save_post_large() C:\www\zulk\wp-includes\plugin.php:429
+[29-Jan-2014 13:03:15 UTC] PHP Notice:  Undefined index: url_video in C:\www\zulk\wp-content\themes\zulk_wp\custom_meta\custom_input.php on line 37
+[29-Jan-2014 13:03:15 UTC] PHP Stack trace:
+[29-Jan-2014 13:03:15 UTC] PHP   1. {main}() C:\www\zulk\wp-admin\index.php:0
+[29-Jan-2014 13:03:15 UTC] PHP   2. wp_dashboard() C:\www\zulk\wp-admin\index.php:125
+[29-Jan-2014 13:03:15 UTC] PHP   3. do_meta_boxes() C:\www\zulk\wp-admin\includes\dashboard.php:152
+[29-Jan-2014 13:03:15 UTC] PHP   4. call_user_func() C:\www\zulk\wp-admin\includes\template.php:924
+[29-Jan-2014 13:03:15 UTC] PHP   5. wp_dashboard_quick_press() C:\www\zulk\wp-admin\includes\template.php:924
+[29-Jan-2014 13:03:15 UTC] PHP   6. get_default_post_to_edit() C:\www\zulk\wp-admin\includes\dashboard.php:335
+[29-Jan-2014 13:03:15 UTC] PHP   7. wp_insert_post() C:\www\zulk\wp-admin\includes\post.php:469
+[29-Jan-2014 13:03:15 UTC] PHP   8. do_action() C:\www\zulk\wp-includes\post.php:2961
+[29-Jan-2014 13:03:15 UTC] PHP   9. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:429
+[29-Jan-2014 13:03:15 UTC] PHP  10. save_post_meta_video() C:\www\zulk\wp-includes\plugin.php:429
+[29-Jan-2014 13:03:15 UTC] PHP Notice:  Undefined index: large in C:\www\zulk\wp-content\themes\zulk_wp\custom_meta\custom_input.php on line 65
+[29-Jan-2014 13:03:15 UTC] PHP Stack trace:
+[29-Jan-2014 13:03:15 UTC] PHP   1. {main}() C:\www\zulk\wp-admin\index.php:0
+[29-Jan-2014 13:03:15 UTC] PHP   2. wp_dashboard() C:\www\zulk\wp-admin\index.php:125
+[29-Jan-2014 13:03:15 UTC] PHP   3. do_meta_boxes() C:\www\zulk\wp-admin\includes\dashboard.php:152
+[29-Jan-2014 13:03:15 UTC] PHP   4. call_user_func() C:\www\zulk\wp-admin\includes\template.php:924
+[29-Jan-2014 13:03:15 UTC] PHP   5. wp_dashboard_quick_press() C:\www\zulk\wp-admin\includes\template.php:924
+[29-Jan-2014 13:03:15 UTC] PHP   6. get_default_post_to_edit() C:\www\zulk\wp-admin\includes\dashboard.php:335
+[29-Jan-2014 13:03:15 UTC] PHP   7. wp_insert_post() C:\www\zulk\wp-admin\includes\post.php:469
+[29-Jan-2014 13:03:15 UTC] PHP   8. do_action() C:\www\zulk\wp-includes\post.php:2961
+[29-Jan-2014 13:03:15 UTC] PHP   9. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:429
+[29-Jan-2014 13:03:15 UTC] PHP  10. save_post_large() C:\www\zulk\wp-includes\plugin.php:429
+[29-Jan-2014 13:05:10 UTC] PHP Warning:  Ocorreu um erro inesperado. Algo pode estar errado com o WordPress.org ou com a configuração deste servidor. Se os problemas persistirem, busque ajuda no <a href="http://wordpress.org/support/">fórum de suporte</a>. (WordPress could not establish a secure connection to WordPress.org. Please contact your server administrator.) in C:\www\zulk\wp-includes\update.php on line 267
+[29-Jan-2014 13:05:10 UTC] PHP Stack trace:
+[29-Jan-2014 13:05:10 UTC] PHP   1. {main}() C:\www\zulk\wp-admin\update-core.php:0
+[29-Jan-2014 13:05:10 UTC] PHP   2. do_core_upgrade() C:\www\zulk\wp-admin\update-core.php:549
+[29-Jan-2014 13:05:10 UTC] PHP   3. Core_Upgrader->upgrade() C:\www\zulk\wp-admin\update-core.php:407
+[29-Jan-2014 13:05:10 UTC] PHP   4. do_action() C:\www\zulk\wp-admin\includes\class-wp-upgrader.php:1414
+[29-Jan-2014 13:05:10 UTC] PHP   5. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:429
+[29-Jan-2014 13:05:10 UTC] PHP   6. wp_update_plugins() C:\www\zulk\wp-includes\plugin.php:429
+[29-Jan-2014 13:05:10 UTC] PHP   7. trigger_error() C:\www\zulk\wp-includes\update.php:267
+[29-Jan-2014 13:06:06 UTC] PHP Notice:  Undefined index: large in C:\www\zulk\wp-content\themes\zulk_wp\custom_meta\custom_input.php on line 65
+[29-Jan-2014 13:06:06 UTC] PHP Stack trace:
+[29-Jan-2014 13:06:06 UTC] PHP   1. {main}() C:\www\zulk\wp-admin\post.php:0
+[29-Jan-2014 13:06:06 UTC] PHP   2. edit_post() C:\www\zulk\wp-admin\post.php:229
+[29-Jan-2014 13:06:06 UTC] PHP   3. wp_update_post() C:\www\zulk\wp-admin\includes\post.php:281
+[29-Jan-2014 13:06:06 UTC] PHP   4. wp_insert_post() C:\www\zulk\wp-includes\post.php:3023
+[29-Jan-2014 13:06:06 UTC] PHP   5. do_action() C:\www\zulk\wp-includes\post.php:2961
+[29-Jan-2014 13:06:06 UTC] PHP   6. call_user_func_array() C:\www\zulk\wp-includes\plugin.php:429
+[29-Jan-2014 13:06:06 UTC] PHP   7. save_post_large() C:\www\zulk\wp-includes\plugin.php:429
+[29-Jan-2014 13:06:15 UTC] PHP Notice:  Array to string conversion in C:\www\zulk\wp-content\themes\zulk_wp\single.php on line 5
+[29-Jan-2014 13:06:15 UTC] PHP Stack trace:
+[29-Jan-2014 13:06:15 UTC] PHP   1. {main}() C:\www\zulk\index.php:0
+[29-Jan-2014 13:06:15 UTC] PHP   2. require() C:\www\zulk\index.php:17
+[29-Jan-2014 13:06:15 UTC] PHP   3. require_once() C:\www\zulk\wp-blog-header.php:16
+[29-Jan-2014 13:06:15 UTC] PHP   4. include() C:\www\zulk\wp-includes\template-loader.php:74

@@ -104,7 +104,7 @@ function categoryPosts($cat_id='',$tam=''){
                 $thumb = thumbUrl(get_the_ID(), $tam);
                 $diff = diffBetweenDates(the_date("Y-m-d",'','',FALSE));     
 
-              echo '<div class="back" style="background:url('.$thumb.') no-repeat center center;-webkit-background-size:cover">
+              echo '<div class="back" style="background:url('.$thumb.') no-repeat center center;-webkit-background-size:local">
             
               <div class="front">
 
